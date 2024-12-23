@@ -21,14 +21,37 @@ def selectGrpMatchups(groupTeams,matchups_grpRd):
     matchup2 = random.choice([x for x in matchups_grpRd if t1 not in x and t2[0] not in x])
     return [matchup1,matchup2]
 
+
+
+
+## Convert League Dictionary to lists
+buildConf = []
+for conf in leageDict.keys(): 
+    confLst = []
+    for div in leageDict[conf].keys():
+        divLst = []
+        for grp in leageDict[conf][div].keys():
+            divLst.append(list(leageDict[conf][div][grp].keys()))
+        confLst.append(divLst)
+    buildConf.append(confLst)
+
+
 matchups = []
-for div in leageDict['Founders'].keys():
-    for g in leageDict['Founders'][div].keys():
-        groupTeams = list(leageDict['Founders'][div][g].keys())
-        matchups_grpRd_all = []
-        for t in groupTeams:
-            for o in groupTeams:
-                if t!=o:
-                    matchups_grpRd_all.append([t, o])
-        matchups += selectGrpMatchups(groupTeams,matchups_grpRd_all)
-matchups
+confLst = []
+for conf in buildConf:
+    # Group pairings
+    divLst = []
+    for div in conf:
+        grpLst = []
+        for grp in div:
+            teamLst =[]
+            for t in grp:
+                for o in grp:
+                    if t!=o:
+                        teamLst.append([t, o])
+            grpLst.append(teamLst)
+        divLst.append(grpLst)
+    confLst.append(divLst)
+    # matchups_grpplay.append(grpLst)
+    
+
