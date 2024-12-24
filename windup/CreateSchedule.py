@@ -43,8 +43,12 @@ for conf in leageDict.keys():
 
 
 
-def categorizeMatchup():
-    
+def categorizeMatchup(h,a,conferenceTms,divisionTms, groupTms):
+    for grp in groupTms:
+        if h in grp and a in grp: return 'Group'
+    for div in divisionTms:
+        if h in div and a in div: return 'Division'
+    else: return 'Conference'
 
 
 ## Find all possible matchups - Home and Away
@@ -54,8 +58,8 @@ for conf in conferenceTms:
     for h in conf:
         for a in conf:
             if h != a:
-                
-                matchupLst.append([h,a])
+                pairing = categorizeMatchup(h,a,conferenceTms,divisionTms, groupTms)
+                matchupLst.append([h,a,pairing])
     confMatchups.append(matchupLst)
 
-conferenceTms[0]
+
