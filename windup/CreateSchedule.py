@@ -6,7 +6,9 @@ Created on Sat Dec 21 21:23:50 2024
 """
 
 import pandas as pd
-import random, itertools
+import random, itertools, copy
+import sys
+sys.path.append(r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup')
 from League_Info import leagueFormation
 
 leageDict = leagueFormation.leagueDict()
@@ -41,25 +43,76 @@ for conf in leageDict.keys():
     conferenceTms.append(flattenLsts(confLst))
     
 
-
-
-def categorizeMatchup(h,a,conferenceTms,divisionTms, groupTms):
+def categorizeMatchup(homeTm,awayTm,conferenceTms,divisionTms,groupTms,matchupLst):
     for grp in groupTms:
-        if h in grp and a in grp: return 'Group'
+        if homeTm in grp and awayTm in grp: 
+            seriesHostingInMatchup = 3
+            matchupLst[0].append([homeTm,awayTm,'Group',seriesHostingInMatchup])
+            return matchupLst
     for div in divisionTms:
-        if h in div and a in div: return 'Division'
-    else: return 'Conference'
+        if homeTm in div and awayTm in div: 
+            seriesHostingInMatchup = 2
+            matchupLst[1].append([homeTm,awayTm,'Division',seriesHostingInMatchup])
+            return matchupLst
+    else: 
+        seriesHostingInMatchup = 1
+        matchupLst[2].append([homeTm,awayTm,'Conference',seriesHostingInMatchup])
+        return matchupLst
 
 
 ## Find all possible matchups - Home and Away
 confMatchups = []
 for conf in conferenceTms:
-    matchupLst = []
-    for h in conf:
-        for a in conf:
-            if h != a:
-                pairing = categorizeMatchup(h,a,conferenceTms,divisionTms, groupTms)
-                matchupLst.append([h,a,pairing])
+    matchupLst = [['Groups Opponent'],['Division Opponent'],['Conference Opponent']]
+    for homeTm in conf:
+        for awayTm in conf:
+            if homeTm != awayTm:
+                matchupLst = categorizeMatchup(homeTm,awayTm,conferenceTms,divisionTms,groupTms,matchupLst)
     confMatchups.append(matchupLst)
+
+
+
+
+
+
+
+
+
+## Schedule Group Rounds
+
+def availableRoundMatchups(matchups):
+    gameLeftLimit = max(list(set([team[3] for team in matchups[1:]])))
+    # return list(set([team[0] for team in matchups[1:] if team[3] == gameLeftLimit]))
+    return [team for team in matchups[1:] if team[3] == gameLeftLimit and gameLeftLimit>0]
+
+def selectMatchup(availPair,seasonTracker):
+    matchup = random.choice(availPair)
+    for i in range(len(seasonTracker)):
+        if seasonTracker[i] == matchup: seasonTracker[i][3] = seasonTracker[i][3]-1
+    return seasonTracker,matchup
+    
+
+def remainingRoundMatchups(matchups,dropTeams): 
+    return [team for team in availPair if team[0] not in dropTeams and team[1] not in dropTeams]
+
+## Copy for processing
+tempconfMatchups = copy.deepcopy(confMatchups)
+
+allmatchups=[]
+for conf in tempconfMatchups:
+    confTemp = []
+    maxGroupGames = len(conf[0][1:])*conf[0][2][3]
+    while len(flattenLsts(confTemp))<maxGroupGames:
+        availPair = availableRoundMatchups(conf[0])
+        roundMatchups = []
+        while len(availPair) >0:
+            conf[0], matchup = selectMatchup(availPair,conf[0])
+            # matchup = random.choice(availPair)
+            roundMatchups.append(list(matchup))
+            availPair = remainingRoundMatchups(availPair,[matchup[0],matchup[1]])
+        confTemp.append(list(roundMatchups))
+    allmatchups.append(list(confTemp))
+
+
 
 
