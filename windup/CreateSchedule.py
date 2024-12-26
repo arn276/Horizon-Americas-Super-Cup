@@ -93,7 +93,7 @@ def selectMatchup(availPair,seasonTracker):
     
 
 def remainingRoundMatchups(matchups,dropTeams): 
-    return [team for team in availPair if team[0] not in dropTeams and team[1] not in dropTeams]
+    return [team for team in matchups if team[0] not in dropTeams and team[1] not in dropTeams]
 
 ## Copy for processing
 tempconfMatchups = copy.deepcopy(confMatchups)
@@ -114,5 +114,30 @@ for conf in tempconfMatchups:
     allmatchups.append(list(confTemp))
 
 
+## Division Scheduling
+for conf in tempconfMatchups:
+    retry = True
+    conf4Repeat = copy.deepcopy(conf)
+    while retry == True:
+        confTemp = []
+        maxGroupGames = len(conf[1][1:])*conf[1][2][3]
+        while len(flattenLsts(confTemp))<maxGroupGames:
+            availPair = availableRoundMatchups(conf[1])
+            roundMatchups = []
+            while len(availPair) >0:
+                conf[1], matchup = selectMatchup(availPair,conf[1])
+                # matchup = random.choice(availPair)
+                roundMatchups.append(list(matchup))
+                availPair = remainingRoundMatchups(availPair,[matchup[0],matchup[1]])
+            confTemp.append(list(roundMatchups))
+    
+        if len(confTemp) == 16: 
+            retry = False
+        else:
+            conf = copy.deepcopy(conf4Repeat)
 
+    allmatchups.append(list(confTemp))
 
+# len(allmatchups[0][0])
+allmatchups[4]
+len(confTemp)
