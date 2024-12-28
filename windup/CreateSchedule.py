@@ -95,49 +95,47 @@ def selectMatchup(availPair,seasonTracker):
 def remainingRoundMatchups(matchups,dropTeams): 
     return [team for team in matchups if team[0] not in dropTeams and team[1] not in dropTeams]
 
+def cycleGroups(confMatchups, matchupType, maxGames, idealMatchupCt):
+    tempconfMatchups = copy.deepcopy(confMatchups)
+    matchupSet = []
+    for conf in tempconfMatchups:
+        retry = True
+        conf4Repeat = copy.deepcopy(conf)    
+        while retry == True:
+            confTemp = []
+            while len(flattenLsts(confTemp))<maxGames:
+                availPair = availableRoundMatchups(conf[matchupType])
+                roundMatchups = []
+                while len(availPair) >0:
+                    conf[1], matchup = selectMatchup(availPair,conf[matchupType])
+                    # matchup = random.choice(availPair)
+                    roundMatchups.append(list(matchup))
+                    availPair = remainingRoundMatchups(availPair,[matchup[0],matchup[1]])
+                confTemp.append(list(roundMatchups))
+            if len(confTemp) == idealMatchupCt: 
+                retry = False
+            else:
+                conf = copy.deepcopy(conf4Repeat)
+        matchupSet.append(list(confTemp))
+    return matchupSet
+
 ## Copy for processing
 tempconfMatchups = copy.deepcopy(confMatchups)
-
-allmatchups=[]
-for conf in tempconfMatchups:
-    confTemp = []
-    maxGroupGames = len(conf[0][1:])*conf[0][2][3]
-    while len(flattenLsts(confTemp))<maxGroupGames:
-        availPair = availableRoundMatchups(conf[0])
-        roundMatchups = []
-        while len(availPair) >0:
-            conf[0], matchup = selectMatchup(availPair,conf[0])
-            # matchup = random.choice(availPair)
-            roundMatchups.append(list(matchup))
-            availPair = remainingRoundMatchups(availPair,[matchup[0],matchup[1]])
-        confTemp.append(list(roundMatchups))
-    allmatchups.append(list(confTemp))
-
+## Group Scheduling
+maxGroupGames = len(confMatchups[0][0][1:])*confMatchups[0][0][2][3]
+groupMatchups = cycleGroups(confMatchups, 0, maxGroupGames, 18)
 
 ## Division Scheduling
-for conf in tempconfMatchups:
-    retry = True
-    conf4Repeat = copy.deepcopy(conf)
-    while retry == True:
-        confTemp = []
-        maxGroupGames = len(conf[1][1:])*conf[1][2][3]
-        while len(flattenLsts(confTemp))<maxGroupGames:
-            availPair = availableRoundMatchups(conf[1])
-            roundMatchups = []
-            while len(availPair) >0:
-                conf[1], matchup = selectMatchup(availPair,conf[1])
-                # matchup = random.choice(availPair)
-                roundMatchups.append(list(matchup))
-                availPair = remainingRoundMatchups(availPair,[matchup[0],matchup[1]])
-            confTemp.append(list(roundMatchups))
-    
-        if len(confTemp) == 16: 
-            retry = False
-        else:
-            conf = copy.deepcopy(conf4Repeat)
+maxDivisionGames = len(confMatchups[0][1][1:])*confMatchups[0][1][2][3]
+divisionMatchups = cycleGroups(confMatchups, 1, maxDivisionGames, 16)
 
-    allmatchups.append(list(confTemp))
+## Conference Scheduling
+maxConferenceGames = len(confMatchups[0][2][1:])*confMatchups[0][2][2][3]
+conferenceMatchups = cycleGroups(confMatchups, 2, maxConferenceGames, 16)
 
-# len(allmatchups[0][0])
-allmatchups[4]
-len(confTemp)
+AllMatchups = groupMatchups+divisionMatchups+conferenceMatchups
+
+
+
+
+
