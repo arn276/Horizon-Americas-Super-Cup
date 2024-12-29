@@ -113,6 +113,7 @@ def cycleGroups(confMatchups, matchupType, maxGames, idealMatchupCt):
                     roundMatchups.append(list(matchup))
                     availPair = remainingRoundMatchups(availPair,[matchup[0],matchup[1]])
                 confTemp.append(list(roundMatchups))
+            print(len(confTemp))
             if len(confTemp) == idealMatchupCt: 
                 retry = False
             else:
@@ -121,16 +122,16 @@ def cycleGroups(confMatchups, matchupType, maxGames, idealMatchupCt):
     return matchupSet
 
 
-# ## Group Scheduling
-# maxGroupGames = len(confMatchups[0][0][1:])*confMatchups[0][0][2][3]
-# groupMatchups = cycleGroups(confMatchups, 0, maxGroupGames, 18)
+## Group Scheduling
+maxGroupGames = len(confMatchups[0][0][1:])*confMatchups[0][0][2][3]
+groupMatchups = cycleGroups(confMatchups, 0, maxGroupGames, 18)
 
-# ## Division Scheduling
-# maxDivisionGames = len(confMatchups[0][1][1:])*confMatchups[0][1][2][3]
-# divisionMatchups = cycleGroups(confMatchups, 1, maxDivisionGames, 16)
+## Division Scheduling
+maxDivisionGames = len(confMatchups[0][1][1:])*confMatchups[0][1][2][3]
+divisionMatchups = cycleGroups(confMatchups, 1, maxDivisionGames, 16)
 
-## Conference Scheduling
-maxConferenceGames = len(confMatchups[0][2][1:])*confMatchups[0][2][2][3]
+
+
 # Group conferences for efficient scheduling
 confPairingOptions = []
 for conf in leagueFormat:
@@ -158,21 +159,41 @@ while len(pairingOrder)<2:
         reduceConfPairingOptions.remove(pair)
     pairingOrder.append(confRd)
 
-#####
-#### Create way to send each round of conf to cycleGroups
+## separate each conference rd by group matchups
+def confRdPairings(rdList,confMatchups,pairingOrder,rd):
+    for conf in confMatchups:
+        confMatchups = []
+        for p in pairingOrder[rd]:
+            matchupTest = flattenLsts(p)
+            # print(matchupTest)
+            for matchup in conf[2][1:]:   
+                if matchup[0] in matchupTest and matchup[1] in matchupTest:
+                    # print(matchup)
+                    confMatchups.append(matchup)
+        rdList.append(confMatchups)
+    return rdList
+
+ConfRd1=[]                
+ConfRd1 = confRdPairings(ConfRd1,confMatchups,pairingOrder,0)
+
+ConfRd2=[]                
+ConfRd2 = confRdPairings(ConfRd2,confMatchups,pairingOrder,1) 
+
+## Set two separate conference rounds for scheduling
+confMatchups[0][2] = ['Conference Rd 1']+ConfRd1[0]
+confMatchups[1][2] = ['Conference Rd 1']+ConfRd1[1]  
+
+confMatchups[0].append(['Conference Rd 2']+ConfRd2[0])
+confMatchups[1].append(['Conference Rd 2']+ConfRd2[1])
 
 
-conferenceMatchups = cycleGroups(confMatchups, 2, maxConferenceGames, 16)
+## Conference Scheduling
+maxConferenceGames = len(confMatchups[0][2][1:])*confMatchups[0][2][2][3]
+conferenceMatchups = cycleGroups(confMatchups, 2, maxConferenceGames, 8)
+conferenceMatchups2 = cycleGroups(confMatchups, 3, maxConferenceGames, 8)
 
-
-
-
-
-
-
-# AllMatchups = groupMatchups+divisionMatchups+conferenceMatchups
-
-
+## Combine all the matchups to a single list
+AllMatchups = groupMatchups+divisionMatchups+conferenceMatchups+conferenceMatchups2
 
 
 
