@@ -13,15 +13,15 @@ from League_Info import leagueFormation
 
 leageDict = leagueFormation.leagueDict()
 
-def selectGrpMatchups(groupTeams,matchups_grpRd):
-    ''' '''
-    t1 = random.choice(groupTeams)
-    matchup1 = random.choice([x for x in matchups_grpRd if t1 in x])
-    t2 = matchup1.copy()
-    t2.remove(t1)
-    # matchups_grpRd = matchups_grpRd.copy()
-    matchup2 = random.choice([x for x in matchups_grpRd if t1 not in x and t2[0] not in x])
-    return [matchup1,matchup2]
+# def selectGrpMatchups(groupTeams,matchups_grpRd):
+#     ''' '''
+#     t1 = random.choice(groupTeams)
+#     matchup1 = random.choice([x for x in matchups_grpRd if t1 in x])
+#     t2 = matchup1.copy()
+#     t2.remove(t1)
+#     # matchups_grpRd = matchups_grpRd.copy()
+#     matchup2 = random.choice([x for x in matchups_grpRd if t1 not in x and t2[0] not in x])
+#     return [matchup1,matchup2]
 
 def flattenLsts(lst):
     return list(itertools.chain.from_iterable(lst))
@@ -29,15 +29,17 @@ def flattenLsts(lst):
 
 ## Convert League Dictionary to lists
 conferenceTms,divisionTms, groupTms = [],[],[]
+leagueFormat=[]
 for conf in leageDict.keys(): 
     confLst = []
+    # confPairings.append([conf])
     for div in leageDict[conf].keys():
         divLst = []
-        
         for grp in leageDict[conf][div].keys():
             groupLst = list(leageDict[conf][div][grp].keys())
             groupTms.append(groupLst)
             divLst.append(groupLst)
+            leagueFormat.append([conf,div,grp,groupLst])
         divisionTms.append(flattenLsts(divLst))
         confLst.append(flattenLsts(divLst))
     conferenceTms.append(flattenLsts(confLst))
@@ -60,6 +62,8 @@ def categorizeMatchup(homeTm,awayTm,conferenceTms,divisionTms,groupTms,matchupLs
         return matchupLst
 
 
+
+
 ## Find all possible matchups - Home and Away
 confMatchups = []
 for conf in conferenceTms:
@@ -71,19 +75,13 @@ for conf in conferenceTms:
     confMatchups.append(matchupLst)
 
 
-
-
-
-
-
-
-
 ## Schedule Group Rounds
 
 def availableRoundMatchups(matchups):
     gameLeftLimit = max(list(set([team[3] for team in matchups[1:]])))
     # return list(set([team[0] for team in matchups[1:] if team[3] == gameLeftLimit]))
     return [team for team in matchups[1:] if team[3] == gameLeftLimit and gameLeftLimit>0]
+
 
 def selectMatchup(availPair,seasonTracker):
     matchup = random.choice(availPair)
@@ -95,8 +93,11 @@ def selectMatchup(availPair,seasonTracker):
 def remainingRoundMatchups(matchups,dropTeams): 
     return [team for team in matchups if team[0] not in dropTeams and team[1] not in dropTeams]
 
+
 def cycleGroups(confMatchups, matchupType, maxGames, idealMatchupCt):
+    ## Copy for processing
     tempconfMatchups = copy.deepcopy(confMatchups)
+    
     matchupSet = []
     for conf in tempconfMatchups:
         retry = True
@@ -119,21 +120,57 @@ def cycleGroups(confMatchups, matchupType, maxGames, idealMatchupCt):
         matchupSet.append(list(confTemp))
     return matchupSet
 
-## Copy for processing
-tempconfMatchups = copy.deepcopy(confMatchups)
-## Group Scheduling
-maxGroupGames = len(confMatchups[0][0][1:])*confMatchups[0][0][2][3]
-groupMatchups = cycleGroups(confMatchups, 0, maxGroupGames, 18)
 
-## Division Scheduling
-maxDivisionGames = len(confMatchups[0][1][1:])*confMatchups[0][1][2][3]
-divisionMatchups = cycleGroups(confMatchups, 1, maxDivisionGames, 16)
+# ## Group Scheduling
+# maxGroupGames = len(confMatchups[0][0][1:])*confMatchups[0][0][2][3]
+# groupMatchups = cycleGroups(confMatchups, 0, maxGroupGames, 18)
+
+# ## Division Scheduling
+# maxDivisionGames = len(confMatchups[0][1][1:])*confMatchups[0][1][2][3]
+# divisionMatchups = cycleGroups(confMatchups, 1, maxDivisionGames, 16)
 
 ## Conference Scheduling
 maxConferenceGames = len(confMatchups[0][2][1:])*confMatchups[0][2][2][3]
+# Group conferences for efficient scheduling
+confPairingOptions = []
+for conf in leagueFormat:
+    for oConf in leagueFormat:
+        if conf[0] == oConf[0] and conf[1] != oConf[1]:
+            confPairingOptions.append([conf[3],oConf[3]] )
+
+#Finding Unique group pairings
+uniqueConfPairingOptions = []
+for p in confPairingOptions:   
+    p.sort()
+    if p not in uniqueConfPairingOptions: uniqueConfPairingOptions.append(p)
+
+            
+# Random selection of order of group pairings
+reduceConfPairingOptions = copy.deepcopy(uniqueConfPairingOptions)
+pairingOrder = []
+while len(pairingOrder)<2:
+    tempConfPairingOptions = copy.deepcopy(reduceConfPairingOptions)
+    confRd = []
+    while len(confRd)<4:
+        pair = random.choice(tempConfPairingOptions)
+        tempConfPairingOptions =remainingRoundMatchups(tempConfPairingOptions,pair)
+        confRd.append(pair)
+        reduceConfPairingOptions.remove(pair)
+    pairingOrder.append(confRd)
+
+#####
+#### Create way to send each round of conf to cycleGroups
+
+
 conferenceMatchups = cycleGroups(confMatchups, 2, maxConferenceGames, 16)
 
-AllMatchups = groupMatchups+divisionMatchups+conferenceMatchups
+
+
+
+
+
+
+# AllMatchups = groupMatchups+divisionMatchups+conferenceMatchups
 
 
 
