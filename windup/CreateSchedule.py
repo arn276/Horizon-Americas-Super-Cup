@@ -6,44 +6,28 @@ Created on Sat Dec 21 21:23:50 2024
 """
 
 import pandas as pd
-import random, itertools, copy
+import random, copy
 import sys,datetime, csv
 sys.path.append(r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup')
+
 from League_Info import leagueFormation
+from createMatchups import matchups
 
 leageDict = leagueFormation.leagueDict()
 
-# def selectGrpMatchups(groupTeams,matchups_grpRd):
-#     ''' '''
-#     t1 = random.choice(groupTeams)
-#     matchup1 = random.choice([x for x in matchups_grpRd if t1 in x])
-#     t2 = matchup1.copy()
-#     t2.remove(t1)
-#     # matchups_grpRd = matchups_grpRd.copy()
-#     matchup2 = random.choice([x for x in matchups_grpRd if t1 not in x and t2[0] not in x])
-#     return [matchup1,matchup2]
 
-def flattenLsts(lst):
-    return list(itertools.chain.from_iterable(lst))
+
 
 
 ## Convert League Dictionary to lists
-conferenceTms,divisionTms, groupTms = [],[],[]
-leagueFormat=[]
-for conf in leageDict.keys(): 
-    confLst = []
-    # confPairings.append([conf])
-    for div in leageDict[conf].keys():
-        divLst = []
-        for grp in leageDict[conf][div].keys():
-            groupLst = list(leageDict[conf][div][grp].keys())
-            groupTms.append(groupLst)
-            divLst.append(groupLst)
-            leagueFormat.append([conf,div,grp,groupLst])
-        divisionTms.append(flattenLsts(divLst))
-        confLst.append(flattenLsts(divLst))
-    conferenceTms.append(flattenLsts(confLst))
+leagueFormat,conferenceTms,divisionTms,groupTms = matchups.leagueFormatToList(leageDict)
     
+
+
+
+##############
+#### Find all possible matchups - Home and Away
+##############
 
 def categorizeMatchup(homeTm,awayTm,conferenceTms,divisionTms,groupTms,matchupLst):
     for grp in groupTms:
@@ -60,12 +44,7 @@ def categorizeMatchup(homeTm,awayTm,conferenceTms,divisionTms,groupTms,matchupLs
         seriesHostingInMatchup = 1
         matchupLst[2].append([homeTm,awayTm,'Conference',seriesHostingInMatchup])
         return matchupLst
-
-
-
-##############
-#### Find all possible matchups - Home and Away
-##############
+    
 confMatchups = []
 for conf in conferenceTms:
     matchupLst = [['Groups Opponent'],['Division Opponent'],['Conference Opponent']]
@@ -90,10 +69,6 @@ uniqueConfPairingOptions = []
 for p in confPairingOptions:   
     p.sort()
     if p not in uniqueConfPairingOptions: uniqueConfPairingOptions.append(p)
-
-
-
-
 
 
 def availableRoundMatchups(matchups):
@@ -286,8 +261,7 @@ def findBackToBackOff(schedules,team,date_list):
     return backToBackOpen
 
 
-
-for group in groupTms[2:3]:
+for group in groupTms: 
     #List all group games by group
     groupGames = [game for game in schedules if game[1] in group and game[2] in group]
     #Find unique
@@ -295,62 +269,49 @@ for group in groupTms[2:3]:
     for matchup in [[game[1],game[2]] for game in groupGames]:
         if matchup not in uniqueLst: uniqueLst.append(matchup)
     #Find dates team could extend series
-    FourthGmOption = []
     for matchup in uniqueLst:
         ## date where both teams have back to back days off
+        FourthGmOption = []
         homeTmPairOff = findBackToBackOff(schedules,matchup[0],date_list)
         awayTmPairOff = findBackToBackOff(schedules,matchup[1],date_list)
         pairedOffPriority = [date for date in homeTmPairOff if date in awayTmPairOff]
-        # print(matchup)
+        # Dates They Already Play
         checkDates = [date[0] for date in schedules if date[1] == matchup[0] and date[2] == matchup[1]]
+
         for date in checkDates:
             if date != base:
+                # Check if both teams have a shared team off before series
                 prevDt = date+datetime.timedelta(days=-1)
                 prevDayTeams = [match[1] for match in schedules if match[0] == prevDt]+[match[2] for match in schedules if match[0] == prevDt]
                 homechk = matchup[0] in prevDayTeams
                 awaychk = matchup[1] in prevDayTeams
-            if homechk == False and awaychk == False:
-                FourthGmOption.append(prevDt)
-                # print('pre')
-                # print(prevDt)
-            else:
-                tomorrow = date+datetime.timedelta(days=1) 
-                tomorrowTeams = [match[1] for match in schedules if match[0] == tomorrow]+[match[2] for match in schedules if match[0] == tomorrow]
-                homechk = matchup[0] in tomorrowTeams
-                awaychk = matchup[1] in tomorrowTeams
                 if homechk == False and awaychk == False:
-                    FourthGmOption.append(tomorrow)
-                    # print('tom')
-                    # print(tomorrow)
+                    FourthGmOption.append(prevDt)
+            
+            # Check if both teams have a shared team off after series
+            tomorrow = date+datetime.timedelta(days=1) 
+            tomorrowTeams = [match[1] for match in schedules if match[0] == tomorrow]+[match[2] for match in schedules if match[0] == tomorrow]
+            homechk = matchup[0] in tomorrowTeams
+            awaychk = matchup[1] in tomorrowTeams
+            if homechk == False and awaychk == False:
+                FourthGmOption.append(tomorrow)
+        #Verify list of shared open days aren't days they already play or days for the quarterly wind-up
+        FourthGmOption = [date for date in FourthGmOption if date not in excludionLst and date not in checkDates]
         
-        try:
+        # Check if the both teams have a day off next to one of them having two days off
+        if len([date for date in FourthGmOption if date in pairedOffPriority]) >0:
             priorityDate = max([date for date in FourthGmOption if date in pairedOffPriority])
             schedules.append([priorityDate]+matchup)
-            print(matchup)
-            print('priority')
-            print(priorityDate)
-        except ValueError:
-            FourthGmOption = [date for date in FourthGmOption if date not in excludionLst]
-            try: 
-                schedules.append([max(FourthGmOption)]+matchup)
-                print(matchup)
-                print('4thOption')
-                print(max(FourthGmOption))
-            except ValueError:
-                minDt, maxDt = datetime.date(2010, 5, 1),datetime.date(2010, 9, 1)
-                doubleHeader = random.choice([game for game in groupGames if game[0]> minDt and game[0]<maxDt ])
-                print(matchup)
-                print('double')
-                print(doubleHeader)
-                schedules.append(doubleHeader)
-                
-                
-                
-                
-                
-schedules[-10:]
-
-
+        # Find Latest shared open date next to series to play 10th game
+        elif len(FourthGmOption)>0:
+            schedules.append([max(FourthGmOption)]+matchup)
+        # Schedule doubleheader
+        else:
+            minDt, maxDt = datetime.date(2010, 5, 1),datetime.date(2010, 9, 1)
+            doubleHeader = random.choice([game for game in groupGames 
+                                          if game[0]> minDt and game[0]<maxDt and 
+                                          game[1] == matchup[0] and game[2] == matchup[1]])
+            schedules.append(doubleHeader)
 
 
 
