@@ -7,12 +7,13 @@ Created on Sat Dec 21 21:23:50 2024
 
 import pandas as pd
 import random, copy
-import sys,datetime, csv
+import sys,datetime, csv, statsapi
 sys.path.append(r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup')
 
 from League_Info import leagueFormation
 from createMatchups import matchups
 from scheduleToDate import schedule
+from HistoricSeasonData import historicSeasons
 
 leageDict = leagueFormation.leagueDict()
 
@@ -66,6 +67,61 @@ with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesSchedule.csv', '
 
 
 
+##############################
+####Historic Scores
+##############################
+locationStr = r'C:\Users\Public\retrosheets\gl2020_23'
+season24 = historicSeasons.readSeason(locationStr+r'\gl2024.txt')
+
+regulation = season24[(season24['lengthofgame_outs']>=51) | (season24['lengthofgame_outs']<=54) ]
+resultRate = regulation[['roadscor','homescore']].value_counts().reset_index()
+resultRate['PercentOfTotal'] = resultRate['count']/resultRate['count'].sum()
+
+resultRate.loc[resultRate['homescore'] > resultRate['roadscor'], 'winner'] = 'Home'
+resultRate.loc[resultRate['homescore'] < resultRate['roadscor'], 'winner'] = 'Road'
+
+
+
+##############################
+####Historic Standings
+##############################
+base = 1922
+yearLst = []
+for i in range(2024-base+1):
+    yearLst.append(base+i)
+
+allStandings = []
+leagueIds = [103,104]
+for league in leagueIds:
+    for year in yearLst:
+        
+        try:
+            season = statsapi.standings(leagueId=league,season=str(year))
+            standing = [x for x in season.split('\n') if x[:4] not in ['Nati','Amer','Rank'] and x != '']
+            splitToElements = [x.split('  ') for x in standing]
+    
+            teamElements=[]
+            for team in splitToElements:
+                teamElements.append([t.strip() for t in team[1:] if t not in ['','-']])
+            # split win if in team name
+            standings = []
+            for team in teamElements:
+                try:
+                    temp = [year,league]+[team[0][:-3]]
+                    wins = int(team[0][-3:])
+                    temp.append(wins)
+                    [temp.append(x) for x in team[1:2]] 
+                    standings.append(temp)
+                except ValueError:
+                    standings.append([year,league]+[x for x in team[0:1]]+[x.split(' ')[0] for x in team[1:3]])
+        except KeyError:
+            standings.append([year, league])
+        
+        allStandings.append(standings)
+
+with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\historicStandings.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerows(allStandings)
 
 
 
@@ -75,8 +131,14 @@ with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesSchedule.csv', '
 
 
 
+[x for x in [i for i  in splitToElements][0] if x not in ['','-']]
+
+[i for i  in splitToElements][0]
 
 
+[x.split('  ') for x in standing][1]
+        
 
+standing[1].split('  ')[1:]
 
 
