@@ -1,5 +1,31 @@
-# -*- coding: utf-8 -*-
+import itertools
+
+
 class leagueFormation:
+    def teamLsts(leageDict):
+        conferenceTms,divisionTms, groupTms = [],[],[]
+        leagueFormat=[]
+        for conf in leageDict.keys(): 
+            confLst = []
+            # confPairings.append([conf])
+            for div in leageDict[conf].keys():
+                divLst = []
+                for grp in leageDict[conf][div].keys():
+                    groupLst = list(leageDict[conf][div][grp].keys())
+                    groupTms.append(groupLst)
+                    divLst.append(groupLst)
+                    leagueFormat.append([conf,div,grp,groupLst])
+                divisionTms.append(leagueFormation.flattenLsts(divLst))
+                confLst.append(leagueFormation.flattenLsts(divLst))
+            conferenceTms.append(leagueFormation.flattenLsts(confLst))
+        # self.leagueLsts = [leagueFormat,conferenceTms,divisionTms,groupTms]
+        return leagueFormat, conferenceTms, divisionTms, groupTms
+        
+    
+    def flattenLsts(lst):
+        return list(itertools.chain.from_iterable(lst))
+    
+    
     def leagueDict():
         leagueConferences = {
             'Founders': {'East Division':{'Port Group':{'Montreal':{'Nickname':'Fantômes'},
