@@ -94,7 +94,7 @@ allStandings = []
 leagueIds = [103,104]
 for league in leagueIds:
     for year in yearLst:
-        
+        standings = []
         try:
             season = statsapi.standings(leagueId=league,season=str(year))
             standing = [x for x in season.split('\n') if x[:4] not in ['Nati','Amer','Rank'] and x != '']
@@ -104,7 +104,7 @@ for league in leagueIds:
             for team in splitToElements:
                 teamElements.append([t.strip() for t in team[1:] if t not in ['','-']])
             # split win if in team name
-            standings = []
+        
             for team in teamElements:
                 try:
                     temp = [year,league]+[team[0][:-3]]
@@ -113,11 +113,61 @@ for league in leagueIds:
                     [temp.append(x) for x in team[1:2]] 
                     standings.append(temp)
                 except ValueError:
-                    standings.append([year,league]+[x for x in team[0:1]]+[x.split(' ')[0] for x in team[1:3]])
+                    if len(team[1])>3:
+                        standings.append([year,league]+[x for x in team[0:1]]+[x.split(' ') for x in team[1:2] ][0] )
+                    else:
+                        standings.append([year,league]+[x for x in team[0:1]]+[x.split(' ')[0] for x in team[1:3]])
         except KeyError:
             standings.append([year, league])
         
         allStandings.append(standings)
+
+
+allStandings = [x for x in allStandings if len(x)>10]
+[[len(i)  for i in x] for x in allStandings]
+    
+## Adding Win Percent
+[[i+[float(i[3])/(float(i[3])+float(i[4]))]  for i in x] for x in allStandings]
+
+
+
+Investigate why Phillies didnt split the wins
+for x in allStandings:
+    for i in x:
+        try:
+            test = float(i[4])
+        except ValueError:
+            print(i)
+            temp = [i[2][:-3]]
+            print(temp)
+            wins = int(i[2][-3:])
+            print(wins)
+            temp.append(wins)
+            [temp.append(x) for x in i[3:]] 
+            print(temp)
+
+
+
+
+
+
+
+
+
+
+allStandings = leagueFormation.flattenLsts(allStandings)
+histStadnignsDf = pd.DataFrame(allStandings)
+
+histStadnignsDf.head()
+
+
+
+
+
+
+
+
+
 
 with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\historicStandings.csv', 'w', newline='') as f:
     writer = csv.writer(f)
