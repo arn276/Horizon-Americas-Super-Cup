@@ -85,53 +85,99 @@ resultRate.loc[resultRate['homescore'] < resultRate['roadscor'], 'winner'] = 'Ro
 ##############################
 ####Historic Standings
 ##############################
-base = 1922
+base = 1969
 yearLst = []
 for i in range(2024-base+1):
     yearLst.append(base+i)
 
+# Collect all standings in statsApi
 allStandings = []
 leagueIds = [103,104]
 for league in leagueIds:
     for year in yearLst:
         standings = []
-        try:
+        try: # Data by season and league, keeping only team lines, split each field
             season = statsapi.standings(leagueId=league,season=str(year))
             standing = [x for x in season.split('\n') if x[:4] not in ['Nati','Amer','Rank'] and x != '']
             splitToElements = [x.split('  ') for x in standing]
     
+            # Keep only those fields with data
             teamElements=[]
             for team in splitToElements:
-                teamElements.append([t.strip() for t in team[1:] if t not in ['','-']])
-            # split win if in team name
-        
-            for team in teamElements:
-                try:
-                    temp = [year,league]+[team[0][:-3]]
-                    wins = int(team[0][-3:])
-                    temp.append(wins)
-                    [temp.append(x) for x in team[1:2]] 
-                    standings.append(temp)
-                except ValueError:
-                    if len(team[1])>3:
-                        standings.append([year,league]+[x for x in team[0:1]]+[x.split(' ') for x in team[1:2] ][0] )
-                    else:
-                        standings.append([year,league]+[x for x in team[0:1]]+[x.split(' ')[0] for x in team[1:3]])
+                teamElements.append([year, league]+[t.strip() for t in team[1:] if t not in ['','-']])
+            standings.append(teamElements)
         except KeyError:
-            standings.append([year, league])
-        
+            standings.append([year, league])    
         allStandings.append(standings)
+ 
+# Get year, league, team, wins, losses in lists
+def checkToSplit_Ls(field):
+    if len(field)>3: result = field.split(' ')[0]
+    else:result = field
+    return result
+
+def checkToSplit_Ws(field):
+    if len(field)>3: result = field.split(' ')
+    else:result = field
+    return result
+
+yearLgBreakout=[]  
+for year in allStandings:
+    teamBrakeout = []  
+    for team in year[0]:    
+        # Keep year, league, team name
+        entry = team[:2]
+        try:
+            wins = int(team[2][-3:])
+            entry += [team[2][:-3].strip()]+[wins]
+            losses = checkToSplit_Ls(team[3])
+            entry += [losses]
+        except ValueError:
+            entry += [team[2]]
+            wins = checkToSplit_Ws(team[3])
+            if type (wins) is list: entry += wins
+            else:
+                losses = checkToSplit_Ls(team[4])
+                entry += [wins]+[losses]
+        teamBrakeout.append(entry)    
+    yearLgBreakout.append(teamBrakeout)
+    
+yearLgBreakout[:10]
 
 
-allStandings = [x for x in allStandings if len(x)>10]
-[[len(i)  for i in x] for x in allStandings]
+
+
+
+#             for team in teamElements:
+#                 try: #if wins didn't get split from team, do it here
+#                     temp = [year,league]+[team[0][:-3]]
+#                     wins = int(team[0][-3:])
+#                     temp.append(wins)
+#                     [temp.append(x) for x in team[1:2]] 
+#                     standings.append(temp)
+#                 except ValueError:
+#                     if len(team[1])>3: # When wins/losses didn't split
+#                         standings.append([year,league]+[x for x in team[0:1]]+[x.split(' ') for x in team[1:2] ][0] )
+#                     else: # When wins/losses did split
+#                         standings.append([year,league]+[x for x in team[0:1]]+[x.split(' ')[0] for x in team[1:3]])
+#         except KeyError:
+#             standings.append([year, league])
+        
+#         allStandings.append(standings)
+
+# # Remove years without standings in statsapi
+# allStandings = [x for x in allStandings if len(x)>2]
+# # remove cases where win had to be resplit from team about (Phillies 76,79,11)
+# allStandings = [[i[:4]  for i in x] for x in allStandings]
+
+
     
 ## Adding Win Percent
 [[i+[float(i[3])/(float(i[3])+float(i[4]))]  for i in x] for x in allStandings]
 
+[[i[:4]  for i in x] for x in allStandings][:50]
 
-
-Investigate why Phillies didnt split the wins
+# Investigate why Phillies didnt split the wins
 for x in allStandings:
     for i in x:
         try:
@@ -148,7 +194,7 @@ for x in allStandings:
 
 
 
-
+allStandings[55:75]
 
 
 
