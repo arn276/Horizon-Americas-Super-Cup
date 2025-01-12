@@ -55,7 +55,10 @@ class historicSeasons():
                     'home_bat8id','home_bat8name','home_bat8pos',
                     'home_bat9id','home_bat9name','home_bat9pos',
                     'additionalinfo','acquisitioninfo']
-        seasonResults = pd.read_csv(locationStr, names= columns,usecols = ['gamedate','roadtm','hometm','roadscor','homescore','lengthofgame_outs'])
+        seasonResults = pd.read_csv(locationStr, names= columns,
+                                    usecols = ['gamedate','roadtm','hometm',
+                                               'roadscor','homescore','lengthofgame_outs',
+                                               'roadlinescore','homelinescore'])
         return seasonResults
     
     def formatHistoricSeason():
