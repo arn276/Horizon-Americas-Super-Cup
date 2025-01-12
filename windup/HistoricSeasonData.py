@@ -5,6 +5,8 @@ Created on Sun Jan  5 10:31:28 2025
 @author: aaron
 """
 import pandas as pd
+import statsapi, csv
+from League_Info import leagueFormation
 
 class historicSeasons():
     def readSeason(locationStr):
@@ -55,6 +57,54 @@ class historicSeasons():
                     'additionalinfo','acquisitioninfo']
         seasonResults = pd.read_csv(locationStr, names= columns,usecols = ['gamedate','roadtm','hometm','roadscor','homescore','lengthofgame_outs'])
         return seasonResults
+    
+    def formatHistoricSeason():
+        base = 1969
+        yearLst = []
+        for i in range(2024-base+1):
+            yearLst.append(base+i)
+
+        # Collect all standings in statsApi
+        allStandings = []
+        leagueIds = [103,104]
+        for league in leagueIds:
+            for year in yearLst:
+                standings = []
+                try: # Data by season and league, keeping only team lines, split each field
+                    season = statsapi.standings(leagueId=league,season=str(year))
+                    standing = [x for x in season.split('\n') if x[:4] not in ['Nati','Amer','Rank'] and x != '']
+                    splitToElements = [x.split(' ') for x in standing]
+            
+                    # Keep only those fields with data
+                    teamElements=[]
+                    for team in splitToElements:
+                        elements = [t.strip() for t in team[1:] if t not in ['','-','E']]
+                        teamNumElements = []
+                        teamname = ''
+                        for e in elements:
+                            try:
+                                teamNumElements.append(int(e))
+                            except ValueError:
+                                try: float(e)
+                                except ValueError:
+                                    teamname += ' '+e
+                        wins = teamNumElements[1]
+                        losses = teamNumElements[2]
+                        winPct = round(float(wins)/(float(wins)+float(losses)),3)
+                        teamElements.append([year,league,teamname.strip(),wins,losses,winPct])
+                    standings.append(teamElements)
+                except KeyError:
+                    standings.append([year, league])    
+                allStandings.append(standings)
+             
+                
+        # Store Historic Standings
+        historicList = leagueFormation.flattenLsts(allStandings)
+        historicList = leagueFormation.flattenLsts(historicList)
+        with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\historicStandings.csv', 'w', newline='') as f:
+            writer = csv.writer(f)
+            writer.writerow(['Year','League','Team','Wins','Losses', 'Winning Pct'])
+            writer.writerows(historicList)
                              
         
         

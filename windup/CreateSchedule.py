@@ -7,7 +7,7 @@ Created on Sat Dec 21 21:23:50 2024
 
 import pandas as pd
 import random, copy
-import sys,datetime, csv, statsapi
+import sys,datetime, csv
 sys.path.append(r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup')
 
 from League_Info import leagueFormation
@@ -85,126 +85,55 @@ resultRate.loc[resultRate['homescore'] < resultRate['roadscor'], 'winner'] = 'Ro
 ##############################
 ####Historic Standings
 ##############################
-base = 1969
-yearLst = []
-for i in range(2024-base+1):
-    yearLst.append(base+i)
+# Pull 1969-2024 standings from StatsApi
+# Write to drive
+# historicSeasons.formatHistoricSeason()
 
-# Collect all standings in statsApi
+# Open Historic Standings
+with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\historicStandings.csv', 'r') as f:
+    reader = csv.reader(f)
+    historicList = list(reader)
+
+years = list(set([int(year[0]) for year in historicList[1:]]))
+lgIds = list(set([lg[1] for lg in historicList[1:]]))
+
 allStandings = []
-leagueIds = [103,104]
-for league in leagueIds:
-    for year in yearLst:
-        standings = []
-        try: # Data by season and league, keeping only team lines, split each field
-            season = statsapi.standings(leagueId=league,season=str(year))
-            standing = [x for x in season.split('\n') if x[:4] not in ['Nati','Amer','Rank'] and x != '']
-            splitToElements = [x.split('  ') for x in standing]
-    
-            # Keep only those fields with data
-            teamElements=[]
-            for team in splitToElements:
-                teamElements.append([year, league]+[t.strip() for t in team[1:] if t not in ['','-']])
-            standings.append(teamElements)
-        except KeyError:
-            standings.append([year, league])    
-        allStandings.append(standings)
- 
-# Get year, league, team, wins, losses in lists
-def checkToSplit_Ls(field):
-    if len(field)>3: result = field.split(' ')[0]
-    else:result = field
-    return result
+for y in years:
+    season = [s for s in historicList if s[0]==str(y)]
+    for l in lgIds:
+        allStandings.append([t for t in season if t[1]==str(l)])
 
-def checkToSplit_Ws(field):
-    if len(field)>3: result = field.split(' ')
-    else:result = field
-    return result
 
-yearLgBreakout=[]  
+# Mock winning percents 
+yearlyWinPct = []
 for year in allStandings:
-    teamBrakeout = []  
-    for team in year[0]:    
-        # Keep year, league, team name
-        entry = team[:2]
-        try:
-            wins = int(team[2][-3:])
-            entry += [team[2][:-3].strip()]+[wins]
-            losses = checkToSplit_Ls(team[3])
-            entry += [losses]
-        except ValueError:
-            entry += [team[2]]
-            wins = checkToSplit_Ws(team[3])
-            if type (wins) is list: entry += wins
-            else:
-                losses = checkToSplit_Ls(team[4])
-                entry += [wins]+[losses]
-        teamBrakeout.append(entry)    
-    yearLgBreakout.append(teamBrakeout)
-    
-yearLgBreakout[:10]
+    winpct = [float(team[5]) for team in year]
+    avgWinPct = sum(winpct)/len(winpct)
+    while len(winpct)<16:
+        winpct.append(avgWinPct)
+    winpct.sort(reverse=True)
+    yearlyWinPct.append([int(year[0][0])]+[int(year[0][1])]+winpct)  
+
+# Find average league rank winning percent
+# will use to simulate team strength
+rankAvgWinPct = []
+for lg in lgIds:
+    league = [lg]
+    for i in range(16):
+        rankWinPct = [x[i+2] for x in yearlyWinPct[-3:] if x[1]==int(lg)]
+        avgWinPct = round(sum(rankWinPct)/len(rankWinPct),3)
+        league.append(avgWinPct)
+    rankAvgWinPct.append(league)
 
 
-
-
-
-#             for team in teamElements:
-#                 try: #if wins didn't get split from team, do it here
-#                     temp = [year,league]+[team[0][:-3]]
-#                     wins = int(team[0][-3:])
-#                     temp.append(wins)
-#                     [temp.append(x) for x in team[1:2]] 
-#                     standings.append(temp)
-#                 except ValueError:
-#                     if len(team[1])>3: # When wins/losses didn't split
-#                         standings.append([year,league]+[x for x in team[0:1]]+[x.split(' ') for x in team[1:2] ][0] )
-#                     else: # When wins/losses did split
-#                         standings.append([year,league]+[x for x in team[0:1]]+[x.split(' ')[0] for x in team[1:3]])
-#         except KeyError:
-#             standings.append([year, league])
-        
-#         allStandings.append(standings)
-
-# # Remove years without standings in statsapi
-# allStandings = [x for x in allStandings if len(x)>2]
-# # remove cases where win had to be resplit from team about (Phillies 76,79,11)
-# allStandings = [[i[:4]  for i in x] for x in allStandings]
-
-
-    
-## Adding Win Percent
-[[i+[float(i[3])/(float(i[3])+float(i[4]))]  for i in x] for x in allStandings]
-
-[[i[:4]  for i in x] for x in allStandings][:50]
-
-# Investigate why Phillies didnt split the wins
-for x in allStandings:
-    for i in x:
-        try:
-            test = float(i[4])
-        except ValueError:
-            print(i)
-            temp = [i[2][:-3]]
-            print(temp)
-            wins = int(i[2][-3:])
-            print(wins)
-            temp.append(wins)
-            [temp.append(x) for x in i[3:]] 
-            print(temp)
-
-
-
-allStandings[55:75]
-
-
-
-
-
-
-allStandings = leagueFormation.flattenLsts(allStandings)
-histStadnignsDf = pd.DataFrame(allStandings)
-
-histStadnignsDf.head()
+# Simulate team strength
+conf = copy.deepcopy(conferenceTms)
+teamStength = []
+for i in range(len(rankAvgWinPct)):
+    for stength in rankAvgWinPct[i][1:]:
+        team = random.choice(conf[i])
+        conf[i].remove(team)
+        teamStength.append([team,stength])
 
 
 
@@ -215,9 +144,6 @@ histStadnignsDf.head()
 
 
 
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\historicStandings.csv', 'w', newline='') as f:
-    writer = csv.writer(f)
-    writer.writerows(allStandings)
 
 
 
@@ -227,14 +153,6 @@ with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\historicStandings.csv', 'w'
 
 
 
-[x for x in [i for i  in splitToElements][0] if x not in ['','-']]
 
-[i for i  in splitToElements][0]
-
-
-[x.split('  ') for x in standing][1]
-        
-
-standing[1].split('  ')[1:]
 
 
