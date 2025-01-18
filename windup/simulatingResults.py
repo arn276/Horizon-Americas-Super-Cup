@@ -60,7 +60,8 @@ class simulate():
         for x in range(len(options)):
             h = options[x][0]
             a = options[x][1]
-            if (h >= regScore and h <= regScore+1 and a >= regScore) or (h >= regScore and a >= regScore and a <= regScore+1):
+            
+            if (h >= regScore and h <= regScore+2 and a >= regScore) or (h >= regScore and a >= regScore and a <= regScore+2):
                 optionsAdj.append(options[x])
                 weightsAdj.append(weights[x])
         return optionsAdj,weightsAdj

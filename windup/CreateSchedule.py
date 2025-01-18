@@ -154,36 +154,107 @@ dates = [base]+dates
 
     
 #Wind-up Standings
-WU_Standing1,WU_Standing2,WU_Standing3,WU_Standing4 = [],[],[],[]
-WU_Results1,WU_Results2,WU_Results3,WU_Results4  = [],[],[],[]
-WU_Standings = [WU_Standing1,WU_Standing2,WU_Standing3,WU_Standing4  ] 
-WU_Results = [WU_Results1,WU_Results2,WU_Results3,WU_Results4 ] 
 
-for i in range(len(dates)):
-    if i > 0:
-        teamWins = len([x for x in results_conf1 if x[3] == groupTms[0][0] 
-                       and x[0]>dates[i-1] and x[0]<dates[i] ])
-        teamLosses = len([x for x in results_conf1 if (x[1] == groupTms[0][0] or x[2] == groupTms[0][0]) 
-                          and x[3] != groupTms[0][0] and x[3] != 'Tie in regulation' 
-                          and x[0]>dates[i-1] and x[0]<dates[i]])
-        teamTies = len([x for x in results_conf1 if (x[1] == groupTms[0][0] or x[2] == groupTms[0][0]) 
-                          and x[3] == 'Tie in regulation' 
-                          and x[0]>dates[i-1] and x[0]<dates[i]])
-        winPct = teamWins/(teamWins+teamLosses)
-        WU_Standings[i-1].append([groupTms[0][0],teamWins,teamLosses,teamTies,winPct])
-        
-        schedule_wu = [x for x in results_conf1 if x[3] == 'Tie in regulation' 
-                          and x[0]>dates[i-1] and x[0]<dates[i]]
-        WU_Results[i-1] = simulate.win_loss(schedule_wu, teamStength, extrasRate, scoringDic)
-        
+from operator import itemgetter
+def WU_Standings(results_conf, groups, dates, winnerCol, WUpre_Standings):
+    for i in range(len(dates)):
+        if i > 0:
+            for division in range(len(groups)):
+                for team in groupTms[division]:
+                    teamWins = len([x for x in results_conf if x[winnerCol] == team 
+                                   and x[0]>=dates[i-1] and x[0]<dates[i] ])
+                    teamLosses = len([x for x in results_conf if (x[1] == team  or x[2] == team ) 
+                                      and x[winnerCol] != team and x[winnerCol] != 'Tie in regulation' 
+                                      and x[0]>=dates[i-1] and x[0]<dates[i]])
+                    teamTies = len([x for x in results_conf if (x[1] == team  or x[2] == team ) 
+                                      and x[winnerCol] == 'Tie in regulation' 
+                                      and x[0]>=dates[i-1] and x[0]<dates[i]])
+                    try:
+                        winPct = round(teamWins/(teamWins+teamLosses),3)
+                    except ZeroDivisionError:
+                        winPct = None
+                    WUpre_Standings[i-1][division].append([team ,teamWins,teamLosses,teamTies,winPct])
+                # WUpre_Standings[i-1][division] = sorted(WUpre_Standings[i-1][division], key=itemgetter(4), reverse=True)
+    return WUpre_Standings
+                    
+## Calculate Standings
+WUpre_Standings = [
+                      [[],[],[],[],[],[],[],[]],
+                      [[],[],[],[],[],[],[],[]],
+                      [[],[],[],[],[],[],[],[]],
+                      [[],[],[],[],[],[],[],[]],
+                      ] 
+
+WUpre_Standings = WU_Standings(results_conf1+results_conf2, groupTms, dates, 3, WUpre_Standings)
+WUpre_Standings[0]
+
+## Calculate Results of Wrap-up
+def WU_createResults(results_conf, dates, teamStength, extrasRate, scoringDic):
+    WU_Results = []
+    for i in range(len(dates)):
+        if i > 0:
+            schedule_wu = [x for x in results_conf if x[3] == 'Tie in regulation' 
+                              and x[0]>=dates[i-1] and x[0]<dates[i]]
+            sim = simulate.win_loss(schedule_wu, teamStength, extrasRate, scoringDic)
+            WU_Results.append(sim)
+    return WU_Results
+                      
+WU_Results_c1 = WU_createResults(results_conf1, dates, teamStength, extrasRate, scoringDic)   
+WU_Results_c2 = WU_createResults(results_conf2, dates, teamStength, extrasRate, scoringDic)            
+            
+WU_Results_c1 = leagueFormation.flattenLsts(WU_Results_c1)
+WU_Results_c2 = leagueFormation.flattenLsts(WU_Results_c2)
 
 
-WU_Results
+## Caculate Wrap-up records
+WUpost_Standings = [
+                      [[],[],[],[],[],[],[],[]],
+                      [[],[],[],[],[],[],[],[]],
+                      [[],[],[],[],[],[],[],[]],
+                      [[],[],[],[],[],[],[],[]],
+                      ]    
+WUpost_Standings = WU_Standings(WU_Results_c1+WU_Results_c2, groupTms, dates, 6, WUpost_Standings)        
+
+
+## Combine standings
+
+for WU in range(len(WUpost_Standings)):
+    for group in range(len(WUpost_Standings[WU])):
+        for team in range(len(WUpost_Standings[WU][group])):
+            t = WUpost_Standings[WU][group][team][0]
+            WU_wins = WUpost_Standings[WU][group][team][1]
+            WU_wins += [x for x in WUpre_Standings[WU][group] if x[0] == t ][0][1]
+            
+            WU_losses = WUpost_Standings[WU][group][team][2]
+            WU_losses += [x for x in WUpre_Standings[WU][group] if x[0] == t ][0][2]
+            
+            if WU >0:
+                WU_wins += [x for x in WUpost_Standings[WU-1][group] if x[0] == t ][0][1]
+                WU_losses += [x for x in WUpost_Standings[WU-1][group] if x[0] == t ][0][2]
+            
+            WU_winpct = round(WU_wins/(WU_wins+WU_losses),3)
+            WUpost_Standings[WU][group][team] = [t,WU_wins, WU_losses, WUpost_Standings[WU][group][team][3], WU_winpct]
 
 
 
 
 
+
+
+
+            
+len(WUpre_Standings[0])
+WUpost_Standings[0][0]
+
+
+[x for x in WU_Results_c1 if x[1] == 'Akron' or x[2] == 'Akron']
+
+[x for x in results_conf1 if (x[1] == 'Akron' or x[2] == 'Akron') and x[3] == 'Tie in regulation']
+
+
+# WU_Results_c1[0][0]
+
+# WUpre_Standings_c1[0]
 
 
 

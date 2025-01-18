@@ -114,9 +114,18 @@ class historicSeasons():
     def historicScores():
         locationStr = r'C:\Users\Public\retrosheets\gl2020_23'
         season24 = historicSeasons.readSeason(locationStr+r'\gl2024.txt')
-
+        season23 = historicSeasons.readSeason(locationStr+r'\gl2023.txt')
+        season22 = historicSeasons.readSeason(locationStr+r'\gl2022.txt')
+        season21 = historicSeasons.readSeason(locationStr+r'\gl2021.txt')
+        locationStr = r'C:\Users\Public\retrosheets\gl2010_19'
+        season19 = historicSeasons.readSeason(locationStr+r'\gl2019.txt')
+        season18 = historicSeasons.readSeason(locationStr+r'\gl2018.txt')
+        season17 = historicSeasons.readSeason(locationStr+r'\gl2017.txt')
+        season16 = historicSeasons.readSeason(locationStr+r'\gl2016.txt')
+        seasons = pd.concat([season24,season23,season22,season21,season19,season18,season17,season16])
+        
         # Score commonality
-        regulation = season24[(season24['lengthofgame_outs']>=51) | (season24['lengthofgame_outs']<=54) ]
+        regulation = seasons[(seasons['lengthofgame_outs']>=51) | (seasons['lengthofgame_outs']<=54) ]
         regulation.drop(columns = ['roadlinescore','homelinescore'])
         resultRate = regulation[['roadscor','homescore']].value_counts().reset_index()
         resultRate['PercentOfTotal'] = resultRate['count']/resultRate['count'].sum()
@@ -125,8 +134,8 @@ class historicSeasons():
         resultRate.loc[resultRate['homescore'] < resultRate['roadscor'], 'winner'] = 'Road'
 
         # rate of going to extras
-        extras = season24[season24['lengthofgame_outs']>54]
-        extrasRate = round(len(extras)/len(season24),3)*100
+        extras = seasons[seasons['lengthofgame_outs']>54]
+        extrasRate = round(len(extras)/len(seasons),3)*100
         
         # Rates for result of extras
         extras.drop(columns = ['roadlinescore','homelinescore'])
