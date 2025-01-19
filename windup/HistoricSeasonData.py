@@ -145,7 +145,16 @@ class historicSeasons():
         extrasResultRate.loc[extrasResultRate['homescore'] > extrasResultRate['roadscor'], 'winner'] = 'Home'
         extrasResultRate.loc[extrasResultRate['homescore'] < extrasResultRate['roadscor'], 'winner'] = 'Road'
         
-        return extras, extrasRate,resultRate,extrasResultRate
+        # Rate number of extras route
+        seasons['gamedate'] = pd.to_datetime(seasons['gamedate'], format='%Y%m%d')
+        # Reducing seasons to pre-2020 rule change
+        seasons_exOuts = seasons[(seasons['gamedate'] < '2020-1-1') & 
+                                 (seasons['lengthofgame_outs'] > 54)][['lengthofgame_outs']].copy()
+        seasons_exOuts['lengthofgame_outs'] = seasons_exOuts['lengthofgame_outs']-54
+        seasons_exOuts = seasons_exOuts.value_counts().reset_index()
+        seasons_exOuts['PercentOfTotal'] = seasons_exOuts['count']/seasons_exOuts['count'].sum()
+        
+        return extras, extrasRate,resultRate,extrasResultRate,seasons_exOuts
         
         
     def summarizeStandings(historicList, resultRate, extras, extrasResultRate):

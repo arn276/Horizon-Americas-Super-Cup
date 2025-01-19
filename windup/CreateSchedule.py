@@ -6,7 +6,7 @@ Created on Sat Dec 21 21:23:50 2024
 """
 
 from operator import itemgetter
-import sys,datetime, csv
+import sys,datetime, csv, copy
 sys.path.append(r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup')
 
 from League_Info import leagueFormation
@@ -73,7 +73,7 @@ with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesSchedule.csv', '
 ##############################
 ####Historic Scores
 ##############################
-extras, extrasRate,resultRate, extrasResultRate = historicSeasons.historicScores()
+extras, extrasRate,resultRate, extrasResultRate,seasons_exOuts = historicSeasons.historicScores()
 
 ##############################
 ####Historic Standings
@@ -111,16 +111,16 @@ with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesSchedule.csv', '
 #### Simulate Win-Loss
 ###########################
 # 3% for homefield advantage 
-results_conf1 = simulate.win_loss(schedule_conf1[1:], teamStength, extrasRate, scoringDic, 3, True)
-results_conf2 = simulate.win_loss(schedule_conf2[1:], teamStength, extrasRate, scoringDic, 3, True)
+results_conf1 = simulate.win_loss(schedule_conf1[1:], teamStength, extrasRate, scoringDic, seasons_exOuts, 3, True)
+results_conf2 = simulate.win_loss(schedule_conf2[1:], teamStength, extrasRate, scoringDic, seasons_exOuts, 3, True)
 
 
 
 #### Sumarize Results
 #####################
 #convert date strings to dates
-results_conf1 = [[datetime.datetime.strptime(date[0], '%Y-%m-%d').date()]+date[1:] for date in results_conf1[1:]]
-results_conf2 = [[datetime.datetime.strptime(date[0], '%Y-%m-%d').date()]+date[1:] for date in results_conf2[1:]]
+results_conf1 = [[datetime.datetime.strptime(date[0], '%Y-%m-%d').date()]+date[1:] for date in results_conf1 ]
+results_conf2 = [[datetime.datetime.strptime(date[0], '%Y-%m-%d').date()]+date[1:] for date in results_conf2 ]
 
 # Find wind-ups
 dates_possible = [date[0] for date in results_conf1 if date[1] == '']
@@ -133,22 +133,12 @@ for d in dates_possible:
     lastDate = d
 dates = [base]+dates
 
-###########################    
-#### Wind-up Standings             
-## Calculate Standings
-WUpre_Standings = [ [[],[],[],[],[],[],[],[]],
-                    [[],[],[],[],[],[],[],[]],
-                    [[],[],[],[],[],[],[],[]],
-                    [[],[],[],[],[],[],[],[]],
-                  ] 
-
-WUpre_Standings = standings.WU_Standings(results_conf1+results_conf2, groupTms, dates, 3, WUpre_Standings)
-WUpre_Standings = [[sorted(group, key=itemgetter(4), reverse=True) for group in x] for x in WUpre_Standings]
-
 
 ## Calculate Matchup Results of Wrap-up                   
-WU_Results_c1 = simulate.WU_createResults(results_conf1, dates, teamStength, extrasRate, scoringDic)   
-WU_Results_c2 = simulate.WU_createResults(results_conf2, dates, teamStength, extrasRate, scoringDic)            
+WU_Results_c1 = simulate.WU_createResults(results_conf1, dates, teamStength, extrasRate, scoringDic, seasons_exOuts)   
+WU_Results_c2 = simulate.WU_createResults(results_conf2, dates, teamStength, extrasRate, scoringDic, seasons_exOuts)     
+
+       
 # Flatten results into single list 
 WU_Results_c1 = leagueFormation.flattenLsts(WU_Results_c1)
 WU_Results_c2 = leagueFormation.flattenLsts(WU_Results_c2)
@@ -157,9 +147,8 @@ WU_Results_c2 = leagueFormation.flattenLsts(WU_Results_c2)
 results_conf1 = sorted(results_conf1, key=itemgetter(0), reverse=False)
 results_conf2 = sorted(results_conf2, key=itemgetter(0), reverse=False)
 
-
-results_conf1 = simulate.seasonResultsOrder(results_conf1,WU_Results_c1, dates)
-results_conf2 = simulate.seasonResultsOrder(results_conf2,WU_Results_c2, dates)
+results_conf1_final = simulate.seasonResultsOrder(results_conf1,WU_Results_c1, dates)
+results_conf2_final = simulate.seasonResultsOrder(results_conf2,WU_Results_c2, dates)
 
 with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\FoundersResultes.csv', 'w', newline='') as f:
     writer = csv.writer(f)
@@ -171,42 +160,23 @@ with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesResultes.csv', '
     writer.writerow(['Date','Home','Away','Result','Home Score','Away Score'])
     writer.writerows(results_conf2)
 
-## Caculate Wrap-up records
-WUpost_Standings = [
-                      [[],[],[],[],[],[],[],[]],
-                      [[],[],[],[],[],[],[],[]],
-                      [[],[],[],[],[],[],[],[]],
-                      [[],[],[],[],[],[],[],[]],
-                      ]    
-WUpost_Standings = standings.WU_Standings(WU_Results_c1+WU_Results_c2, groupTms, dates, 6, WUpost_Standings)        
 
-## Combine standings
-WUpost_Standings = standings.finalStandingsSummary(WUpre_Standings,WUpost_Standings)
-WUpost_Standings = [[sorted(group, key=itemgetter(4), reverse=True) for group in x] for x in WUpost_Standings]
+###########################    
+#### Wind-up Standings             
+results_conf = copy.deepcopy(results_conf1+results_conf2)
+results_conf_final = copy.deepcopy(results_conf1_final+results_conf2_final)
+WU_Results = copy.deepcopy(WU_Results_c1+WU_Results_c2)
+## Create pre- and post- Wind-up standings
+WUpre_Standings,WUpost_Standings = standings.createStandings(results_conf,WU_Results,results_conf_final,dates,groupTms)
 
-parts = ['Part 1', 'Part 2', 'Part 3', 'Part 4']
-standingParts = []
-for i in range(len(parts)):
-    for g in range(len(WUpost_Standings[i])):
-        confNm = [x[0] for x in leagueFormat if WUpre_Standings[i][g][0][0] in x[3]]
-        divNm = [x[1] for x in leagueFormat if WUpre_Standings[i][g][0][0] in x[3]]
-        groupNm = [x[2] for x in leagueFormat if WUpre_Standings[i][g][0][0] in x[3]]
-        standingParts += [['pre Wind-up',parts[i]]+confNm+divNm+groupNm+team for team in WUpre_Standings[i][g] ]
-        
-        
-        confNm = [x[0] for x in leagueFormat if WUpost_Standings[i][g][0][0] in x[3]]
-        divNm = [x[1] for x in leagueFormat if WUpost_Standings[i][g][0][0] in x[3]]
-        groupNm = [x[2] for x in leagueFormat if WUpost_Standings[i][g][0][0] in x[3]]
-        standingParts += [['post Wind-up',parts[i]]+confNm+divNm+groupNm+team for team in WUpost_Standings[i][g] ]
+## Create standings list
+standingParts = standings.standingLists(WUpre_Standings,WUpost_Standings,leagueFormat)
 
 
 
-        
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\seasonStandings.csv', 'w', newline='') as f:
-    writer = csv.writer(f)
-    writer.writerow(['Timing','Season Part','Conference','Division','Group',
-                     'Team','Wins','Losses','Ties to Finish','Winning Percent'])
-    writer.writerows(standingParts)
+
+
+
 
 
 

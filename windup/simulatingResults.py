@@ -53,6 +53,7 @@ class simulate():
             score = random.choices(homeOptionsAdj, weights=(homeWeightsAdj), k=1)
         elif awayteam == winnerSelection[0]:
             score = random.choices(awayOptionsAdj, weights=(awayWeightsAdj), k=1)
+            
         return score
     
     def adjOptionsWU(options, weights,regScore):
@@ -67,7 +68,7 @@ class simulate():
         return optionsAdj,weightsAdj
     
     
-    def win_loss(schedule, teamStength, extrasRate, scoringDic,homefield = 0,tie=None):
+    def win_loss(schedule, teamStength, extrasRate, scoringDic,seasons_exOuts,homefield = 0,tie=None):
         results_conf=[]
         for game in schedule:
             if game[1] == '':
@@ -88,30 +89,33 @@ class simulate():
                 homeWt,awayWt = homeWt+homefield,awayWt-homefield
                 
                 # Change for tie at end of regulation
+                extras =[]
                 if tie is not None:
                     homeWt,awayWt = homeWt-(extrasRate/2),awayWt-(extrasRate/2)
                     # Result weight based selection
                     winnerSelection = random.choices(game[1:]+['Tie in regulation'], weights=(homeWt, awayWt,extrasRate), k=1)
                     # Add Score
                     score = simulate.reg_scores(winnerSelection,hometeam,awayteam,scoringDic)
+                    results_conf.append(game+winnerSelection+score[0])
                 else:
                     # Result weight based selection
                     winnerSelection = random.choices(game[1:3], weights=(homeWt, awayWt), k=1)
                     # Add Score
                     score = simulate.ex_scores(winnerSelection,hometeam,awayteam,scoringDic,int(game[4]))
-                
-                results_conf.append(game+winnerSelection+score[0])
-                
+                    extras = random.choices(seasons_exOuts['lengthofgame_outs'], weights=(seasons_exOuts['PercentOfTotal']), k=1)
+                    
+                    results_conf.append(game+winnerSelection+score[0]+extras)
+                    
         return results_conf
     
     
-    def WU_createResults(results_conf, dates, teamStength, extrasRate, scoringDic):
+    def WU_createResults(results_conf, dates, teamStength, extrasRate, scoringDic, seasons_exOuts):
         WU_Results = []
         for i in range(len(dates)):
             if i > 0:
                 schedule_wu = [x for x in results_conf if x[3] == 'Tie in regulation' 
                                   and x[0]>=dates[i-1] and x[0]<dates[i]]
-                sim = simulate.win_loss(schedule_wu, teamStength, extrasRate, scoringDic)
+                sim = simulate.win_loss(schedule_wu, teamStength, extrasRate, scoringDic, seasons_exOuts)
                 WU_Results.append(sim)
         return WU_Results
     
