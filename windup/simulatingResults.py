@@ -105,6 +105,24 @@ class simulate():
         return results_conf
     
     
+    def WU_createResults(results_conf, dates, teamStength, extrasRate, scoringDic):
+        WU_Results = []
+        for i in range(len(dates)):
+            if i > 0:
+                schedule_wu = [x for x in results_conf if x[3] == 'Tie in regulation' 
+                                  and x[0]>=dates[i-1] and x[0]<dates[i]]
+                sim = simulate.win_loss(schedule_wu, teamStength, extrasRate, scoringDic)
+                WU_Results.append(sim)
+        return WU_Results
     
+    
+    def seasonResultsOrder(results_conf,WU_Results, dates):
+        resultsOrder = []
+        for i in range(len(dates)):
+            if i > 0:
+                complete = [x for x in results_conf if x[3] != 'Tie in regulation' and x[0]>=dates[i-1] and x[0]<dates[i]]
+                WU_rd = [x for x in WU_Results if x[0]>=dates[i-1] and x[0]<dates[i]]
+                resultsOrder = resultsOrder+complete+WU_rd
+        return resultsOrder
     
     

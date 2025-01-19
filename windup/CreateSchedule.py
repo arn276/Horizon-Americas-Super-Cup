@@ -5,7 +5,7 @@ Created on Sat Dec 21 21:23:50 2024
 @author: aaron
 """
 
-
+from operator import itemgetter
 import sys,datetime, csv
 sys.path.append(r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup')
 
@@ -14,6 +14,7 @@ from createMatchups import matchups
 from scheduleToDate import schedule
 from HistoricSeasonData import historicSeasons
 from simulatingResults import simulate
+from calculateStandings import standings
 
 leageDict = leagueFormation.leagueDict()
 
@@ -113,30 +114,10 @@ with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesSchedule.csv', '
 results_conf1 = simulate.win_loss(schedule_conf1[1:], teamStength, extrasRate, scoringDic, 3, True)
 results_conf2 = simulate.win_loss(schedule_conf2[1:], teamStength, extrasRate, scoringDic, 3, True)
 
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\FoundersResultes.csv', 'w', newline='') as f:
-    writer = csv.writer(f)
-    writer.writerow(['Date','Home','Away','Result','Home Score','Away Score'])
-    writer.writerows(results_conf1)
-
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesResultes.csv', 'w', newline='') as f:
-    writer = csv.writer(f)
-    writer.writerow(['Date','Home','Away','Result','Home Score','Away Score'])
-    writer.writerows(results_conf2)
 
 
 #### Sumarize Results
 #####################
-# Open conference results
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\FoundersResultes.csv', 'r') as f:
-    reader = csv.reader(f)
-    results_conf1 = list(reader)
-
-# Open conference results
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesResultes.csv', 'r') as f:
-    reader = csv.reader(f)
-    results_conf2 = list(reader)
-
-
 #convert date strings to dates
 results_conf1 = [[datetime.datetime.strptime(date[0], '%Y-%m-%d').date()]+date[1:] for date in results_conf1[1:]]
 results_conf2 = [[datetime.datetime.strptime(date[0], '%Y-%m-%d').date()]+date[1:] for date in results_conf2[1:]]
@@ -152,59 +133,43 @@ for d in dates_possible:
     lastDate = d
 dates = [base]+dates
 
-    
-#Wind-up Standings
-
-from operator import itemgetter
-def WU_Standings(results_conf, groups, dates, winnerCol, WUpre_Standings):
-    for i in range(len(dates)):
-        if i > 0:
-            for division in range(len(groups)):
-                for team in groupTms[division]:
-                    teamWins = len([x for x in results_conf if x[winnerCol] == team 
-                                   and x[0]>=dates[i-1] and x[0]<dates[i] ])
-                    teamLosses = len([x for x in results_conf if (x[1] == team  or x[2] == team ) 
-                                      and x[winnerCol] != team and x[winnerCol] != 'Tie in regulation' 
-                                      and x[0]>=dates[i-1] and x[0]<dates[i]])
-                    teamTies = len([x for x in results_conf if (x[1] == team  or x[2] == team ) 
-                                      and x[winnerCol] == 'Tie in regulation' 
-                                      and x[0]>=dates[i-1] and x[0]<dates[i]])
-                    try:
-                        winPct = round(teamWins/(teamWins+teamLosses),3)
-                    except ZeroDivisionError:
-                        winPct = None
-                    WUpre_Standings[i-1][division].append([team ,teamWins,teamLosses,teamTies,winPct])
-                # WUpre_Standings[i-1][division] = sorted(WUpre_Standings[i-1][division], key=itemgetter(4), reverse=True)
-    return WUpre_Standings
-                    
+###########################    
+#### Wind-up Standings             
 ## Calculate Standings
-WUpre_Standings = [
-                      [[],[],[],[],[],[],[],[]],
-                      [[],[],[],[],[],[],[],[]],
-                      [[],[],[],[],[],[],[],[]],
-                      [[],[],[],[],[],[],[],[]],
-                      ] 
+WUpre_Standings = [ [[],[],[],[],[],[],[],[]],
+                    [[],[],[],[],[],[],[],[]],
+                    [[],[],[],[],[],[],[],[]],
+                    [[],[],[],[],[],[],[],[]],
+                  ] 
 
-WUpre_Standings = WU_Standings(results_conf1+results_conf2, groupTms, dates, 3, WUpre_Standings)
-WUpre_Standings[0]
+WUpre_Standings = standings.WU_Standings(results_conf1+results_conf2, groupTms, dates, 3, WUpre_Standings)
+WUpre_Standings = [[sorted(group, key=itemgetter(4), reverse=True) for group in x] for x in WUpre_Standings]
 
-## Calculate Results of Wrap-up
-def WU_createResults(results_conf, dates, teamStength, extrasRate, scoringDic):
-    WU_Results = []
-    for i in range(len(dates)):
-        if i > 0:
-            schedule_wu = [x for x in results_conf if x[3] == 'Tie in regulation' 
-                              and x[0]>=dates[i-1] and x[0]<dates[i]]
-            sim = simulate.win_loss(schedule_wu, teamStength, extrasRate, scoringDic)
-            WU_Results.append(sim)
-    return WU_Results
-                      
-WU_Results_c1 = WU_createResults(results_conf1, dates, teamStength, extrasRate, scoringDic)   
-WU_Results_c2 = WU_createResults(results_conf2, dates, teamStength, extrasRate, scoringDic)            
-            
+
+## Calculate Matchup Results of Wrap-up                   
+WU_Results_c1 = simulate.WU_createResults(results_conf1, dates, teamStength, extrasRate, scoringDic)   
+WU_Results_c2 = simulate.WU_createResults(results_conf2, dates, teamStength, extrasRate, scoringDic)            
+# Flatten results into single list 
 WU_Results_c1 = leagueFormation.flattenLsts(WU_Results_c1)
 WU_Results_c2 = leagueFormation.flattenLsts(WU_Results_c2)
 
+# Combine season and wind-up results
+results_conf1 = sorted(results_conf1, key=itemgetter(0), reverse=False)
+results_conf2 = sorted(results_conf2, key=itemgetter(0), reverse=False)
+
+
+results_conf1 = simulate.seasonResultsOrder(results_conf1,WU_Results_c1, dates)
+results_conf2 = simulate.seasonResultsOrder(results_conf2,WU_Results_c2, dates)
+
+with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\FoundersResultes.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(['Date','Home','Away','Result','Home Score','Away Score'])
+    writer.writerows(results_conf1)
+
+with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesResultes.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(['Date','Home','Away','Result','Home Score','Away Score'])
+    writer.writerows(results_conf2)
 
 ## Caculate Wrap-up records
 WUpost_Standings = [
@@ -213,48 +178,60 @@ WUpost_Standings = [
                       [[],[],[],[],[],[],[],[]],
                       [[],[],[],[],[],[],[],[]],
                       ]    
-WUpost_Standings = WU_Standings(WU_Results_c1+WU_Results_c2, groupTms, dates, 6, WUpost_Standings)        
-
+WUpost_Standings = standings.WU_Standings(WU_Results_c1+WU_Results_c2, groupTms, dates, 6, WUpost_Standings)        
 
 ## Combine standings
+WUpost_Standings = standings.finalStandingsSummary(WUpre_Standings,WUpost_Standings)
+WUpost_Standings = [[sorted(group, key=itemgetter(4), reverse=True) for group in x] for x in WUpost_Standings]
 
-for WU in range(len(WUpost_Standings)):
-    for group in range(len(WUpost_Standings[WU])):
-        for team in range(len(WUpost_Standings[WU][group])):
-            t = WUpost_Standings[WU][group][team][0]
-            WU_wins = WUpost_Standings[WU][group][team][1]
-            WU_wins += [x for x in WUpre_Standings[WU][group] if x[0] == t ][0][1]
-            
-            WU_losses = WUpost_Standings[WU][group][team][2]
-            WU_losses += [x for x in WUpre_Standings[WU][group] if x[0] == t ][0][2]
-            
-            if WU >0:
-                WU_wins += [x for x in WUpost_Standings[WU-1][group] if x[0] == t ][0][1]
-                WU_losses += [x for x in WUpost_Standings[WU-1][group] if x[0] == t ][0][2]
-            
-            WU_winpct = round(WU_wins/(WU_wins+WU_losses),3)
-            WUpost_Standings[WU][group][team] = [t,WU_wins, WU_losses, WUpost_Standings[WU][group][team][3], WU_winpct]
-
-
+parts = ['Part 1', 'Part 2', 'Part 3', 'Part 4']
+standingParts = []
+for i in range(len(parts)):
+    for g in range(len(WUpost_Standings[i])):
+        confNm = [x[0] for x in leagueFormat if WUpre_Standings[i][g][0][0] in x[3]]
+        divNm = [x[1] for x in leagueFormat if WUpre_Standings[i][g][0][0] in x[3]]
+        groupNm = [x[2] for x in leagueFormat if WUpre_Standings[i][g][0][0] in x[3]]
+        standingParts += [['pre Wind-up',parts[i]]+confNm+divNm+groupNm+team for team in WUpre_Standings[i][g] ]
+        
+        
+        confNm = [x[0] for x in leagueFormat if WUpost_Standings[i][g][0][0] in x[3]]
+        divNm = [x[1] for x in leagueFormat if WUpost_Standings[i][g][0][0] in x[3]]
+        groupNm = [x[2] for x in leagueFormat if WUpost_Standings[i][g][0][0] in x[3]]
+        standingParts += [['post Wind-up',parts[i]]+confNm+divNm+groupNm+team for team in WUpost_Standings[i][g] ]
 
 
 
+        
+with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\seasonStandings.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(['Timing','Season Part','Conference','Division','Group',
+                     'Team','Wins','Losses','Ties to Finish','Winning Percent'])
+    writer.writerows(standingParts)
 
 
 
-            
-len(WUpre_Standings[0])
-WUpost_Standings[0][0]
 
 
-[x for x in WU_Results_c1 if x[1] == 'Akron' or x[2] == 'Akron']
-
-[x for x in results_conf1 if (x[1] == 'Akron' or x[2] == 'Akron') and x[3] == 'Tie in regulation']
 
 
-# WU_Results_c1[0][0]
 
-# WUpre_Standings_c1[0]
+
+
+# Open conference results
+with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\FoundersResultes.csv', 'r') as f:
+    reader = csv.reader(f)
+    results_conf1 = list(reader)
+
+# Open conference results
+with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesResultes.csv', 'r') as f:
+    reader = csv.reader(f)
+    results_conf2 = list(reader)
+
+
+
+
+
+         
 
 
 

@@ -4,7 +4,7 @@ import itertools
 class leagueFormation:
     def teamLsts(leageDict):
         conferenceTms,divisionTms, groupTms = [],[],[]
-        leagueFormat=[]
+        leagueFormat = []
         for conf in leageDict.keys(): 
             confLst = []
             # confPairings.append([conf])
@@ -19,6 +19,7 @@ class leagueFormation:
                 confLst.append(leagueFormation.flattenLsts(divLst))
             conferenceTms.append(leagueFormation.flattenLsts(confLst))
         # self.leagueLsts = [leagueFormat,conferenceTms,divisionTms,groupTms]
+        
         return leagueFormat, conferenceTms, divisionTms, groupTms
         
     
