@@ -1,14 +1,26 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jan  1 20:46:35 2025
-
-@author: aaron
-"""
 import random, copy
 from League_Info import leagueFormation
 
 class matchups:
+    '''
+    Class holds all functions for creating league matchups
+    '''
+    
     def allPosibleMatchups(conferenceTms,divisionTms,groupTms):
+        '''
+        Parameters
+        ----------
+        conferenceTms : List of all teams in conference
+        divisionTms : List of lists of all teams in a division
+        groupTms : List of lists of all teams in a group
+
+        Function: Creates a list of all matchups that will occur, home and away
+        
+        Returns
+        -------
+        confMatchups : List of all matchups
+
+        '''
         confMatchups = []
         for conf in conferenceTms:
             matchupLst = [['Groups Opponent'],['Division Opponent'],['Conference Opponent']]
@@ -20,6 +32,23 @@ class matchups:
         return confMatchups
     
     def categorizeMatchup(homeTm,awayTm,conferenceTms,divisionTms,groupTms,matchupLst):
+        '''
+        Parameters
+        ----------
+        homeTm : home team in matchup
+        awayTm : road team in matchup
+        conferenceTms : List of all teams in conference
+        divisionTms : List of lists of all teams in a division
+        groupTms : List of lists of all teams in a group
+        matchupLst : Possible matchup categorizaiton
+
+        Function: Categorize the type of matchup and number of series to be played.        
+
+        Returns
+        -------
+        matchupLst : list of matchups, categorization, and number of series to play in season.
+
+        '''
         for grp in groupTms:
             if homeTm in grp and awayTm in grp: 
                 seriesHostingInMatchup = 3
@@ -37,6 +66,20 @@ class matchups:
         
         
     def allUniquePairs(leagueFormat):
+        '''
+        Parameters
+        ----------
+        leagueFormat : List - conference name, division name, group name, [teams in group]
+
+        Function: all possible group v group pairings.  To be used in creating schedules
+
+        Returns
+        -------
+        uniqueConfPairingOptions : List of unique group v group pairings accross conference.
+
+        '''
+        
+        
         ## Group conferences for efficient scheduling
         confPairingOptions = []
         for conf in leagueFormat:
@@ -49,27 +92,23 @@ class matchups:
             p.sort()
             if p not in uniqueConfPairingOptions: uniqueConfPairingOptions.append(p)
         return uniqueConfPairingOptions
-    
 
-    def availableRoundMatchups(matchups):
-        gameLeftLimit = max(list(set([team[3] for team in matchups[1:]])))
-        # return list(set([team[0] for team in matchups[1:] if team[3] == gameLeftLimit]))
-        return [team for team in matchups[1:] if team[3] == gameLeftLimit and gameLeftLimit>0]
-    
-    
-    def selectMatchup(availPair,seasonTracker):
-        matchup = random.choice(availPair)
-        for i in range(len(seasonTracker)):
-            if seasonTracker[i] == matchup: seasonTracker[i][3] = seasonTracker[i][3]-1
-        return seasonTracker,matchup
-        
-    
-    def remainingRoundMatchups(matchups,dropTeams): 
-        return [team for team in matchups if team[0] not in dropTeams and team[1] not in dropTeams]
-    
-    
+
     def cycleGroups(confMatchups, matchupType, maxGames, idealMatchupCt):
-        ## Copy for processing
+        '''
+        Parameters
+        ----------
+        confMatchups : List of all matchups
+        matchupType : 0 = Group, 1 = Divisions, 2 = Conference1, 3 = conference2
+        maxGames : Number of games that need to be scheduled.
+        idealMatchupCt : Number of unique series to schedule
+        
+        Function: randomly selects order of matchups.
+        
+        Returns
+        -------
+        matchupSet : Order of series with each matchup in them
+        '''
         tempconfMatchups = copy.deepcopy(confMatchups)
         
         matchupSet = []
@@ -93,6 +132,25 @@ class matchups:
                     conf = copy.deepcopy(conf4Repeat)
             matchupSet.append(list(confTemp))
         return matchupSet
+    
+
+    def availableRoundMatchups(matchups):
+        gameLeftLimit = max(list(set([team[3] for team in matchups[1:]])))
+        return [team for team in matchups[1:] if team[3] == gameLeftLimit and gameLeftLimit>0]
+    
+    
+    def selectMatchup(availPair,seasonTracker):
+        matchup = random.choice(availPair)
+        for i in range(len(seasonTracker)):
+            if seasonTracker[i] == matchup: seasonTracker[i][3] = seasonTracker[i][3]-1
+        return seasonTracker,matchup
+        
+    
+    def remainingRoundMatchups(matchups,dropTeams): 
+        return [team for team in matchups if team[0] not in dropTeams and team[1] not in dropTeams]
+    
+    
+    
     
     
     def confRdPairings(rdList,confMatchups,pairingOrder,rd):

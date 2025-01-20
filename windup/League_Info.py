@@ -1,33 +1,14 @@
 import itertools
-
-
 class leagueFormation:
-    def teamLsts(leageDict):
-        conferenceTms,divisionTms, groupTms = [],[],[]
-        leagueFormat = []
-        for conf in leageDict.keys(): 
-            confLst = []
-            # confPairings.append([conf])
-            for div in leageDict[conf].keys():
-                divLst = []
-                for grp in leageDict[conf][div].keys():
-                    groupLst = list(leageDict[conf][div][grp].keys())
-                    groupTms.append(groupLst)
-                    divLst.append(groupLst)
-                    leagueFormat.append([conf,div,grp,groupLst])
-                divisionTms.append(leagueFormation.flattenLsts(divLst))
-                confLst.append(leagueFormation.flattenLsts(divLst))
-            conferenceTms.append(leagueFormation.flattenLsts(confLst))
-        # self.leagueLsts = [leagueFormat,conferenceTms,divisionTms,groupTms]
-        
-        return leagueFormat, conferenceTms, divisionTms, groupTms
-        
-    
-    def flattenLsts(lst):
-        return list(itertools.chain.from_iterable(lst))
-    
-    
+    '''
+    Class holding league format and reformatting.
+    '''
     def leagueDict():
+        '''
+        Returns
+        -------
+        leagueConferences: Dictionary with league formation, team names, and nicknames.
+        '''
         leagueConferences = {
             'Founders': {'East Division':{'Port Group':{'Montreal':{'Nickname':'Fantômes'},
                                                        'Boston':{'Nickname':'Nexus'},
@@ -78,3 +59,51 @@ class leagueFormation:
                            }
         }
         return leagueConferences
+    
+    
+    def teamLsts(leageDict):
+        '''
+        Parameters
+        ----------
+        leageDict : List of league teams in league format
+
+        Returns
+        -------
+        leagueFormat : List - conference name, division name, group name, [teams in group]
+        groupTms : Teams in same group 
+        divisionTms : Teams in two paired groups 
+        conferenceTms : Teams in four groups/two divisions
+        '''
+        conferenceTms,divisionTms, groupTms = [],[],[]
+        leagueFormat = []
+        for conf in leageDict.keys(): 
+            confLst = []
+            for div in leageDict[conf].keys():
+                divLst = []
+                for grp in leageDict[conf][div].keys():
+                    groupLst = list(leageDict[conf][div][grp].keys())
+                    groupTms.append(groupLst)
+                    divLst.append(groupLst)
+                    leagueFormat.append([conf,div,grp,groupLst])
+                divisionTms.append(leagueFormation.flattenLsts(divLst))
+                confLst.append(leagueFormation.flattenLsts(divLst))
+            conferenceTms.append(leagueFormation.flattenLsts(confLst))
+        
+        return leagueFormat, conferenceTms, divisionTms, groupTms
+        
+    
+    def flattenLsts(lst):
+        '''
+        Parameters
+        ----------
+        lst : list of lists
+
+        Returns
+        -------
+        lists flattened one level
+
+        '''
+        return list(itertools.chain.from_iterable(lst))
+    
+    
+    
