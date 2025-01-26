@@ -105,15 +105,15 @@ rankAvgWinPct, scoringDic = historicSeasons.summarizeStandings(historicList, res
 teamStength = simulate.teamStrength(conferenceTms,rankAvgWinPct)
 
 
-# Open conference schedules
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\FoundersSchedule.csv', 'r') as f:
-    reader = csv.reader(f)
-    schedule_conf1 = list(reader)
+# # Open conference schedules
+# with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\FoundersSchedule.csv', 'r') as f:
+#     reader = csv.reader(f)
+#     schedule_conf1 = list(reader)
 
-# Open conference schedules
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesSchedule.csv', 'r') as f:
-    reader = csv.reader(f)
-    schedule_conf2 = list(reader)
+# # Open conference schedules
+# with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesSchedule.csv', 'r') as f:
+#     reader = csv.reader(f)
+#     schedule_conf2 = list(reader)
 
 
 #### Simulate Win-Loss
@@ -127,8 +127,8 @@ results_conf2 = simulate.win_loss(schedule_conf2[1:], teamStength, extrasRate, s
 #### Sumarize Results
 #####################
 #convert date strings to dates
-results_conf1 = [[datetime.datetime.strptime(date[0], '%Y-%m-%d').date()]+date[1:] for date in results_conf1 ]
-results_conf2 = [[datetime.datetime.strptime(date[0], '%Y-%m-%d').date()]+date[1:] for date in results_conf2 ]
+# results_conf1 = [[datetime.datetime.strptime(date[0], '%Y-%m-%d').date()]+date[1:] for date in results_conf1 ]
+# results_conf2 = [[datetime.datetime.strptime(date[0], '%Y-%m-%d').date()]+date[1:] for date in results_conf2 ]
 
 # Find wind-ups
 dates_possible = [date[0] for date in results_conf1 if date[1] == '']
@@ -158,16 +158,20 @@ results_conf2 = sorted(results_conf2, key=itemgetter(0), reverse=False)
 results_conf1_final = simulate.seasonResultsOrder(results_conf1,WU_Results_c1, dates)
 results_conf2_final = simulate.seasonResultsOrder(results_conf2,WU_Results_c2, dates)
 
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\FoundersResultes.csv', 'w', newline='') as f:
+
+## Store simulation Results
+location = r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup\simulations\Results'
+lst = os.listdir(location)
+
+with open(location +'\FoundersResultes_sim'+str(number)+'.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Date','Home','Away','Result','Home Score','Away Score'])
     writer.writerows(results_conf1)
 
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesResultes.csv', 'w', newline='') as f:
+with open(location +'\VisionariesResultes_sim'+str(number)+'.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Date','Home','Away','Result','Home Score','Away Score'])
     writer.writerows(results_conf2)
-
 
 ###########################    
 #### Wind-up Standings             
@@ -180,7 +184,29 @@ WUpre_Standings,WUpost_Standings = standings.createStandings(results_conf,WU_Res
 ## Create standings list
 standingParts = standings.standingLists(WUpre_Standings,WUpost_Standings,leagueFormat)
 
+## Reordering standings
+standings_final = standings.reorderStandings(standingParts)
 
+
+
+
+
+
+
+
+
+
+
+
+## Store simulation standings
+location = r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup\simulations\Standings'
+lst = os.listdir(location)
+
+with open(location +'\seasonStandings_sim'+str(number)+'.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(['Timing','Season Part','Conference','Division','Group',
+                     'Team','Wins','Losses','Ties to Finish','Winning Percent'])
+    writer.writerows(standings_final)
 
 
 

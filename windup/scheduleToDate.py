@@ -27,6 +27,22 @@ class schedule:
         
 
     def scheduleGames(seriesOrder,matchupsForScheduling,group,division,conf1,conf2):
+        '''
+        Parameters
+        ----------
+        seriesOrder: Set order of series type of matchups
+        matchupsForScheduling: Order of series matchups by type (in-group, g vs div g, g vs in conf g1, g vs in conf g2)
+        group: group section of matchupsForScheduling 
+        division: division section of matchupsForScheduling 
+        conf1: conference pair 1 section of matchupsForScheduling 
+        conf2: conference pair 2 section of matchupsForScheduling 
+
+        Function: schedues each game of all series in order
+
+        Returns
+        -------
+        confSchedule: Schedule order of all games
+        '''
         confSchedule=[]
         for q in range(len(seriesOrder)):
             for s in seriesOrder[q]:
@@ -49,11 +65,24 @@ class schedule:
 
 
     def setDates(conf,base):
+        '''
+        Parameters
+        ----------
+        conf : order of games for conference
+        base : base start date for season
+
+        Function: assigning dates to order of games.
+
+        Returns
+        -------
+        schedules : schedule by dates
+        '''
         date_list = [base + datetime.timedelta(days=x) for x in range(225)] ##185
         schedules = []
         for series in range(len(conf)):
             for leagueGame in range(len(conf[series])):
                 if len(conf[series][leagueGame]) == 0:
+                    ## Setting blank days for wind-up
                     if len([date[1] for date in schedules if date[0] == date_list[0]])>1 : del date_list[0]
                     schedules.append([date_list[0]]+['',''])
                     del date_list[0]
@@ -62,7 +91,8 @@ class schedule:
                         prevDayTeams = [date[1] for date in schedules if date[0] == date_list[0]]+[date[2] for date in schedules if date[0] == date_list[0]]
                         homechk = conf[series][leagueGame][game][0] in prevDayTeams
                         awaychk = conf[series][leagueGame][game][1] in prevDayTeams
-                        if game <5 and homechk == False and awaychk == False:
+                        # Check to build in off days by offsetting series start by a day
+                        if game <5 and homechk == False and awaychk == False: 
                             schedules.append([date_list[0]]+conf[series][leagueGame][game])
                         else: schedules.append([date_list[1]]+conf[series][leagueGame][game])
                     del date_list[0]
@@ -73,6 +103,19 @@ class schedule:
     
     
     def groupSeriesToMake4Games(base,schedules,groupTms):
+        '''
+        Parameters
+        ----------
+        base: base start date for season
+        schedules: schedule of games by dates
+        groupTms: List of lists of all teams in a group
+
+        Function: Find off day for each in-group matchup (home and away) to add a 4th game to series
+
+        Returns
+        -------
+        schedules : schedule by dates
+        '''
         ## season game date list
         date_list = [base + datetime.timedelta(days=x) for x in range(186)]
         excludionLst = [d[0] for d in schedules if d[1] == '']
@@ -95,7 +138,6 @@ class schedule:
                 pairedOffPriority = [date for date in homeTmPairOff if date in awayTmPairOff]
                 # Dates They Already Play
                 checkDates = [date[0] for date in schedules if date[1] == matchup[0] and date[2] == matchup[1]]
-
                 for date in checkDates:
                     if date != base:
                         # Check if both teams have a shared team off before series
@@ -135,16 +177,29 @@ class schedule:
     
     
     def findBackToBackOff(schedules,team,date_list):
+        '''
+        Parameters
+        ----------
+        schedules: schedule of games by dates
+        team: team to search
+        date_list: available dates in season
+        
+        Function: find when a team has back-to-back off days
+
+        Returns
+        -------
+        backToBackOpen: List of back-to-back open dates for team
+        '''
         backToBackOpen = []
-        # Days home plays
-        hmTeamDates = [date[0] for date in schedules if date[1] == team or date[2] == team]
-        # Days home doesn't play
-        hmTeamDates = [d for d in date_list if d not in  hmTeamDates]
-        for date in range(len(hmTeamDates)):
+        # Days team plays
+        teamDates = [date[0] for date in schedules if date[1] == team or date[2] == team]
+        # Days team doesn't play
+        teamDates = [d for d in date_list if d not in  teamDates]
+        for date in range(len(teamDates)):
             if date != 0:
-                if abs((hmTeamDates[date] - hmTeamDates[date-1]).days) == 1:
-                    backToBackOpen.append(hmTeamDates[date])
-                    backToBackOpen.append(hmTeamDates[date-1])
+                if abs((teamDates[date] - teamDates[date-1]).days) == 1:
+                    backToBackOpen.append(teamDates[date])
+                    backToBackOpen.append(teamDates[date-1])
         return backToBackOpen
     
     

@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jan  5 10:31:28 2025
-
-@author: aaron
-"""
 import pandas as pd
 import statsapi, csv
 from collections import Counter
@@ -11,6 +5,17 @@ from League_Info import leagueFormation
 
 class historicSeasons():
     def readSeason(locationStr):
+        '''
+        Parameters
+        ----------
+        locationStr: location of stored MLB season data
+
+        Function: Read in downloaded retrosheet gamelogs (https://www.retrosheet.org/gamelogs/index.html) 
+
+        Returns
+        -------
+        seasonResults : DataFrame of season gamelog file
+        '''
         columns = ['gamedate','numberofgames','dayofweek',
                     'roadtm','roadlg','roadtmgamenum',
                     'hometm','homelg','hometmgamenum',
@@ -63,6 +68,10 @@ class historicSeasons():
         return seasonResults
     
     def formatHistoricSeason():
+        '''
+        Function: Use statsApi to read historic MLB annual standings.  Write to CSV
+
+        '''
         base = 1969
         yearLst = []
         for i in range(2024-base+1):
@@ -70,7 +79,7 @@ class historicSeasons():
 
         # Collect all standings in statsApi
         allStandings = []
-        leagueIds = [103,104]
+        leagueIds = [103,104] # Al, NL ids
         for league in leagueIds:
             for year in yearLst:
                 standings = []
@@ -112,6 +121,17 @@ class historicSeasons():
                              
     
     def historicScores():
+        '''
+        Function: Open historic retrosheet game logs
+
+        Returns
+        -------
+        extras: DF of MLB extra-inning games
+        extrasRate: rate of MLB games that go extra innings
+        resultRate: rate of MLB games with score (home/away specific)
+        extrasResultRate: rate of MLB extra-inning games with score (home/away specific)
+        seasons_exOuts: DF of MLB extra-inning games, for number of outs post zombie runner change
+        '''
         locationStr = r'C:\Users\Public\retrosheets\gl2020_23'
         season24 = historicSeasons.readSeason(locationStr+r'\gl2024.txt')
         season23 = historicSeasons.readSeason(locationStr+r'\gl2023.txt')
@@ -158,6 +178,21 @@ class historicSeasons():
         
         
     def summarizeStandings(historicList, resultRate, extras, extrasResultRate):
+        '''
+        Parameters
+        ----------
+        historicList: Historic standings from StatsAPI
+        resultRate: rate of MLB games with score (home/away specific)
+        extras: DF of MLB extra-inning games
+        extrasResultRate: rate of MLB extra-inning games with score (home/away specific)
+
+        Function: Create dictionary of various results and their occurance rates
+
+        Returns
+        -------
+        rankAvgWinPct: average MLB historic winning percent (since 1969) by conference rank
+        scoringDic: Dicitonary of results: home/road result options and odds of outcomes, including for extras.
+        '''
         years = list(set([int(year[0]) for year in historicList[1:]]))
         lgIds = list(set([lg[1] for lg in historicList[1:]]))
 
