@@ -1,0 +1,5 @@
+# Ignore All (xlsx) files
+*.xlsx
+
+# Ignore All (csv) files
+*.cv
