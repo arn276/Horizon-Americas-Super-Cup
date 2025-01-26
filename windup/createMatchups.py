@@ -135,11 +135,35 @@ class matchups:
     
 
     def availableRoundMatchups(matchups):
+        '''
+        Parameters
+        ----------
+        matchups : List of all matchups
+        
+        Function: Find the team pairings that haven't been selected this series
+        
+        Returns
+        -------
+        list : matchups available for selection this series
+        '''
         gameLeftLimit = max(list(set([team[3] for team in matchups[1:]])))
         return [team for team in matchups[1:] if team[3] == gameLeftLimit and gameLeftLimit>0]
     
     
     def selectMatchup(availPair,seasonTracker):
+        '''
+        Parameters
+        ----------
+        availPair : pairs available for matchup selection
+        seasonTracker : season tracking of matchups remaining series for the pair 
+        
+        Function: Random select an available matchup for series
+
+        Returns
+        -------
+        seasonTracker : season tracking of matchups remaining series for the pair
+        matchup : selected matchup
+        '''
         matchup = random.choice(availPair)
         for i in range(len(seasonTracker)):
             if seasonTracker[i] == matchup: seasonTracker[i][3] = seasonTracker[i][3]-1
@@ -147,14 +171,37 @@ class matchups:
         
     
     def remainingRoundMatchups(matchups,dropTeams): 
+        '''
+        Parameters
+        ----------
+        matchups : available matchups
+        dropTeams : teams that were selected
+        
+        Function: remove teams from selected matchup from those available for series round
+
+        Returns
+        -------
+        matchups : available matchups
+        '''
         return [team for team in matchups if team[0] not in dropTeams and team[1] not in dropTeams]
     
     
     
-    
-    
     def confRdPairings(rdList,confMatchups,pairingOrder,rd):
-    ## separate each conference rd by group matchups
+        '''
+        Parameters
+        ----------
+        rdList : List of pairs in series round
+        confMatchups : List of all matchups
+        pairingOrder : Order of series
+        rd : 1st or 2nd set of conference group pairings
+            
+        Function: separate each conference rd by group matchups
+
+        Returns
+        -------
+        rdList: List of pairs in series round
+        '''
         for conf in confMatchups:
             confMatchups = []
             for p in pairingOrder[rd]:
@@ -167,7 +214,22 @@ class matchups:
             rdList.append(confMatchups)
         return rdList
     
+    
+    
     def conferenceScheduling(uniqueConfPairingOptions, confMatchups):
+        '''
+        Parameters
+        ----------
+        uniqueConfPairingOptions: List of all group v group pairings 
+        confMatchups: List of all possible conference pairings
+            
+        Function: Conference Scheduling - Random selection of order of group 
+                                        pairingsfor conference matchups
+        Returns
+        -------
+        conferenceMatchups: order of series matchups for conference pairings in group v group 1
+        conferenceMatchups2: order of series matchups for conference pairings in group v group 2
+        '''
         #### Conference Scheduling            
         ## Random selection of order of group pairingsfor conference matchups
         reduceConfPairingOptions = copy.deepcopy(uniqueConfPairingOptions)

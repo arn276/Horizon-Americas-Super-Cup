@@ -1,13 +1,19 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Jan  5 08:40:35 2025
-
-@author: aaron
-"""
 import copy, datetime, random
 
 class schedule:    
     def createOrderOfGames(AllMatchups):
+        '''
+        Parameters
+        ----------
+        AllMatchups : List of all the matchups
+            
+        Function: Order series based on group, conference 1, division, conference 2 
+                    for series type in order
+        Returns
+        -------
+        conf1 : Schedule order for Founders Conference
+        conf2 : Schedule order for Visionaries Conference
+        '''
         seriesOrder = [
                         ['g','g','g','g','g','g','c1','c1','c1','c1'],
                        ['d','d','d','d','d','d','d','d','d','d','d','d','d','d','d','d'],
