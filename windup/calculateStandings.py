@@ -166,13 +166,31 @@ class standings():
         return standingParts
     
     
-    def reorderStandings(standingParts):
+    def rankStandings(standingParts,teamStength):
+        '''
+        Parameters
+        ----------
+        standingParts : final single list of standings for export
+
+        Returns
+        -------
+        standings : final single list of standings for export with a division rank field
+                    and the team strength rating
+        '''
         standings = []
         for i in range(len(standingParts)):
-            if (i+1)%4 == 0: rank = 4
+            # Set rank 1-4, unles same percent as team above, then match.
+            if (i+1)%4 == 0 : 
+                if i == 0:  rank = 4
+                elif standingParts[i][9] == standingParts[i-1][9]: rank = i%4
+                else: rank = 4
+            elif standingParts[i][9] == standingParts[i-1][9]: rank = i%4
             else: rank = (i+1)%4
             
-            standings.append(standingParts[i][:5]+[rank]+standingParts[i][5:])
+            # Add team strength setting to compair to winning percent
+            ts = [ts[1] for ts in teamStength if ts[0] == standingParts[i][5]]
+            
+            standings.append(standingParts[i][:5]+[rank]+standingParts[i][5:]+ts)
         return standings
             
             

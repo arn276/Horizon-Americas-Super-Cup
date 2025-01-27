@@ -62,17 +62,20 @@ schedule_conf1 = schedule.groupSeriesToMake4Games(base,schedule_conf1,groupTms)
 schedule_conf2 = schedule.groupSeriesToMake4Games(base,schedule_conf2,groupTms)
 
 ## Store simulation Schedule
+# Find simulation number
+location = r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup\simulations\Standings'
+number = len(os.listdir(location))+1
+
 location = r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup\simulations\Schedules'
 lst = os.listdir(location)
-number = len(lst)+1
 
 ##Store Schedule
-with open(location+'\FoundersSchedule_sim'+str(number)+'.csv', 'w', newline='') as f:
+with open(r''+location+r'\FoundersSchedule_sim'+str(number)+'.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Date','Home','Away'])
     writer.writerows(schedule_conf1)
 
-with open(location+'\VisionariesSchedule_sim'+str(number)+'.csv', 'w', newline='') as f:
+with open(r''+location+r'\VisionariesSchedule_sim'+str(number)+'.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Date','Home','Away'])
     writer.writerows(schedule_conf2)
@@ -163,12 +166,12 @@ results_conf2_final = simulate.seasonResultsOrder(results_conf2,WU_Results_c2, d
 location = r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup\simulations\Results'
 lst = os.listdir(location)
 
-with open(location +'\FoundersResultes_sim'+str(number)+'.csv', 'w', newline='') as f:
+with open(r''+location +r'\FoundersResultes_sim'+str(number)+'.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Date','Home','Away','Result','Home Score','Away Score'])
     writer.writerows(results_conf1)
 
-with open(location +'\VisionariesResultes_sim'+str(number)+'.csv', 'w', newline='') as f:
+with open(r''+location +r'\VisionariesResultes_sim'+str(number)+'.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Date','Home','Away','Result','Home Score','Away Score'])
     writer.writerows(results_conf2)
@@ -184,25 +187,16 @@ WUpre_Standings,WUpost_Standings = standings.createStandings(results_conf,WU_Res
 ## Create standings list
 standingParts = standings.standingLists(WUpre_Standings,WUpost_Standings,leagueFormat)
 
-## Reordering standings
-standings_final = standings.reorderStandings(standingParts)
 
-
-
-
-
-
-
-
-
-
+## Adding rank and team strength to  standings
+standings_final = standings.rankStandings(standingParts,teamStength)
 
 
 ## Store simulation standings
 location = r'C:\Users\aaron\OneDrive\Documents\GitHub\North-American-Super-Cup\windup\simulations\Standings'
 lst = os.listdir(location)
 
-with open(location +'\seasonStandings_sim'+str(number)+'.csv', 'w', newline='') as f:
+with open(r''+location +r'\seasonStandings_sim'+str(number)+'.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Timing','Season Part','Conference','Division','Group',
                      'Team','Wins','Losses','Ties to Finish','Winning Percent'])
@@ -217,25 +211,6 @@ with open(location +'\seasonStandings_sim'+str(number)+'.csv', 'w', newline='') 
 
 
 
-
-
-
-
-# Open conference results
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\FoundersResultes.csv', 'r') as f:
-    reader = csv.reader(f)
-    results_conf1 = list(reader)
-
-# Open conference results
-with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesResultes.csv', 'r') as f:
-    reader = csv.reader(f)
-    results_conf2 = list(reader)
-
-
-
-
-
-         
 
 
 
