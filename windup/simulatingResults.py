@@ -78,7 +78,7 @@ class simulate():
                     winnerSelection = random.choices(game[1:3], weights=(homeWt, awayWt), k=1)
                     # Add Score
                     score = simulate.ex_scores(winnerSelection,hometeam,awayteam,scoringDic,int(game[4]))
-                    extras = random.choices(seasons_exOuts['lengthofgame_outs'], weights=(seasons_exOuts['PercentOfTotal']), k=1)
+                    extras = random.choices(seasons_exOuts['length_of_game_outs'], weights=(seasons_exOuts['PercentOfTotal']), k=1)
                     
                     results_conf.append(game+winnerSelection+score[0]+extras)
                     

@@ -124,8 +124,13 @@ class standings():
         teamWins_post : Team wins through the end of Wind-up date
         teamLosses_post : Team losses through the end of Wind-up date
         '''
-        teamWins_post = len([x for x in results_conf if x[winnerCol] == team 
-                       and x[0]<=date ])
+        # print(team)
+        # print(winnerCol)
+        # print(date)
+        # print(results_conf[12])
+        # print([x for x in results_conf if x[winnerCol] == team  ])
+        # print([x for x in results_conf if  x[0]<=date ])
+        teamWins_post = len([x for x in results_conf if x[winnerCol] == team and x[0]<=date ])
         teamLosses_post = len([x for x in results_conf if (x[1] == team  or x[2] == team ) 
                           and x[winnerCol] != team and x[winnerCol] != 'Tie in regulation' 
                           and x[0]<=date ])

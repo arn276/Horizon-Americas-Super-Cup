@@ -1,0 +1,1559 @@
+Year,League,Team,Wins,Losses,Winning Pct
+1969,103,Baltimore Orioles,109,53,0.673
+1969,103,Detroit Tigers,90,72,0.556
+1969,103,Boston Red Sox,87,75,0.537
+1969,103,Washington Senators,86,76,0.531
+1969,103,New York Yankees,80,81,0.497
+1969,103,Cleveland Indians,62,99,0.385
+1969,103,Minnesota Twins,97,65,0.599
+1969,103,Oakland Athletics,88,74,0.543
+1969,103,California Angels,71,91,0.438
+1969,103,Kansas City Royals,69,93,0.426
+1969,103,Chicago White Sox,68,94,0.42
+1969,103,Seattle Pilots,64,98,0.395
+1970,103,Baltimore Orioles,108,54,0.667
+1970,103,New York Yankees,93,69,0.574
+1970,103,Boston Red Sox,87,75,0.537
+1970,103,Detroit Tigers,79,83,0.488
+1970,103,Cleveland Indians,76,86,0.469
+1970,103,Washington Senators,70,92,0.432
+1970,103,Minnesota Twins,98,64,0.605
+1970,103,Oakland Athletics,89,73,0.549
+1970,103,California Angels,86,76,0.531
+1970,103,Kansas City Royals,65,97,0.401
+1970,103,Milwaukee Brewers,65,97,0.401
+1970,103,Chicago White Sox,56,106,0.346
+1971,103,Baltimore Orioles,101,57,0.639
+1971,103,Detroit Tigers,91,71,0.562
+1971,103,Boston Red Sox,85,77,0.525
+1971,103,New York Yankees,82,80,0.506
+1971,103,Washington Senators,63,96,0.396
+1971,103,Cleveland Indians,60,102,0.37
+1971,103,Oakland Athletics,101,60,0.627
+1971,103,Kansas City Royals,85,76,0.528
+1971,103,Chicago White Sox,79,83,0.488
+1971,103,California Angels,76,86,0.469
+1971,103,Minnesota Twins,74,86,0.463
+1971,103,Milwaukee Brewers,69,92,0.429
+1972,103,Detroit Tigers,86,70,0.551
+1972,103,Boston Red Sox,85,70,0.548
+1972,103,Baltimore Orioles,80,74,0.519
+1972,103,New York Yankees,79,76,0.51
+1972,103,Cleveland Indians,72,84,0.462
+1972,103,Milwaukee Brewers,65,91,0.417
+1972,103,Oakland Athletics,93,62,0.6
+1972,103,Chicago White Sox,87,67,0.565
+1972,103,Minnesota Twins,77,77,0.5
+1972,103,Kansas City Royals,76,78,0.494
+1972,103,California Angels,75,80,0.484
+1972,103,Texas Rangers,54,100,0.351
+1973,103,Baltimore Orioles,97,65,0.599
+1973,103,Boston Red Sox,89,73,0.549
+1973,103,Detroit Tigers,85,77,0.525
+1973,103,New York Yankees,80,82,0.494
+1973,103,Milwaukee Brewers,74,88,0.457
+1973,103,Cleveland Indians,71,91,0.438
+1973,103,Oakland Athletics,94,68,0.58
+1973,103,Kansas City Royals,88,74,0.543
+1973,103,Minnesota Twins,81,81,0.5
+1973,103,California Angels,79,83,0.488
+1973,103,Chicago White Sox,77,85,0.475
+1973,103,Texas Rangers,57,105,0.352
+1974,103,Baltimore Orioles,91,71,0.562
+1974,103,New York Yankees,89,73,0.549
+1974,103,Boston Red Sox,84,78,0.519
+1974,103,Cleveland Indians,77,85,0.475
+1974,103,Milwaukee Brewers,76,86,0.469
+1974,103,Detroit Tigers,72,90,0.444
+1974,103,Oakland Athletics,90,72,0.556
+1974,103,Texas Rangers,84,76,0.525
+1974,103,Minnesota Twins,82,80,0.506
+1974,103,Chicago White Sox,80,80,0.5
+1974,103,Kansas City Royals,77,85,0.475
+1974,103,California Angels,68,94,0.42
+1975,103,Boston Red Sox,95,65,0.594
+1975,103,Baltimore Orioles,90,69,0.566
+1975,103,New York Yankees,83,77,0.519
+1975,103,Cleveland Indians,79,80,0.497
+1975,103,Milwaukee Brewers,68,94,0.42
+1975,103,Detroit Tigers,57,102,0.358
+1975,103,Oakland Athletics,98,64,0.605
+1975,103,Kansas City Royals,91,71,0.562
+1975,103,Texas Rangers,79,83,0.488
+1975,103,Minnesota Twins,76,83,0.478
+1975,103,Chicago White Sox,75,86,0.466
+1975,103,California Angels,72,89,0.447
+1976,103,New York Yankees,97,62,0.61
+1976,103,Baltimore Orioles,88,74,0.543
+1976,103,Boston Red Sox,83,79,0.512
+1976,103,Cleveland Indians,81,78,0.509
+1976,103,Detroit Tigers,74,87,0.46
+1976,103,Milwaukee Brewers,66,95,0.41
+1976,103,Kansas City Royals,90,72,0.556
+1976,103,Oakland Athletics,87,74,0.54
+1976,103,Minnesota Twins,85,77,0.525
+1976,103,California Angels,76,86,0.469
+1976,103,Texas Rangers,76,86,0.469
+1976,103,Chicago White Sox,64,97,0.398
+1977,103,New York Yankees,100,62,0.617
+1977,103,Baltimore Orioles,97,64,0.602
+1977,103,Boston Red Sox,97,64,0.602
+1977,103,Detroit Tigers,74,88,0.457
+1977,103,Cleveland Indians,71,90,0.441
+1977,103,Milwaukee Brewers,67,95,0.414
+1977,103,Toronto Blue Jays,54,107,0.335
+1977,103,Kansas City Royals,102,60,0.63
+1977,103,Texas Rangers,94,68,0.58
+1977,103,Chicago White Sox,90,72,0.556
+1977,103,Minnesota Twins,84,77,0.522
+1977,103,California Angels,74,88,0.457
+1977,103,Seattle Mariners,64,98,0.395
+1977,103,Oakland Athletics,63,98,0.391
+1978,103,New York Yankees,100,63,0.613
+1978,103,Boston Red Sox,99,64,0.607
+1978,103,Milwaukee Brewers,93,69,0.574
+1978,103,Baltimore Orioles,90,71,0.559
+1978,103,Detroit Tigers,86,76,0.531
+1978,103,Cleveland Indians,69,90,0.434
+1978,103,Toronto Blue Jays,59,102,0.366
+1978,103,Kansas City Royals,92,70,0.568
+1978,103,California Angels,87,75,0.537
+1978,103,Texas Rangers,87,75,0.537
+1978,103,Minnesota Twins,73,89,0.451
+1978,103,Chicago White Sox,71,90,0.441
+1978,103,Oakland Athletics,69,93,0.426
+1978,103,Seattle Mariners,56,104,0.35
+1979,103,Baltimore Orioles,102,57,0.642
+1979,103,Milwaukee Brewers,95,66,0.59
+1979,103,Boston Red Sox,91,69,0.569
+1979,103,New York Yankees,89,71,0.556
+1979,103,Detroit Tigers,85,76,0.528
+1979,103,Cleveland Indians,81,80,0.503
+1979,103,Toronto Blue Jays,53,109,0.327
+1979,103,California Angels,88,74,0.543
+1979,103,Kansas City Royals,85,77,0.525
+1979,103,Texas Rangers,83,79,0.512
+1979,103,Minnesota Twins,82,80,0.506
+1979,103,Chicago White Sox,73,87,0.456
+1979,103,Seattle Mariners,67,95,0.414
+1979,103,Oakland Athletics,54,108,0.333
+1980,103,New York Yankees,103,59,0.636
+1980,103,Baltimore Orioles,100,62,0.617
+1980,103,Milwaukee Brewers,86,76,0.531
+1980,103,Boston Red Sox,83,77,0.519
+1980,103,Detroit Tigers,84,78,0.519
+1980,103,Cleveland Indians,79,81,0.494
+1980,103,Toronto Blue Jays,67,95,0.414
+1980,103,Kansas City Royals,97,65,0.599
+1980,103,Oakland Athletics,83,79,0.512
+1980,103,Minnesota Twins,77,84,0.478
+1980,103,Texas Rangers,76,85,0.472
+1980,103,Chicago White Sox,70,90,0.438
+1980,103,California Angels,65,95,0.406
+1980,103,Seattle Mariners,59,103,0.364
+1981,103,Milwaukee Brewers,62,47,0.569
+1981,103,Baltimore Orioles,59,46,0.562
+1981,103,New York Yankees,59,48,0.551
+1981,103,Detroit Tigers,60,49,0.55
+1981,103,Boston Red Sox,59,49,0.546
+1981,103,Cleveland Indians,52,51,0.505
+1981,103,Toronto Blue Jays,37,69,0.349
+1981,103,Oakland Athletics,64,45,0.587
+1981,103,Texas Rangers,57,48,0.543
+1981,103,Chicago White Sox,54,52,0.509
+1981,103,Kansas City Royals,50,53,0.485
+1981,103,California Angels,51,59,0.464
+1981,103,Seattle Mariners,44,65,0.404
+1981,103,Minnesota Twins,41,68,0.376
+1982,103,Milwaukee Brewers,95,67,0.586
+1982,103,Baltimore Orioles,94,68,0.58
+1982,103,Boston Red Sox,89,73,0.549
+1982,103,Detroit Tigers,83,79,0.512
+1982,103,New York Yankees,79,83,0.488
+1982,103,Cleveland Indians,78,84,0.481
+1982,103,Toronto Blue Jays,78,84,0.481
+1982,103,California Angels,93,69,0.574
+1982,103,Kansas City Royals,90,72,0.556
+1982,103,Chicago White Sox,87,75,0.537
+1982,103,Seattle Mariners,76,86,0.469
+1982,103,Oakland Athletics,68,94,0.42
+1982,103,Texas Rangers,64,98,0.395
+1982,103,Minnesota Twins,60,102,0.37
+1983,103,Baltimore Orioles,98,64,0.605
+1983,103,Detroit Tigers,92,70,0.568
+1983,103,New York Yankees,91,71,0.562
+1983,103,Toronto Blue Jays,89,73,0.549
+1983,103,Milwaukee Brewers,87,75,0.537
+1983,103,Boston Red Sox,78,84,0.481
+1983,103,Cleveland Indians,70,92,0.432
+1983,103,Chicago White Sox,99,63,0.611
+1983,103,Kansas City Royals,79,83,0.488
+1983,103,Texas Rangers,77,85,0.475
+1983,103,Oakland Athletics,74,88,0.457
+1983,103,California Angels,70,92,0.432
+1983,103,Minnesota Twins,70,92,0.432
+1983,103,Seattle Mariners,60,102,0.37
+1984,103,Detroit Tigers,104,58,0.642
+1984,103,Toronto Blue Jays,89,73,0.549
+1984,103,New York Yankees,87,75,0.537
+1984,103,Boston Red Sox,86,76,0.531
+1984,103,Baltimore Orioles,85,77,0.525
+1984,103,Cleveland Indians,75,87,0.463
+1984,103,Milwaukee Brewers,67,94,0.416
+1984,103,Kansas City Royals,84,78,0.519
+1984,103,California Angels,81,81,0.5
+1984,103,Minnesota Twins,81,81,0.5
+1984,103,Oakland Athletics,77,85,0.475
+1984,103,Chicago White Sox,74,88,0.457
+1984,103,Seattle Mariners,74,88,0.457
+1984,103,Texas Rangers,69,92,0.429
+1985,103,Toronto Blue Jays,99,62,0.615
+1985,103,New York Yankees,97,64,0.602
+1985,103,Detroit Tigers,84,77,0.522
+1985,103,Baltimore Orioles,83,78,0.516
+1985,103,Boston Red Sox,81,81,0.5
+1985,103,Milwaukee Brewers,71,90,0.441
+1985,103,Cleveland Indians,60,102,0.37
+1985,103,Kansas City Royals,91,71,0.562
+1985,103,California Angels,90,72,0.556
+1985,103,Chicago White Sox,85,77,0.525
+1985,103,Minnesota Twins,77,85,0.475
+1985,103,Oakland Athletics,77,85,0.475
+1985,103,Seattle Mariners,74,88,0.457
+1985,103,Texas Rangers,62,99,0.385
+1986,103,Boston Red Sox,95,66,0.59
+1986,103,New York Yankees,90,72,0.556
+1986,103,Detroit Tigers,87,75,0.537
+1986,103,Toronto Blue Jays,86,76,0.531
+1986,103,Cleveland Indians,84,78,0.519
+1986,103,Milwaukee Brewers,77,84,0.478
+1986,103,Baltimore Orioles,73,89,0.451
+1986,103,California Angels,92,70,0.568
+1986,103,Texas Rangers,87,75,0.537
+1986,103,Kansas City Royals,76,86,0.469
+1986,103,Oakland Athletics,76,86,0.469
+1986,103,Chicago White Sox,72,90,0.444
+1986,103,Minnesota Twins,71,91,0.438
+1986,103,Seattle Mariners,67,95,0.414
+1987,103,Detroit Tigers,98,64,0.605
+1987,103,Toronto Blue Jays,96,66,0.593
+1987,103,Milwaukee Brewers,91,71,0.562
+1987,103,New York Yankees,89,73,0.549
+1987,103,Boston Red Sox,78,84,0.481
+1987,103,Baltimore Orioles,67,95,0.414
+1987,103,Cleveland Indians,61,101,0.377
+1987,103,Minnesota Twins,85,77,0.525
+1987,103,Kansas City Royals,83,79,0.512
+1987,103,Oakland Athletics,81,81,0.5
+1987,103,Seattle Mariners,78,84,0.481
+1987,103,Chicago White Sox,77,85,0.475
+1987,103,California Angels,75,87,0.463
+1987,103,Texas Rangers,75,87,0.463
+1988,103,Boston Red Sox,89,73,0.549
+1988,103,Detroit Tigers,88,74,0.543
+1988,103,Milwaukee Brewers,87,75,0.537
+1988,103,Toronto Blue Jays,87,75,0.537
+1988,103,New York Yankees,85,76,0.528
+1988,103,Cleveland Indians,78,84,0.481
+1988,103,Baltimore Orioles,54,107,0.335
+1988,103,Oakland Athletics,104,58,0.642
+1988,103,Minnesota Twins,91,71,0.562
+1988,103,Kansas City Royals,84,77,0.522
+1988,103,California Angels,75,87,0.463
+1988,103,Chicago White Sox,71,90,0.441
+1988,103,Texas Rangers,70,91,0.435
+1988,103,Seattle Mariners,68,93,0.422
+1989,103,Toronto Blue Jays,89,73,0.549
+1989,103,Baltimore Orioles,87,75,0.537
+1989,103,Boston Red Sox,83,79,0.512
+1989,103,Milwaukee Brewers,81,81,0.5
+1989,103,New York Yankees,74,87,0.46
+1989,103,Cleveland Indians,73,89,0.451
+1989,103,Detroit Tigers,59,103,0.364
+1989,103,Oakland Athletics,99,63,0.611
+1989,103,Kansas City Royals,92,70,0.568
+1989,103,California Angels,91,71,0.562
+1989,103,Texas Rangers,83,79,0.512
+1989,103,Minnesota Twins,80,82,0.494
+1989,103,Seattle Mariners,73,89,0.451
+1989,103,Chicago White Sox,69,92,0.429
+1990,103,Boston Red Sox,88,74,0.543
+1990,103,Toronto Blue Jays,86,76,0.531
+1990,103,Detroit Tigers,79,83,0.488
+1990,103,Cleveland Indians,77,85,0.475
+1990,103,Baltimore Orioles,76,85,0.472
+1990,103,Milwaukee Brewers,74,88,0.457
+1990,103,New York Yankees,67,95,0.414
+1990,103,Oakland Athletics,103,59,0.636
+1990,103,Chicago White Sox,94,68,0.58
+1990,103,Texas Rangers,83,79,0.512
+1990,103,California Angels,80,82,0.494
+1990,103,Seattle Mariners,77,85,0.475
+1990,103,Kansas City Royals,75,86,0.466
+1990,103,Minnesota Twins,74,88,0.457
+1991,103,Toronto Blue Jays,91,71,0.562
+1991,103,Boston Red Sox,84,78,0.519
+1991,103,Detroit Tigers,84,78,0.519
+1991,103,Milwaukee Brewers,83,79,0.512
+1991,103,New York Yankees,71,91,0.438
+1991,103,Baltimore Orioles,67,95,0.414
+1991,103,Cleveland Indians,57,105,0.352
+1991,103,Minnesota Twins,95,67,0.586
+1991,103,Chicago White Sox,87,75,0.537
+1991,103,Texas Rangers,85,77,0.525
+1991,103,Oakland Athletics,84,78,0.519
+1991,103,Seattle Mariners,83,79,0.512
+1991,103,Kansas City Royals,82,80,0.506
+1991,103,California Angels,81,81,0.5
+1992,103,Toronto Blue Jays,96,66,0.593
+1992,103,Milwaukee Brewers,92,70,0.568
+1992,103,Baltimore Orioles,89,73,0.549
+1992,103,Cleveland Indians,76,86,0.469
+1992,103,New York Yankees,76,86,0.469
+1992,103,Detroit Tigers,75,87,0.463
+1992,103,Boston Red Sox,73,89,0.451
+1992,103,Oakland Athletics,96,66,0.593
+1992,103,Minnesota Twins,90,72,0.556
+1992,103,Chicago White Sox,86,76,0.531
+1992,103,Texas Rangers,77,85,0.475
+1992,103,California Angels,72,90,0.444
+1992,103,Kansas City Royals,72,90,0.444
+1992,103,Seattle Mariners,64,98,0.395
+1993,103,Toronto Blue Jays,95,67,0.586
+1993,103,New York Yankees,88,74,0.543
+1993,103,Baltimore Orioles,85,77,0.525
+1993,103,Detroit Tigers,85,77,0.525
+1993,103,Boston Red Sox,80,82,0.494
+1993,103,Cleveland Indians,76,86,0.469
+1993,103,Milwaukee Brewers,69,93,0.426
+1993,103,Chicago White Sox,94,68,0.58
+1993,103,Texas Rangers,86,76,0.531
+1993,103,Kansas City Royals,84,78,0.519
+1993,103,Seattle Mariners,82,80,0.506
+1993,103,California Angels,71,91,0.438
+1993,103,Minnesota Twins,71,91,0.438
+1993,103,Oakland Athletics,68,94,0.42
+1994,103,New York Yankees,70,43,0.619
+1994,103,Baltimore Orioles,63,49,0.562
+1994,103,Toronto Blue Jays,55,60,0.478
+1994,103,Boston Red Sox,54,61,0.47
+1994,103,Detroit Tigers,53,62,0.461
+1994,103,Chicago White Sox,67,46,0.593
+1994,103,Cleveland Indians,66,47,0.584
+1994,103,Kansas City Royals,64,51,0.557
+1994,103,Minnesota Twins,53,60,0.469
+1994,103,Milwaukee Brewers,53,62,0.461
+1994,103,Texas Rangers,52,62,0.456
+1994,103,Oakland Athletics,51,63,0.447
+1994,103,Seattle Mariners,49,63,0.438
+1994,103,California Angels,47,68,0.409
+1995,103,Boston Red Sox,86,58,0.597
+1995,103,New York Yankees,79,65,0.549
+1995,103,Baltimore Orioles,71,73,0.493
+1995,103,Detroit Tigers,60,84,0.417
+1995,103,Toronto Blue Jays,56,88,0.389
+1995,103,Cleveland Indians,100,44,0.694
+1995,103,Kansas City Royals,70,74,0.486
+1995,103,Chicago White Sox,68,76,0.472
+1995,103,Milwaukee Brewers,65,79,0.451
+1995,103,Minnesota Twins,56,88,0.389
+1995,103,Seattle Mariners,79,66,0.545
+1995,103,California Angels,78,67,0.538
+1995,103,Texas Rangers,74,70,0.514
+1995,103,Oakland Athletics,67,77,0.465
+1996,103,New York Yankees,92,70,0.568
+1996,103,Baltimore Orioles,88,74,0.543
+1996,103,Boston Red Sox,85,77,0.525
+1996,103,Toronto Blue Jays,74,88,0.457
+1996,103,Detroit Tigers,53,109,0.327
+1996,103,Cleveland Indians,99,62,0.615
+1996,103,Chicago White Sox,85,77,0.525
+1996,103,Milwaukee Brewers,80,82,0.494
+1996,103,Minnesota Twins,78,84,0.481
+1996,103,Kansas City Royals,75,86,0.466
+1996,103,Texas Rangers,90,72,0.556
+1996,103,Seattle Mariners,85,76,0.528
+1996,103,Oakland Athletics,78,84,0.481
+1996,103,California Angels,70,91,0.435
+1997,103,Baltimore Orioles,98,64,0.605
+1997,103,New York Yankees,96,66,0.593
+1997,103,Detroit Tigers,79,83,0.488
+1997,103,Boston Red Sox,78,84,0.481
+1997,103,Toronto Blue Jays,76,86,0.469
+1997,103,Cleveland Indians,86,75,0.534
+1997,103,Chicago White Sox,80,81,0.497
+1997,103,Milwaukee Brewers,78,83,0.484
+1997,103,Minnesota Twins,68,94,0.42
+1997,103,Kansas City Royals,67,94,0.416
+1997,103,Seattle Mariners,90,72,0.556
+1997,103,Anaheim Angels,84,78,0.519
+1997,103,Texas Rangers,77,85,0.475
+1997,103,Oakland Athletics,65,97,0.401
+1998,103,New York Yankees,114,48,0.704
+1998,103,Boston Red Sox,92,70,0.568
+1998,103,Toronto Blue Jays,88,74,0.543
+1998,103,Baltimore Orioles,79,83,0.488
+1998,103,Tampa Bay Devil Rays,63,99,0.389
+1998,103,Cleveland Indians,89,73,0.549
+1998,103,Chicago White Sox,80,82,0.494
+1998,103,Kansas City Royals,72,89,0.447
+1998,103,Minnesota Twins,70,92,0.432
+1998,103,Detroit Tigers,65,97,0.401
+1998,103,Texas Rangers,88,74,0.543
+1998,103,Anaheim Angels,85,77,0.525
+1998,103,Seattle Mariners,76,85,0.472
+1998,103,Oakland Athletics,74,88,0.457
+1999,103,New York Yankees,98,64,0.605
+1999,103,Boston Red Sox,94,68,0.58
+1999,103,Toronto Blue Jays,84,78,0.519
+1999,103,Baltimore Orioles,78,84,0.481
+1999,103,Tampa Bay Devil Rays,69,93,0.426
+1999,103,Cleveland Indians,97,65,0.599
+1999,103,Chicago White Sox,75,86,0.466
+1999,103,Detroit Tigers,69,92,0.429
+1999,103,Kansas City Royals,64,97,0.398
+1999,103,Minnesota Twins,63,97,0.394
+1999,103,Texas Rangers,95,67,0.586
+1999,103,Oakland Athletics,87,75,0.537
+1999,103,Seattle Mariners,79,83,0.488
+1999,103,Anaheim Angels,70,92,0.432
+2000,103,New York Yankees,87,74,0.54
+2000,103,Boston Red Sox,85,77,0.525
+2000,103,Toronto Blue Jays,83,79,0.512
+2000,103,Baltimore Orioles,74,88,0.457
+2000,103,Tampa Bay Devil Rays,69,92,0.429
+2000,103,Chicago White Sox,95,67,0.586
+2000,103,Cleveland Indians,90,72,0.556
+2000,103,Detroit Tigers,79,83,0.488
+2000,103,Kansas City Royals,77,85,0.475
+2000,103,Minnesota Twins,69,93,0.426
+2000,103,Oakland Athletics,91,70,0.565
+2000,103,Seattle Mariners,91,71,0.562
+2000,103,Anaheim Angels,82,80,0.506
+2000,103,Texas Rangers,71,91,0.438
+2001,103,New York Yankees,95,65,0.594
+2001,103,Boston Red Sox,82,79,0.509
+2001,103,Toronto Blue Jays,80,82,0.494
+2001,103,Baltimore Orioles,63,98,0.391
+2001,103,Tampa Bay Devil Rays,62,100,0.383
+2001,103,Cleveland Indians,91,71,0.562
+2001,103,Minnesota Twins,85,77,0.525
+2001,103,Chicago White Sox,83,79,0.512
+2001,103,Detroit Tigers,66,96,0.407
+2001,103,Kansas City Royals,65,97,0.401
+2001,103,Seattle Mariners,116,46,0.716
+2001,103,Oakland Athletics,102,60,0.63
+2001,103,Anaheim Angels,75,87,0.463
+2001,103,Texas Rangers,73,89,0.451
+2002,103,New York Yankees,103,58,0.64
+2002,103,Boston Red Sox,93,69,0.574
+2002,103,Toronto Blue Jays,78,84,0.481
+2002,103,Baltimore Orioles,67,95,0.414
+2002,103,Tampa Bay Devil Rays,55,106,0.342
+2002,103,Minnesota Twins,94,67,0.584
+2002,103,Chicago White Sox,81,81,0.5
+2002,103,Cleveland Indians,74,88,0.457
+2002,103,Kansas City Royals,62,100,0.383
+2002,103,Detroit Tigers,55,106,0.342
+2002,103,Oakland Athletics,103,59,0.636
+2002,103,Anaheim Angels,99,63,0.611
+2002,103,Seattle Mariners,93,69,0.574
+2002,103,Texas Rangers,72,90,0.444
+2003,103,New York Yankees,101,61,0.623
+2003,103,Boston Red Sox,95,67,0.586
+2003,103,Toronto Blue Jays,86,76,0.531
+2003,103,Baltimore Orioles,71,91,0.438
+2003,103,Tampa Bay Devil Rays,63,99,0.389
+2003,103,Minnesota Twins,90,72,0.556
+2003,103,Chicago White Sox,86,76,0.531
+2003,103,Kansas City Royals,83,79,0.512
+2003,103,Cleveland Indians,68,94,0.42
+2003,103,Detroit Tigers,43,119,0.265
+2003,103,Oakland Athletics,96,66,0.593
+2003,103,Seattle Mariners,93,69,0.574
+2003,103,Anaheim Angels,77,85,0.475
+2003,103,Texas Rangers,71,91,0.438
+2004,103,New York Yankees,101,61,0.623
+2004,103,Boston Red Sox,98,64,0.605
+2004,103,Baltimore Orioles,78,84,0.481
+2004,103,Tampa Bay Devil Rays,70,91,0.435
+2004,103,Toronto Blue Jays,67,94,0.416
+2004,103,Minnesota Twins,92,70,0.568
+2004,103,Chicago White Sox,83,79,0.512
+2004,103,Cleveland Indians,80,82,0.494
+2004,103,Detroit Tigers,72,90,0.444
+2004,103,Kansas City Royals,58,104,0.358
+2004,103,Anaheim Angels,92,70,0.568
+2004,103,Oakland Athletics,91,71,0.562
+2004,103,Texas Rangers,89,73,0.549
+2004,103,Seattle Mariners,63,99,0.389
+2005,103,New York Yankees,95,67,0.586
+2005,103,Boston Red Sox,95,67,0.586
+2005,103,Toronto Blue Jays,80,82,0.494
+2005,103,Baltimore Orioles,74,88,0.457
+2005,103,Tampa Bay Devil Rays,67,95,0.414
+2005,103,Chicago White Sox,99,63,0.611
+2005,103,Cleveland Indians,93,69,0.574
+2005,103,Minnesota Twins,83,79,0.512
+2005,103,Detroit Tigers,71,91,0.438
+2005,103,Kansas City Royals,56,106,0.346
+2005,103,Los Angeles Angels,95,67,0.586
+2005,103,Oakland Athletics,88,74,0.543
+2005,103,Texas Rangers,79,83,0.488
+2005,103,Seattle Mariners,69,93,0.426
+2006,103,New York Yankees,97,65,0.599
+2006,103,Toronto Blue Jays,87,75,0.537
+2006,103,Boston Red Sox,86,76,0.531
+2006,103,Baltimore Orioles,70,92,0.432
+2006,103,Tampa Bay Devil Rays,61,101,0.377
+2006,103,Minnesota Twins,96,66,0.593
+2006,103,Detroit Tigers,95,67,0.586
+2006,103,Chicago White Sox,90,72,0.556
+2006,103,Cleveland Indians,78,84,0.481
+2006,103,Kansas City Royals,62,100,0.383
+2006,103,Oakland Athletics,93,69,0.574
+2006,103,Los Angeles Angels,89,73,0.549
+2006,103,Texas Rangers,80,82,0.494
+2006,103,Seattle Mariners,78,84,0.481
+2007,103,Boston Red Sox,96,66,0.593
+2007,103,New York Yankees,94,68,0.58
+2007,103,Toronto Blue Jays,83,79,0.512
+2007,103,Baltimore Orioles,69,93,0.426
+2007,103,Tampa Bay Devil Rays,66,96,0.407
+2007,103,Cleveland Indians,96,66,0.593
+2007,103,Detroit Tigers,88,74,0.543
+2007,103,Minnesota Twins,79,83,0.488
+2007,103,Chicago White Sox,72,90,0.444
+2007,103,Kansas City Royals,69,93,0.426
+2007,103,Los Angeles Angels,94,68,0.58
+2007,103,Seattle Mariners,88,74,0.543
+2007,103,Oakland Athletics,76,86,0.469
+2007,103,Texas Rangers,75,87,0.463
+2008,103,Tampa Bay Rays,97,65,0.599
+2008,103,Boston Red Sox,95,67,0.586
+2008,103,New York Yankees,89,73,0.549
+2008,103,Toronto Blue Jays,86,76,0.531
+2008,103,Baltimore Orioles,68,93,0.422
+2008,103,Chicago White Sox,89,74,0.546
+2008,103,Minnesota Twins,88,75,0.54
+2008,103,Cleveland Indians,81,81,0.5
+2008,103,Kansas City Royals,75,87,0.463
+2008,103,Detroit Tigers,74,88,0.457
+2008,103,Los Angeles Angels,100,62,0.617
+2008,103,Texas Rangers,79,83,0.488
+2008,103,Oakland Athletics,75,86,0.466
+2008,103,Seattle Mariners,61,101,0.377
+2009,103,New York Yankees,103,59,0.636
+2009,103,Boston Red Sox,95,67,0.586
+2009,103,Tampa Bay Rays,84,78,0.519
+2009,103,Toronto Blue Jays,75,87,0.463
+2009,103,Baltimore Orioles,64,98,0.395
+2009,103,Minnesota Twins,87,76,0.534
+2009,103,Detroit Tigers,86,77,0.528
+2009,103,Chicago White Sox,79,83,0.488
+2009,103,Cleveland Indians,65,97,0.401
+2009,103,Kansas City Royals,65,97,0.401
+2009,103,Los Angeles Angels,97,65,0.599
+2009,103,Texas Rangers,87,75,0.537
+2009,103,Seattle Mariners,85,77,0.525
+2009,103,Oakland Athletics,75,87,0.463
+2010,103,Tampa Bay Rays,96,66,0.593
+2010,103,New York Yankees,95,67,0.586
+2010,103,Boston Red Sox,89,73,0.549
+2010,103,Toronto Blue Jays,85,77,0.525
+2010,103,Baltimore Orioles,66,96,0.407
+2010,103,Minnesota Twins,94,68,0.58
+2010,103,Chicago White Sox,88,74,0.543
+2010,103,Detroit Tigers,81,81,0.5
+2010,103,Cleveland Indians,69,93,0.426
+2010,103,Kansas City Royals,67,95,0.414
+2010,103,Texas Rangers,90,72,0.556
+2010,103,Oakland Athletics,81,81,0.5
+2010,103,Los Angeles Angels,80,82,0.494
+2010,103,Seattle Mariners,61,101,0.377
+2011,103,New York Yankees,97,65,0.599
+2011,103,Tampa Bay Rays,91,71,0.562
+2011,103,Boston Red Sox,90,72,0.556
+2011,103,Toronto Blue Jays,81,81,0.5
+2011,103,Baltimore Orioles,69,93,0.426
+2011,103,Detroit Tigers,95,67,0.586
+2011,103,Cleveland Indians,80,82,0.494
+2011,103,Chicago White Sox,79,83,0.488
+2011,103,Kansas City Royals,71,91,0.438
+2011,103,Minnesota Twins,63,99,0.389
+2011,103,Texas Rangers,96,66,0.593
+2011,103,Los Angeles Angels,86,76,0.531
+2011,103,Oakland Athletics,74,88,0.457
+2011,103,Seattle Mariners,67,95,0.414
+2012,103,New York Yankees,95,67,0.586
+2012,103,Baltimore Orioles,93,69,0.574
+2012,103,Tampa Bay Rays,90,72,0.556
+2012,103,Toronto Blue Jays,73,89,0.451
+2012,103,Boston Red Sox,69,93,0.426
+2012,103,Detroit Tigers,88,74,0.543
+2012,103,Chicago White Sox,85,77,0.525
+2012,103,Kansas City Royals,72,90,0.444
+2012,103,Cleveland Indians,68,94,0.42
+2012,103,Minnesota Twins,66,96,0.407
+2012,103,Oakland Athletics,94,68,0.58
+2012,103,Texas Rangers,93,69,0.574
+2012,103,Los Angeles Angels,89,73,0.549
+2012,103,Seattle Mariners,75,87,0.463
+2013,103,Boston Red Sox,97,65,0.599
+2013,103,Tampa Bay Rays,92,71,0.564
+2013,103,Baltimore Orioles,85,77,0.525
+2013,103,New York Yankees,85,77,0.525
+2013,103,Toronto Blue Jays,74,88,0.457
+2013,103,Detroit Tigers,93,69,0.574
+2013,103,Cleveland Indians,92,70,0.568
+2013,103,Kansas City Royals,86,76,0.531
+2013,103,Minnesota Twins,66,96,0.407
+2013,103,Chicago White Sox,63,99,0.389
+2013,103,Oakland Athletics,96,66,0.593
+2013,103,Texas Rangers,91,72,0.558
+2013,103,Los Angeles Angels,78,84,0.481
+2013,103,Seattle Mariners,71,91,0.438
+2013,103,Houston Astros,51,111,0.315
+2014,103,Baltimore Orioles,96,66,0.593
+2014,103,New York Yankees,84,78,0.519
+2014,103,Toronto Blue Jays,83,79,0.512
+2014,103,Tampa Bay Rays,77,85,0.475
+2014,103,Boston Red Sox,71,91,0.438
+2014,103,Detroit Tigers,90,72,0.556
+2014,103,Kansas City Royals,89,73,0.549
+2014,103,Cleveland Indians,85,77,0.525
+2014,103,Chicago White Sox,73,89,0.451
+2014,103,Minnesota Twins,70,92,0.432
+2014,103,Los Angeles Angels,98,64,0.605
+2014,103,Oakland Athletics,88,74,0.543
+2014,103,Seattle Mariners,87,75,0.537
+2014,103,Houston Astros,70,92,0.432
+2014,103,Texas Rangers,67,95,0.414
+2015,103,Toronto Blue Jays,93,69,0.574
+2015,103,New York Yankees,87,75,0.537
+2015,103,Baltimore Orioles,81,81,0.5
+2015,103,Tampa Bay Rays,80,82,0.494
+2015,103,Boston Red Sox,78,84,0.481
+2015,103,Kansas City Royals,95,67,0.586
+2015,103,Minnesota Twins,83,79,0.512
+2015,103,Cleveland Indians,81,80,0.503
+2015,103,Chicago White Sox,76,86,0.469
+2015,103,Detroit Tigers,74,87,0.46
+2015,103,Texas Rangers,88,74,0.543
+2015,103,Houston Astros,86,76,0.531
+2015,103,Los Angeles Angels,85,77,0.525
+2015,103,Seattle Mariners,76,86,0.469
+2015,103,Oakland Athletics,68,94,0.42
+2016,103,Boston Red Sox,93,69,0.574
+2016,103,Baltimore Orioles,89,73,0.549
+2016,103,Toronto Blue Jays,89,73,0.549
+2016,103,New York Yankees,84,78,0.519
+2016,103,Tampa Bay Rays,68,94,0.42
+2016,103,Cleveland Indians,94,67,0.584
+2016,103,Detroit Tigers,86,75,0.534
+2016,103,Kansas City Royals,81,81,0.5
+2016,103,Chicago White Sox,78,84,0.481
+2016,103,Minnesota Twins,59,103,0.364
+2016,103,Texas Rangers,95,67,0.586
+2016,103,Seattle Mariners,86,76,0.531
+2016,103,Houston Astros,84,78,0.519
+2016,103,Los Angeles Angels,74,88,0.457
+2016,103,Oakland Athletics,69,93,0.426
+2017,103,Boston Red Sox,93,69,0.574
+2017,103,New York Yankees,91,71,0.562
+2017,103,Tampa Bay Rays,80,82,0.494
+2017,103,Toronto Blue Jays,76,86,0.469
+2017,103,Baltimore Orioles,75,87,0.463
+2017,103,Cleveland Indians,102,60,0.63
+2017,103,Minnesota Twins,85,77,0.525
+2017,103,Kansas City Royals,80,82,0.494
+2017,103,Chicago White Sox,67,95,0.414
+2017,103,Detroit Tigers,64,98,0.395
+2017,103,Houston Astros,101,61,0.623
+2017,103,Los Angeles Angels,80,82,0.494
+2017,103,Seattle Mariners,78,84,0.481
+2017,103,Texas Rangers,78,84,0.481
+2017,103,Oakland Athletics,75,87,0.463
+2018,103,Boston Red Sox,108,54,0.667
+2018,103,New York Yankees,100,62,0.617
+2018,103,Tampa Bay Rays,90,72,0.556
+2018,103,Toronto Blue Jays,73,89,0.451
+2018,103,Baltimore Orioles,47,115,0.29
+2018,103,Cleveland Indians,91,71,0.562
+2018,103,Minnesota Twins,78,84,0.481
+2018,103,Detroit Tigers,64,98,0.395
+2018,103,Chicago White Sox,62,100,0.383
+2018,103,Kansas City Royals,58,104,0.358
+2018,103,Houston Astros,103,59,0.636
+2018,103,Oakland Athletics,97,65,0.599
+2018,103,Seattle Mariners,89,73,0.549
+2018,103,Los Angeles Angels,80,82,0.494
+2018,103,Texas Rangers,67,95,0.414
+2019,103,New York Yankees,103,59,0.636
+2019,103,Tampa Bay Rays,96,66,0.593
+2019,103,Boston Red Sox,84,78,0.519
+2019,103,Toronto Blue Jays,67,95,0.414
+2019,103,Baltimore Orioles,54,108,0.333
+2019,103,Minnesota Twins,101,61,0.623
+2019,103,Cleveland Indians,93,69,0.574
+2019,103,Chicago White Sox,72,89,0.447
+2019,103,Kansas City Royals,59,103,0.364
+2019,103,Detroit Tigers,47,114,0.292
+2019,103,Houston Astros,107,55,0.66
+2019,103,Oakland Athletics,97,65,0.599
+2019,103,Texas Rangers,78,84,0.481
+2019,103,Los Angeles Angels,72,90,0.444
+2019,103,Seattle Mariners,68,94,0.42
+2020,103,Tampa Bay Rays,40,20,0.667
+2020,103,New York Yankees,33,27,0.55
+2020,103,Toronto Blue Jays,32,28,0.533
+2020,103,Baltimore Orioles,25,35,0.417
+2020,103,Boston Red Sox,24,36,0.4
+2020,103,Minnesota Twins,36,24,0.6
+2020,103,Cleveland Indians,35,25,0.583
+2020,103,Chicago White Sox,35,25,0.583
+2020,103,Kansas City Royals,26,34,0.433
+2020,103,Detroit Tigers,23,35,0.397
+2020,103,Oakland Athletics,36,24,0.6
+2020,103,Houston Astros,29,31,0.483
+2020,103,Seattle Mariners,27,33,0.45
+2020,103,Los Angeles Angels,26,34,0.433
+2020,103,Texas Rangers,22,38,0.367
+2021,103,Tampa Bay Rays,100,62,0.617
+2021,103,Boston Red Sox,92,70,0.568
+2021,103,New York Yankees,92,70,0.568
+2021,103,Toronto Blue Jays,91,71,0.562
+2021,103,Baltimore Orioles,52,110,0.321
+2021,103,Chicago White Sox,93,69,0.574
+2021,103,Cleveland Indians,80,82,0.494
+2021,103,Detroit Tigers,77,85,0.475
+2021,103,Kansas City Royals,74,88,0.457
+2021,103,Minnesota Twins,73,89,0.451
+2021,103,Houston Astros,95,67,0.586
+2021,103,Seattle Mariners,90,72,0.556
+2021,103,Oakland Athletics,86,76,0.531
+2021,103,Los Angeles Angels,77,85,0.475
+2021,103,Texas Rangers,60,102,0.37
+2022,103,New York Yankees,99,63,0.611
+2022,103,Toronto Blue Jays,92,70,0.568
+2022,103,Tampa Bay Rays,86,76,0.531
+2022,103,Baltimore Orioles,83,79,0.512
+2022,103,Boston Red Sox,78,84,0.481
+2022,103,Cleveland Guardians,92,70,0.568
+2022,103,Chicago White Sox,81,81,0.5
+2022,103,Minnesota Twins,78,84,0.481
+2022,103,Detroit Tigers,66,96,0.407
+2022,103,Kansas City Royals,65,97,0.401
+2022,103,Houston Astros,106,56,0.654
+2022,103,Seattle Mariners,90,72,0.556
+2022,103,Los Angeles Angels,73,89,0.451
+2022,103,Texas Rangers,68,94,0.42
+2022,103,Oakland Athletics,60,102,0.37
+2023,103,Baltimore Orioles,101,61,0.623
+2023,103,Tampa Bay Rays,99,63,0.611
+2023,103,Toronto Blue Jays,89,73,0.549
+2023,103,New York Yankees,82,80,0.506
+2023,103,Boston Red Sox,78,84,0.481
+2023,103,Minnesota Twins,87,75,0.537
+2023,103,Detroit Tigers,78,84,0.481
+2023,103,Cleveland Guardians,76,86,0.469
+2023,103,Chicago White Sox,61,101,0.377
+2023,103,Kansas City Royals,56,106,0.346
+2023,103,Houston Astros,90,72,0.556
+2023,103,Texas Rangers,90,72,0.556
+2023,103,Seattle Mariners,88,74,0.543
+2023,103,Los Angeles Angels,73,89,0.451
+2023,103,Oakland Athletics,50,112,0.309
+2024,103,New York Yankees,94,68,0.58
+2024,103,Baltimore Orioles,91,71,0.562
+2024,103,Boston Red Sox,81,81,0.5
+2024,103,Tampa Bay Rays,80,82,0.494
+2024,103,Toronto Blue Jays,74,88,0.457
+2024,103,Cleveland Guardians,92,69,0.571
+2024,103,Kansas City Royals,86,76,0.531
+2024,103,Detroit Tigers,86,76,0.531
+2024,103,Minnesota Twins,82,80,0.506
+2024,103,Chicago White Sox,41,121,0.253
+2024,103,Houston Astros,88,73,0.547
+2024,103,Seattle Mariners,85,77,0.525
+2024,103,Texas Rangers,78,84,0.481
+2024,103,Oakland Athletics,69,93,0.426
+2024,103,Los Angeles Angels,63,99,0.389
+1969,104,New York Mets,100,62,0.617
+1969,104,Chicago Cubs,92,70,0.568
+1969,104,Pittsburgh Pirates,88,74,0.543
+1969,104,St. Louis Cardinals,87,75,0.537
+1969,104,Philadelphia Phillies,63,99,0.389
+1969,104,Montreal Expos,52,110,0.321
+1969,104,Atlanta Braves,93,69,0.574
+1969,104,San Francisco Giants,90,72,0.556
+1969,104,Cincinnati Reds,89,73,0.549
+1969,104,Los Angeles Dodgers,85,77,0.525
+1969,104,Houston Astros,81,81,0.5
+1969,104,San Diego Padres,52,110,0.321
+1970,104,Pittsburgh Pirates,89,73,0.549
+1970,104,Chicago Cubs,84,78,0.519
+1970,104,New York Mets,83,79,0.512
+1970,104,St. Louis Cardinals,76,86,0.469
+1970,104,Philadelphia Phillies,73,88,0.453
+1970,104,Montreal Expos,73,89,0.451
+1970,104,Cincinnati Reds,102,60,0.63
+1970,104,Los Angeles Dodgers,87,74,0.54
+1970,104,San Francisco Giants,86,76,0.531
+1970,104,Houston Astros,79,83,0.488
+1970,104,Atlanta Braves,76,86,0.469
+1970,104,San Diego Padres,63,99,0.389
+1971,104,Pittsburgh Pirates,97,65,0.599
+1971,104,St. Louis Cardinals,90,72,0.556
+1971,104,Chicago Cubs,83,79,0.512
+1971,104,New York Mets,83,79,0.512
+1971,104,Montreal Expos,71,90,0.441
+1971,104,Philadelphia Phillies,67,95,0.414
+1971,104,San Francisco Giants,90,72,0.556
+1971,104,Los Angeles Dodgers,89,73,0.549
+1971,104,Atlanta Braves,82,80,0.506
+1971,104,Cincinnati Reds,79,83,0.488
+1971,104,Houston Astros,79,83,0.488
+1971,104,San Diego Padres,61,100,0.379
+1972,104,Pittsburgh Pirates,96,59,0.619
+1972,104,Chicago Cubs,85,70,0.548
+1972,104,New York Mets,83,73,0.532
+1972,104,St. Louis Cardinals,75,81,0.481
+1972,104,Montreal Expos,70,86,0.449
+1972,104,Philadelphia Phillies,59,97,0.378
+1972,104,Cincinnati Reds,95,59,0.617
+1972,104,Houston Astros,84,69,0.549
+1972,104,Los Angeles Dodgers,85,70,0.548
+1972,104,Atlanta Braves,70,84,0.455
+1972,104,San Francisco Giants,69,86,0.445
+1972,104,San Diego Padres,58,95,0.379
+1973,104,New York Mets,82,79,0.509
+1973,104,St. Louis Cardinals,81,81,0.5
+1973,104,Pittsburgh Pirates,80,82,0.494
+1973,104,Montreal Expos,79,83,0.488
+1973,104,Chicago Cubs,77,84,0.478
+1973,104,Philadelphia Phillies,71,91,0.438
+1973,104,Cincinnati Reds,99,63,0.611
+1973,104,Los Angeles Dodgers,95,66,0.59
+1973,104,San Francisco Giants,88,74,0.543
+1973,104,Houston Astros,82,80,0.506
+1973,104,Atlanta Braves,76,85,0.472
+1973,104,San Diego Padres,60,102,0.37
+1974,104,Pittsburgh Pirates,88,74,0.543
+1974,104,St. Louis Cardinals,86,75,0.534
+1974,104,Philadelphia Phillies,80,82,0.494
+1974,104,Montreal Expos,79,82,0.491
+1974,104,New York Mets,71,91,0.438
+1974,104,Chicago Cubs,66,96,0.407
+1974,104,Los Angeles Dodgers,102,60,0.63
+1974,104,Cincinnati Reds,98,64,0.605
+1974,104,Atlanta Braves,88,74,0.543
+1974,104,Houston Astros,81,81,0.5
+1974,104,San Francisco Giants,72,90,0.444
+1974,104,San Diego Padres,60,102,0.37
+1975,104,Pittsburgh Pirates,92,69,0.571
+1975,104,Philadelphia Phillies,86,76,0.531
+1975,104,New York Mets,82,80,0.506
+1975,104,St. Louis Cardinals,82,80,0.506
+1975,104,Chicago Cubs,75,87,0.463
+1975,104,Montreal Expos,75,87,0.463
+1975,104,Cincinnati Reds,108,54,0.667
+1975,104,Los Angeles Dodgers,88,74,0.543
+1975,104,San Francisco Giants,80,81,0.497
+1975,104,San Diego Padres,71,91,0.438
+1975,104,Atlanta Braves,67,94,0.416
+1975,104,Houston Astros,64,97,0.398
+1976,104,Philadelphia Phillies,101,61,0.623
+1976,104,Pittsburgh Pirates,92,70,0.568
+1976,104,New York Mets,86,76,0.531
+1976,104,Chicago Cubs,75,87,0.463
+1976,104,St. Louis Cardinals,72,90,0.444
+1976,104,Montreal Expos,55,107,0.34
+1976,104,Cincinnati Reds,102,60,0.63
+1976,104,Los Angeles Dodgers,92,70,0.568
+1976,104,Houston Astros,80,82,0.494
+1976,104,San Francisco Giants,74,88,0.457
+1976,104,San Diego Padres,73,89,0.451
+1976,104,Atlanta Braves,70,92,0.432
+1977,104,Philadelphia Phillies,101,61,0.623
+1977,104,Pittsburgh Pirates,96,66,0.593
+1977,104,St. Louis Cardinals,83,79,0.512
+1977,104,Chicago Cubs,81,81,0.5
+1977,104,Montreal Expos,75,87,0.463
+1977,104,New York Mets,64,98,0.395
+1977,104,Los Angeles Dodgers,98,64,0.605
+1977,104,Cincinnati Reds,88,74,0.543
+1977,104,Houston Astros,81,81,0.5
+1977,104,San Francisco Giants,75,87,0.463
+1977,104,San Diego Padres,69,93,0.426
+1977,104,Atlanta Braves,61,101,0.377
+1978,104,Philadelphia Phillies,90,72,0.556
+1978,104,Pittsburgh Pirates,88,73,0.547
+1978,104,Chicago Cubs,79,83,0.488
+1978,104,Montreal Expos,76,86,0.469
+1978,104,St. Louis Cardinals,69,93,0.426
+1978,104,New York Mets,66,96,0.407
+1978,104,Los Angeles Dodgers,95,67,0.586
+1978,104,Cincinnati Reds,92,69,0.571
+1978,104,San Francisco Giants,89,73,0.549
+1978,104,San Diego Padres,84,78,0.519
+1978,104,Houston Astros,74,88,0.457
+1978,104,Atlanta Braves,69,93,0.426
+1979,104,Pittsburgh Pirates,98,64,0.605
+1979,104,Montreal Expos,95,65,0.594
+1979,104,St. Louis Cardinals,86,76,0.531
+1979,104,Philadelphia Phillies,84,78,0.519
+1979,104,Chicago Cubs,80,82,0.494
+1979,104,New York Mets,63,99,0.389
+1979,104,Cincinnati Reds,90,71,0.559
+1979,104,Houston Astros,89,73,0.549
+1979,104,Los Angeles Dodgers,79,83,0.488
+1979,104,San Francisco Giants,71,91,0.438
+1979,104,San Diego Padres,68,93,0.422
+1979,104,Atlanta Braves,66,94,0.412
+1980,104,Philadelphia Phillies,91,71,0.562
+1980,104,Montreal Expos,90,72,0.556
+1980,104,Pittsburgh Pirates,83,79,0.512
+1980,104,St. Louis Cardinals,74,88,0.457
+1980,104,New York Mets,67,95,0.414
+1980,104,Chicago Cubs,64,98,0.395
+1980,104,Houston Astros,93,70,0.571
+1980,104,Los Angeles Dodgers,92,71,0.564
+1980,104,Cincinnati Reds,89,73,0.549
+1980,104,Atlanta Braves,81,80,0.503
+1980,104,San Francisco Giants,75,86,0.466
+1980,104,San Diego Padres,73,89,0.451
+1981,104,St. Louis Cardinals,59,43,0.578
+1981,104,Montreal Expos,60,48,0.556
+1981,104,Philadelphia Phillies,59,48,0.551
+1981,104,Pittsburgh Pirates,46,56,0.451
+1981,104,New York Mets,41,62,0.398
+1981,104,Chicago Cubs,38,65,0.369
+1981,104,Cincinnati Reds,66,42,0.611
+1981,104,Los Angeles Dodgers,63,47,0.573
+1981,104,Houston Astros,61,49,0.555
+1981,104,San Francisco Giants,56,55,0.505
+1981,104,Atlanta Braves,50,56,0.472
+1981,104,San Diego Padres,41,69,0.373
+1982,104,St. Louis Cardinals,92,70,0.568
+1982,104,Philadelphia Phillies,89,73,0.549
+1982,104,Montreal Expos,86,76,0.531
+1982,104,Pittsburgh Pirates,84,78,0.519
+1982,104,Chicago Cubs,73,89,0.451
+1982,104,New York Mets,65,97,0.401
+1982,104,Atlanta Braves,89,73,0.549
+1982,104,Los Angeles Dodgers,88,74,0.543
+1982,104,San Francisco Giants,87,75,0.537
+1982,104,San Diego Padres,81,81,0.5
+1982,104,Houston Astros,77,85,0.475
+1982,104,Cincinnati Reds,61,101,0.377
+1983,104,Philadelphia Phillies,90,72,0.556
+1983,104,Pittsburgh Pirates,84,78,0.519
+1983,104,Montreal Expos,82,80,0.506
+1983,104,St. Louis Cardinals,79,83,0.488
+1983,104,Chicago Cubs,71,91,0.438
+1983,104,New York Mets,68,94,0.42
+1983,104,Los Angeles Dodgers,91,71,0.562
+1983,104,Atlanta Braves,88,74,0.543
+1983,104,Houston Astros,85,77,0.525
+1983,104,San Diego Padres,81,81,0.5
+1983,104,San Francisco Giants,79,83,0.488
+1983,104,Cincinnati Reds,74,88,0.457
+1984,104,Chicago Cubs,96,65,0.596
+1984,104,New York Mets,90,72,0.556
+1984,104,St. Louis Cardinals,84,78,0.519
+1984,104,Philadelphia Phillies,81,81,0.5
+1984,104,Montreal Expos,78,83,0.484
+1984,104,Pittsburgh Pirates,75,87,0.463
+1984,104,San Diego Padres,92,70,0.568
+1984,104,Atlanta Braves,80,82,0.494
+1984,104,Houston Astros,80,82,0.494
+1984,104,Los Angeles Dodgers,79,83,0.488
+1984,104,Cincinnati Reds,70,92,0.432
+1984,104,San Francisco Giants,66,96,0.407
+1985,104,St. Louis Cardinals,101,61,0.623
+1985,104,New York Mets,98,64,0.605
+1985,104,Montreal Expos,84,77,0.522
+1985,104,Chicago Cubs,77,84,0.478
+1985,104,Philadelphia Phillies,75,87,0.463
+1985,104,Pittsburgh Pirates,57,104,0.354
+1985,104,Los Angeles Dodgers,95,67,0.586
+1985,104,Cincinnati Reds,89,72,0.553
+1985,104,Houston Astros,83,79,0.512
+1985,104,San Diego Padres,83,79,0.512
+1985,104,Atlanta Braves,66,96,0.407
+1985,104,San Francisco Giants,62,100,0.383
+1986,104,New York Mets,108,54,0.667
+1986,104,Philadelphia Phillies,86,75,0.534
+1986,104,St. Louis Cardinals,79,82,0.491
+1986,104,Montreal Expos,78,83,0.484
+1986,104,Chicago Cubs,70,90,0.438
+1986,104,Pittsburgh Pirates,64,98,0.395
+1986,104,Houston Astros,96,66,0.593
+1986,104,Cincinnati Reds,86,76,0.531
+1986,104,San Francisco Giants,83,79,0.512
+1986,104,San Diego Padres,74,88,0.457
+1986,104,Los Angeles Dodgers,73,89,0.451
+1986,104,Atlanta Braves,72,89,0.447
+1987,104,St. Louis Cardinals,95,67,0.586
+1987,104,New York Mets,92,70,0.568
+1987,104,Montreal Expos,91,71,0.562
+1987,104,Philadelphia Phillies,80,82,0.494
+1987,104,Pittsburgh Pirates,80,82,0.494
+1987,104,Chicago Cubs,76,85,0.472
+1987,104,San Francisco Giants,90,72,0.556
+1987,104,Cincinnati Reds,84,78,0.519
+1987,104,Houston Astros,76,86,0.469
+1987,104,Los Angeles Dodgers,73,89,0.451
+1987,104,Atlanta Braves,69,92,0.429
+1987,104,San Diego Padres,65,97,0.401
+1988,104,New York Mets,100,60,0.625
+1988,104,Pittsburgh Pirates,85,75,0.531
+1988,104,Montreal Expos,81,81,0.5
+1988,104,Chicago Cubs,77,85,0.475
+1988,104,St. Louis Cardinals,76,86,0.469
+1988,104,Philadelphia Phillies,65,96,0.404
+1988,104,Los Angeles Dodgers,94,67,0.584
+1988,104,Cincinnati Reds,87,74,0.54
+1988,104,San Diego Padres,83,78,0.516
+1988,104,San Francisco Giants,83,79,0.512
+1988,104,Houston Astros,82,80,0.506
+1988,104,Atlanta Braves,54,106,0.338
+1989,104,Chicago Cubs,93,69,0.574
+1989,104,New York Mets,87,75,0.537
+1989,104,St. Louis Cardinals,86,76,0.531
+1989,104,Montreal Expos,81,81,0.5
+1989,104,Pittsburgh Pirates,74,88,0.457
+1989,104,Philadelphia Phillies,67,95,0.414
+1989,104,San Francisco Giants,92,70,0.568
+1989,104,San Diego Padres,89,73,0.549
+1989,104,Houston Astros,86,76,0.531
+1989,104,Los Angeles Dodgers,77,83,0.481
+1989,104,Cincinnati Reds,75,87,0.463
+1989,104,Atlanta Braves,63,97,0.394
+1990,104,Pittsburgh Pirates,95,67,0.586
+1990,104,New York Mets,91,71,0.562
+1990,104,Montreal Expos,85,77,0.525
+1990,104,Chicago Cubs,77,85,0.475
+1990,104,Philadelphia Phillies,77,85,0.475
+1990,104,St. Louis Cardinals,70,92,0.432
+1990,104,Cincinnati Reds,91,71,0.562
+1990,104,Los Angeles Dodgers,86,76,0.531
+1990,104,San Francisco Giants,85,77,0.525
+1990,104,Houston Astros,75,87,0.463
+1990,104,San Diego Padres,75,87,0.463
+1990,104,Atlanta Braves,65,97,0.401
+1991,104,Pittsburgh Pirates,98,64,0.605
+1991,104,St. Louis Cardinals,84,78,0.519
+1991,104,Philadelphia Phillies,78,84,0.481
+1991,104,Chicago Cubs,77,83,0.481
+1991,104,New York Mets,77,84,0.478
+1991,104,Montreal Expos,71,90,0.441
+1991,104,Atlanta Braves,94,68,0.58
+1991,104,Los Angeles Dodgers,93,69,0.574
+1991,104,San Diego Padres,84,78,0.519
+1991,104,San Francisco Giants,75,87,0.463
+1991,104,Cincinnati Reds,74,88,0.457
+1991,104,Houston Astros,65,97,0.401
+1992,104,Pittsburgh Pirates,96,66,0.593
+1992,104,Montreal Expos,87,75,0.537
+1992,104,St. Louis Cardinals,83,79,0.512
+1992,104,Chicago Cubs,78,84,0.481
+1992,104,New York Mets,72,90,0.444
+1992,104,Philadelphia Phillies,70,92,0.432
+1992,104,Atlanta Braves,98,64,0.605
+1992,104,Cincinnati Reds,90,72,0.556
+1992,104,San Diego Padres,82,80,0.506
+1992,104,Houston Astros,81,81,0.5
+1992,104,San Francisco Giants,72,90,0.444
+1992,104,Los Angeles Dodgers,63,99,0.389
+1993,104,Philadelphia Phillies,97,65,0.599
+1993,104,Montreal Expos,94,68,0.58
+1993,104,St. Louis Cardinals,87,75,0.537
+1993,104,Chicago Cubs,84,78,0.519
+1993,104,Pittsburgh Pirates,75,87,0.463
+1993,104,Florida Marlins,64,98,0.395
+1993,104,New York Mets,59,103,0.364
+1993,104,Atlanta Braves,104,58,0.642
+1993,104,San Francisco Giants,103,59,0.636
+1993,104,Houston Astros,85,77,0.525
+1993,104,Los Angeles Dodgers,81,81,0.5
+1993,104,Cincinnati Reds,73,89,0.451
+1993,104,Colorado Rockies,67,95,0.414
+1993,104,San Diego Padres,61,101,0.377
+1994,104,Montreal Expos,74,40,0.649
+1994,104,Atlanta Braves,68,46,0.596
+1994,104,New York Mets,55,58,0.487
+1994,104,Philadelphia Phillies,54,61,0.47
+1994,104,Florida Marlins,51,64,0.443
+1994,104,Cincinnati Reds,66,48,0.579
+1994,104,Houston Astros,66,49,0.574
+1994,104,Pittsburgh Pirates,53,61,0.465
+1994,104,St. Louis Cardinals,53,61,0.465
+1994,104,Chicago Cubs,49,64,0.434
+1994,104,Los Angeles Dodgers,58,56,0.509
+1994,104,San Francisco Giants,55,60,0.478
+1994,104,Colorado Rockies,53,64,0.453
+1994,104,San Diego Padres,47,70,0.402
+1995,104,Atlanta Braves,90,54,0.625
+1995,104,New York Mets,69,75,0.479
+1995,104,Philadelphia Phillies,69,75,0.479
+1995,104,Florida Marlins,67,76,0.469
+1995,104,Montreal Expos,66,78,0.458
+1995,104,Cincinnati Reds,85,59,0.59
+1995,104,Houston Astros,76,68,0.528
+1995,104,Chicago Cubs,73,71,0.507
+1995,104,St. Louis Cardinals,62,81,0.434
+1995,104,Pittsburgh Pirates,58,86,0.403
+1995,104,Los Angeles Dodgers,78,66,0.542
+1995,104,Colorado Rockies,77,67,0.535
+1995,104,San Diego Padres,70,74,0.486
+1995,104,San Francisco Giants,67,77,0.465
+1996,104,Atlanta Braves,96,66,0.593
+1996,104,Montreal Expos,88,74,0.543
+1996,104,Florida Marlins,80,82,0.494
+1996,104,New York Mets,71,91,0.438
+1996,104,Philadelphia Phillies,67,95,0.414
+1996,104,St. Louis Cardinals,88,74,0.543
+1996,104,Houston Astros,82,80,0.506
+1996,104,Cincinnati Reds,81,81,0.5
+1996,104,Chicago Cubs,76,86,0.469
+1996,104,Pittsburgh Pirates,73,89,0.451
+1996,104,San Diego Padres,91,71,0.562
+1996,104,Los Angeles Dodgers,90,72,0.556
+1996,104,Colorado Rockies,83,79,0.512
+1996,104,San Francisco Giants,68,94,0.42
+1997,104,Atlanta Braves,101,61,0.623
+1997,104,Florida Marlins,92,70,0.568
+1997,104,New York Mets,88,74,0.543
+1997,104,Montreal Expos,78,84,0.481
+1997,104,Philadelphia Phillies,68,94,0.42
+1997,104,Houston Astros,84,78,0.519
+1997,104,Pittsburgh Pirates,79,83,0.488
+1997,104,Cincinnati Reds,76,86,0.469
+1997,104,St. Louis Cardinals,73,89,0.451
+1997,104,Chicago Cubs,68,94,0.42
+1997,104,San Francisco Giants,90,72,0.556
+1997,104,Los Angeles Dodgers,88,74,0.543
+1997,104,Colorado Rockies,83,79,0.512
+1997,104,San Diego Padres,76,86,0.469
+1998,104,Atlanta Braves,106,56,0.654
+1998,104,New York Mets,88,74,0.543
+1998,104,Philadelphia Phillies,75,87,0.463
+1998,104,Montreal Expos,65,97,0.401
+1998,104,Florida Marlins,54,108,0.333
+1998,104,Houston Astros,102,60,0.63
+1998,104,Chicago Cubs,90,73,0.552
+1998,104,St. Louis Cardinals,83,79,0.512
+1998,104,Cincinnati Reds,77,85,0.475
+1998,104,Milwaukee Brewers,74,88,0.457
+1998,104,Pittsburgh Pirates,69,93,0.426
+1998,104,San Diego Padres,98,64,0.605
+1998,104,San Francisco Giants,89,74,0.546
+1998,104,Los Angeles Dodgers,83,79,0.512
+1998,104,Colorado Rockies,77,85,0.475
+1998,104,Arizona Diamondbacks,65,97,0.401
+1999,104,Atlanta Braves,103,59,0.636
+1999,104,New York Mets,97,66,0.595
+1999,104,Philadelphia Phillies,77,85,0.475
+1999,104,Montreal Expos,68,94,0.42
+1999,104,Florida Marlins,64,98,0.395
+1999,104,Houston Astros,97,65,0.599
+1999,104,Cincinnati Reds,96,67,0.589
+1999,104,Pittsburgh Pirates,78,83,0.484
+1999,104,St. Louis Cardinals,75,86,0.466
+1999,104,Milwaukee Brewers,74,87,0.46
+1999,104,Chicago Cubs,67,95,0.414
+1999,104,Arizona Diamondbacks,100,62,0.617
+1999,104,San Francisco Giants,86,76,0.531
+1999,104,Los Angeles Dodgers,77,85,0.475
+1999,104,San Diego Padres,74,88,0.457
+1999,104,Colorado Rockies,72,90,0.444
+2000,104,Atlanta Braves,95,67,0.586
+2000,104,New York Mets,94,68,0.58
+2000,104,Florida Marlins,79,82,0.491
+2000,104,Montreal Expos,67,95,0.414
+2000,104,Philadelphia Phillies,65,97,0.401
+2000,104,St. Louis Cardinals,95,67,0.586
+2000,104,Cincinnati Reds,85,77,0.525
+2000,104,Milwaukee Brewers,73,89,0.451
+2000,104,Houston Astros,72,90,0.444
+2000,104,Pittsburgh Pirates,69,93,0.426
+2000,104,Chicago Cubs,65,97,0.401
+2000,104,San Francisco Giants,97,65,0.599
+2000,104,Los Angeles Dodgers,86,76,0.531
+2000,104,Arizona Diamondbacks,85,77,0.525
+2000,104,Colorado Rockies,82,80,0.506
+2000,104,San Diego Padres,76,86,0.469
+2001,104,Atlanta Braves,88,74,0.543
+2001,104,Philadelphia Phillies,86,76,0.531
+2001,104,New York Mets,82,80,0.506
+2001,104,Florida Marlins,76,86,0.469
+2001,104,Montreal Expos,68,94,0.42
+2001,104,Houston Astros,93,69,0.574
+2001,104,St. Louis Cardinals,93,69,0.574
+2001,104,Chicago Cubs,88,74,0.543
+2001,104,Milwaukee Brewers,68,94,0.42
+2001,104,Cincinnati Reds,66,96,0.407
+2001,104,Pittsburgh Pirates,62,100,0.383
+2001,104,Arizona Diamondbacks,92,70,0.568
+2001,104,San Francisco Giants,90,72,0.556
+2001,104,Los Angeles Dodgers,86,76,0.531
+2001,104,San Diego Padres,79,83,0.488
+2001,104,Colorado Rockies,73,89,0.451
+2002,104,Atlanta Braves,101,59,0.631
+2002,104,Montreal Expos,83,79,0.512
+2002,104,Philadelphia Phillies,80,81,0.497
+2002,104,Florida Marlins,79,83,0.488
+2002,104,New York Mets,75,86,0.466
+2002,104,St. Louis Cardinals,97,65,0.599
+2002,104,Houston Astros,84,78,0.519
+2002,104,Cincinnati Reds,78,84,0.481
+2002,104,Pittsburgh Pirates,72,89,0.447
+2002,104,Chicago Cubs,67,95,0.414
+2002,104,Milwaukee Brewers,56,106,0.346
+2002,104,Arizona Diamondbacks,98,64,0.605
+2002,104,San Francisco Giants,95,66,0.59
+2002,104,Los Angeles Dodgers,92,70,0.568
+2002,104,Colorado Rockies,73,89,0.451
+2002,104,San Diego Padres,66,96,0.407
+2003,104,Atlanta Braves,101,61,0.623
+2003,104,Florida Marlins,91,71,0.562
+2003,104,Philadelphia Phillies,86,76,0.531
+2003,104,Montreal Expos,83,79,0.512
+2003,104,New York Mets,66,95,0.41
+2003,104,Chicago Cubs,88,74,0.543
+2003,104,Houston Astros,87,75,0.537
+2003,104,St. Louis Cardinals,85,77,0.525
+2003,104,Pittsburgh Pirates,75,87,0.463
+2003,104,Cincinnati Reds,69,93,0.426
+2003,104,Milwaukee Brewers,68,94,0.42
+2003,104,San Francisco Giants,100,61,0.621
+2003,104,Los Angeles Dodgers,85,77,0.525
+2003,104,Arizona Diamondbacks,84,78,0.519
+2003,104,Colorado Rockies,74,88,0.457
+2003,104,San Diego Padres,64,98,0.395
+2004,104,Atlanta Braves,96,66,0.593
+2004,104,Philadelphia Phillies,86,76,0.531
+2004,104,Florida Marlins,83,79,0.512
+2004,104,New York Mets,71,91,0.438
+2004,104,Montreal Expos,67,95,0.414
+2004,104,St. Louis Cardinals,105,57,0.648
+2004,104,Houston Astros,92,70,0.568
+2004,104,Chicago Cubs,89,73,0.549
+2004,104,Cincinnati Reds,76,86,0.469
+2004,104,Pittsburgh Pirates,72,89,0.447
+2004,104,Milwaukee Brewers,67,94,0.416
+2004,104,Los Angeles Dodgers,93,69,0.574
+2004,104,San Francisco Giants,91,71,0.562
+2004,104,San Diego Padres,87,75,0.537
+2004,104,Colorado Rockies,68,94,0.42
+2004,104,Arizona Diamondbacks,51,111,0.315
+2005,104,Atlanta Braves,90,72,0.556
+2005,104,Philadelphia Phillies,88,74,0.543
+2005,104,Florida Marlins,83,79,0.512
+2005,104,New York Mets,83,79,0.512
+2005,104,Washington Nationals,81,81,0.5
+2005,104,St. Louis Cardinals,100,62,0.617
+2005,104,Houston Astros,89,73,0.549
+2005,104,Milwaukee Brewers,81,81,0.5
+2005,104,Chicago Cubs,79,83,0.488
+2005,104,Cincinnati Reds,73,89,0.451
+2005,104,Pittsburgh Pirates,67,95,0.414
+2005,104,San Diego Padres,82,80,0.506
+2005,104,Arizona Diamondbacks,77,85,0.475
+2005,104,San Francisco Giants,75,87,0.463
+2005,104,Los Angeles Dodgers,71,91,0.438
+2005,104,Colorado Rockies,67,95,0.414
+2006,104,New York Mets,97,65,0.599
+2006,104,Philadelphia Phillies,85,77,0.525
+2006,104,Atlanta Braves,79,83,0.488
+2006,104,Florida Marlins,78,84,0.481
+2006,104,Washington Nationals,71,91,0.438
+2006,104,St. Louis Cardinals,83,78,0.516
+2006,104,Houston Astros,82,80,0.506
+2006,104,Cincinnati Reds,80,82,0.494
+2006,104,Milwaukee Brewers,75,87,0.463
+2006,104,Pittsburgh Pirates,67,95,0.414
+2006,104,Chicago Cubs,66,96,0.407
+2006,104,Los Angeles Dodgers,88,74,0.543
+2006,104,San Diego Padres,88,74,0.543
+2006,104,San Francisco Giants,76,85,0.472
+2006,104,Arizona Diamondbacks,76,86,0.469
+2006,104,Colorado Rockies,76,86,0.469
+2007,104,Philadelphia Phillies,89,73,0.549
+2007,104,New York Mets,88,74,0.543
+2007,104,Atlanta Braves,84,78,0.519
+2007,104,Washington Nationals,73,89,0.451
+2007,104,Florida Marlins,71,91,0.438
+2007,104,Chicago Cubs,85,77,0.525
+2007,104,Milwaukee Brewers,83,79,0.512
+2007,104,St. Louis Cardinals,78,84,0.481
+2007,104,Houston Astros,73,89,0.451
+2007,104,Cincinnati Reds,72,90,0.444
+2007,104,Pittsburgh Pirates,68,94,0.42
+2007,104,Arizona Diamondbacks,90,72,0.556
+2007,104,Colorado Rockies,90,73,0.552
+2007,104,San Diego Padres,89,74,0.546
+2007,104,Los Angeles Dodgers,82,80,0.506
+2007,104,San Francisco Giants,71,91,0.438
+2008,104,Philadelphia Phillies,92,70,0.568
+2008,104,New York Mets,89,73,0.549
+2008,104,Florida Marlins,84,77,0.522
+2008,104,Atlanta Braves,72,90,0.444
+2008,104,Washington Nationals,59,102,0.366
+2008,104,Chicago Cubs,97,64,0.602
+2008,104,Milwaukee Brewers,90,72,0.556
+2008,104,Houston Astros,86,75,0.534
+2008,104,St. Louis Cardinals,86,76,0.531
+2008,104,Cincinnati Reds,74,88,0.457
+2008,104,Pittsburgh Pirates,67,95,0.414
+2008,104,Los Angeles Dodgers,84,78,0.519
+2008,104,Arizona Diamondbacks,82,80,0.506
+2008,104,Colorado Rockies,74,88,0.457
+2008,104,San Francisco Giants,72,90,0.444
+2008,104,San Diego Padres,63,99,0.389
+2009,104,Philadelphia Phillies,93,69,0.574
+2009,104,Florida Marlins,87,75,0.537
+2009,104,Atlanta Braves,86,76,0.531
+2009,104,New York Mets,70,92,0.432
+2009,104,Washington Nationals,59,103,0.364
+2009,104,St. Louis Cardinals,91,71,0.562
+2009,104,Chicago Cubs,83,78,0.516
+2009,104,Milwaukee Brewers,80,82,0.494
+2009,104,Cincinnati Reds,78,84,0.481
+2009,104,Houston Astros,74,88,0.457
+2009,104,Pittsburgh Pirates,62,99,0.385
+2009,104,Los Angeles Dodgers,95,67,0.586
+2009,104,Colorado Rockies,92,70,0.568
+2009,104,San Francisco Giants,88,74,0.543
+2009,104,San Diego Padres,75,87,0.463
+2009,104,Arizona Diamondbacks,70,92,0.432
+2010,104,Philadelphia Phillies,97,65,0.599
+2010,104,Atlanta Braves,91,71,0.562
+2010,104,Florida Marlins,80,82,0.494
+2010,104,New York Mets,79,83,0.488
+2010,104,Washington Nationals,69,93,0.426
+2010,104,Cincinnati Reds,91,71,0.562
+2010,104,St. Louis Cardinals,86,76,0.531
+2010,104,Milwaukee Brewers,77,85,0.475
+2010,104,Houston Astros,76,86,0.469
+2010,104,Chicago Cubs,75,87,0.463
+2010,104,Pittsburgh Pirates,57,105,0.352
+2010,104,San Francisco Giants,92,70,0.568
+2010,104,San Diego Padres,90,72,0.556
+2010,104,Colorado Rockies,83,79,0.512
+2010,104,Los Angeles Dodgers,80,82,0.494
+2010,104,Arizona Diamondbacks,65,97,0.401
+2011,104,Philadelphia Phillies,102,60,0.63
+2011,104,Atlanta Braves,89,73,0.549
+2011,104,Washington Nationals,80,81,0.497
+2011,104,New York Mets,77,85,0.475
+2011,104,Florida Marlins,72,90,0.444
+2011,104,Milwaukee Brewers,96,66,0.593
+2011,104,St. Louis Cardinals,90,72,0.556
+2011,104,Cincinnati Reds,79,83,0.488
+2011,104,Pittsburgh Pirates,72,90,0.444
+2011,104,Chicago Cubs,71,91,0.438
+2011,104,Houston Astros,56,106,0.346
+2011,104,Arizona Diamondbacks,94,68,0.58
+2011,104,San Francisco Giants,86,76,0.531
+2011,104,Los Angeles Dodgers,82,79,0.509
+2011,104,Colorado Rockies,73,89,0.451
+2011,104,San Diego Padres,71,91,0.438
+2012,104,Washington Nationals,98,64,0.605
+2012,104,Atlanta Braves,94,68,0.58
+2012,104,Philadelphia Phillies,81,81,0.5
+2012,104,New York Mets,74,88,0.457
+2012,104,Miami Marlins,69,93,0.426
+2012,104,Cincinnati Reds,97,65,0.599
+2012,104,St. Louis Cardinals,88,74,0.543
+2012,104,Milwaukee Brewers,83,79,0.512
+2012,104,Pittsburgh Pirates,79,83,0.488
+2012,104,Chicago Cubs,61,101,0.377
+2012,104,Houston Astros,55,107,0.34
+2012,104,San Francisco Giants,94,68,0.58
+2012,104,Los Angeles Dodgers,86,76,0.531
+2012,104,Arizona Diamondbacks,81,81,0.5
+2012,104,San Diego Padres,76,86,0.469
+2012,104,Colorado Rockies,64,98,0.395
+2013,104,Atlanta Braves,96,66,0.593
+2013,104,Washington Nationals,86,76,0.531
+2013,104,New York Mets,74,88,0.457
+2013,104,Philadelphia Phillies,73,89,0.451
+2013,104,Miami Marlins,62,100,0.383
+2013,104,St. Louis Cardinals,97,65,0.599
+2013,104,Pittsburgh Pirates,94,68,0.58
+2013,104,Cincinnati Reds,90,72,0.556
+2013,104,Milwaukee Brewers,74,88,0.457
+2013,104,Chicago Cubs,66,96,0.407
+2013,104,Los Angeles Dodgers,92,70,0.568
+2013,104,Arizona Diamondbacks,81,81,0.5
+2013,104,San Diego Padres,76,86,0.469
+2013,104,San Francisco Giants,76,86,0.469
+2013,104,Colorado Rockies,74,88,0.457
+2014,104,Washington Nationals,96,66,0.593
+2014,104,Atlanta Braves,79,83,0.488
+2014,104,New York Mets,79,83,0.488
+2014,104,Miami Marlins,77,85,0.475
+2014,104,Philadelphia Phillies,73,89,0.451
+2014,104,St. Louis Cardinals,90,72,0.556
+2014,104,Pittsburgh Pirates,88,74,0.543
+2014,104,Milwaukee Brewers,82,80,0.506
+2014,104,Cincinnati Reds,76,86,0.469
+2014,104,Chicago Cubs,73,89,0.451
+2014,104,Los Angeles Dodgers,94,68,0.58
+2014,104,San Francisco Giants,88,74,0.543
+2014,104,San Diego Padres,77,85,0.475
+2014,104,Colorado Rockies,66,96,0.407
+2014,104,Arizona Diamondbacks,64,98,0.395
+2015,104,New York Mets,90,72,0.556
+2015,104,Washington Nationals,83,79,0.512
+2015,104,Miami Marlins,71,91,0.438
+2015,104,Atlanta Braves,67,95,0.414
+2015,104,Philadelphia Phillies,63,99,0.389
+2015,104,St. Louis Cardinals,100,62,0.617
+2015,104,Pittsburgh Pirates,98,64,0.605
+2015,104,Chicago Cubs,97,65,0.599
+2015,104,Milwaukee Brewers,68,94,0.42
+2015,104,Cincinnati Reds,64,98,0.395
+2015,104,Los Angeles Dodgers,92,70,0.568
+2015,104,San Francisco Giants,84,78,0.519
+2015,104,Arizona Diamondbacks,79,83,0.488
+2015,104,San Diego Padres,74,88,0.457
+2015,104,Colorado Rockies,68,94,0.42
+2016,104,Washington Nationals,95,67,0.586
+2016,104,New York Mets,87,75,0.537
+2016,104,Miami Marlins,79,82,0.491
+2016,104,Philadelphia Phillies,71,91,0.438
+2016,104,Atlanta Braves,68,93,0.422
+2016,104,Chicago Cubs,103,58,0.64
+2016,104,St. Louis Cardinals,86,76,0.531
+2016,104,Pittsburgh Pirates,78,83,0.484
+2016,104,Milwaukee Brewers,73,89,0.451
+2016,104,Cincinnati Reds,68,94,0.42
+2016,104,Los Angeles Dodgers,91,71,0.562
+2016,104,San Francisco Giants,87,75,0.537
+2016,104,Colorado Rockies,75,87,0.463
+2016,104,Arizona Diamondbacks,69,93,0.426
+2016,104,San Diego Padres,68,94,0.42
+2017,104,Washington Nationals,97,65,0.599
+2017,104,Miami Marlins,77,85,0.475
+2017,104,Atlanta Braves,72,90,0.444
+2017,104,New York Mets,70,92,0.432
+2017,104,Philadelphia Phillies,66,96,0.407
+2017,104,Chicago Cubs,92,70,0.568
+2017,104,Milwaukee Brewers,86,76,0.531
+2017,104,St. Louis Cardinals,83,79,0.512
+2017,104,Pittsburgh Pirates,75,87,0.463
+2017,104,Cincinnati Reds,68,94,0.42
+2017,104,Los Angeles Dodgers,104,58,0.642
+2017,104,Arizona Diamondbacks,93,69,0.574
+2017,104,Colorado Rockies,87,75,0.537
+2017,104,San Diego Padres,71,91,0.438
+2017,104,San Francisco Giants,64,98,0.395
+2018,104,Atlanta Braves,90,72,0.556
+2018,104,Washington Nationals,82,80,0.506
+2018,104,Philadelphia Phillies,80,82,0.494
+2018,104,New York Mets,77,85,0.475
+2018,104,Miami Marlins,63,98,0.391
+2018,104,Milwaukee Brewers,96,67,0.589
+2018,104,Chicago Cubs,95,68,0.583
+2018,104,St. Louis Cardinals,88,74,0.543
+2018,104,Pittsburgh Pirates,82,79,0.509
+2018,104,Cincinnati Reds,67,95,0.414
+2018,104,Los Angeles Dodgers,92,71,0.564
+2018,104,Colorado Rockies,91,72,0.558
+2018,104,Arizona Diamondbacks,82,80,0.506
+2018,104,San Francisco Giants,73,89,0.451
+2018,104,San Diego Padres,66,96,0.407
+2019,104,Atlanta Braves,97,65,0.599
+2019,104,Washington Nationals,93,69,0.574
+2019,104,New York Mets,86,76,0.531
+2019,104,Philadelphia Phillies,81,81,0.5
+2019,104,Miami Marlins,57,105,0.352
+2019,104,St. Louis Cardinals,91,71,0.562
+2019,104,Milwaukee Brewers,89,73,0.549
+2019,104,Chicago Cubs,84,78,0.519
+2019,104,Cincinnati Reds,75,87,0.463
+2019,104,Pittsburgh Pirates,69,93,0.426
+2019,104,Los Angeles Dodgers,106,56,0.654
+2019,104,Arizona Diamondbacks,85,77,0.525
+2019,104,San Francisco Giants,77,85,0.475
+2019,104,Colorado Rockies,71,91,0.438
+2019,104,San Diego Padres,70,92,0.432
+2020,104,Atlanta Braves,35,25,0.583
+2020,104,Miami Marlins,31,29,0.517
+2020,104,Philadelphia Phillies,28,32,0.467
+2020,104,New York Mets,26,34,0.433
+2020,104,Washington Nationals,26,34,0.433
+2020,104,Chicago Cubs,34,26,0.567
+2020,104,St. Louis Cardinals,30,28,0.517
+2020,104,Cincinnati Reds,31,29,0.517
+2020,104,Milwaukee Brewers,29,31,0.483
+2020,104,Pittsburgh Pirates,19,41,0.317
+2020,104,Los Angeles Dodgers,43,17,0.717
+2020,104,San Diego Padres,37,23,0.617
+2020,104,San Francisco Giants,29,31,0.483
+2020,104,Colorado Rockies,26,34,0.433
+2020,104,Arizona Diamondbacks,25,35,0.417
+2021,104,Atlanta Braves,88,73,0.547
+2021,104,Philadelphia Phillies,82,80,0.506
+2021,104,New York Mets,77,85,0.475
+2021,104,Miami Marlins,67,95,0.414
+2021,104,Washington Nationals,65,97,0.401
+2021,104,Milwaukee Brewers,95,67,0.586
+2021,104,St. Louis Cardinals,90,72,0.556
+2021,104,Cincinnati Reds,83,79,0.512
+2021,104,Chicago Cubs,71,91,0.438
+2021,104,Pittsburgh Pirates,61,101,0.377
+2021,104,San Francisco Giants,107,55,0.66
+2021,104,Los Angeles Dodgers,106,56,0.654
+2021,104,San Diego Padres,79,83,0.488
+2021,104,Colorado Rockies,74,87,0.46
+2021,104,Arizona Diamondbacks,52,110,0.321
+2022,104,Atlanta Braves,101,61,0.623
+2022,104,New York Mets,101,61,0.623
+2022,104,Philadelphia Phillies,87,75,0.537
+2022,104,Miami Marlins,69,93,0.426
+2022,104,Washington Nationals,55,107,0.34
+2022,104,St. Louis Cardinals,93,69,0.574
+2022,104,Milwaukee Brewers,86,76,0.531
+2022,104,Chicago Cubs,74,88,0.457
+2022,104,Cincinnati Reds,62,100,0.383
+2022,104,Pittsburgh Pirates,62,100,0.383
+2022,104,Los Angeles Dodgers,111,51,0.685
+2022,104,San Diego Padres,89,73,0.549
+2022,104,San Francisco Giants,81,81,0.5
+2022,104,Arizona Diamondbacks,74,88,0.457
+2022,104,Colorado Rockies,68,94,0.42
+2023,104,Atlanta Braves,104,58,0.642
+2023,104,Philadelphia Phillies,90,72,0.556
+2023,104,Miami Marlins,84,78,0.519
+2023,104,New York Mets,75,87,0.463
+2023,104,Washington Nationals,71,91,0.438
+2023,104,Milwaukee Brewers,92,70,0.568
+2023,104,Chicago Cubs,83,79,0.512
+2023,104,Cincinnati Reds,82,80,0.506
+2023,104,Pittsburgh Pirates,76,86,0.469
+2023,104,St. Louis Cardinals,71,91,0.438
+2023,104,Los Angeles Dodgers,100,62,0.617
+2023,104,Arizona Diamondbacks,84,78,0.519
+2023,104,San Diego Padres,82,80,0.506
+2023,104,San Francisco Giants,79,83,0.488
+2023,104,Colorado Rockies,59,103,0.364
+2024,104,Philadelphia Phillies,95,67,0.586
+2024,104,Atlanta Braves,89,73,0.549
+2024,104,New York Mets,89,73,0.549
+2024,104,Washington Nationals,71,91,0.438
+2024,104,Miami Marlins,62,100,0.383
+2024,104,Milwaukee Brewers,93,69,0.574
+2024,104,Chicago Cubs,83,79,0.512
+2024,104,St. Louis Cardinals,83,79,0.512
+2024,104,Cincinnati Reds,77,85,0.475
+2024,104,Pittsburgh Pirates,76,86,0.469
+2024,104,Los Angeles Dodgers,98,64,0.605
+2024,104,San Diego Padres,93,69,0.574
+2024,104,Arizona Diamondbacks,89,73,0.549
+2024,104,San Francisco Giants,80,82,0.494
+2024,104,Colorado Rockies,61,101,0.377

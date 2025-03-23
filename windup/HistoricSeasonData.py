@@ -1,5 +1,7 @@
 import pandas as pd
 import statsapi, csv
+from sqlalchemy import create_engine
+import psycopg2
 from collections import Counter
 from League_Info import leagueFormation
 
@@ -16,13 +18,13 @@ class historicSeasons():
         -------
         seasonResults : DataFrame of season gamelog file
         '''
-        columns = ['gamedate','numberofgames','dayofweek',
+        columns = ['game_date','numberofgames','dayofweek',
                     'roadtm','roadlg','roadtmgamenum',
                     'hometm','homelg','hometmgamenum',
-                    'roadscor','homescore','lengthofgame_outs','dayornight',
+                    'roadscore','homescore','length_of_game_outs','dayornight',
                     'completioninformation','forfeit','protest',
                     'parkid','attendance',
-                    'timeofgame_min','roadlinescore','homelinescore',
+                    'timeofgame_min','road_linescore','home_linescore',
                     'roadab','roadh','roaddouble','roadtriple','roadhr','roadrbi',
                     'roadsachit','roadsacfly','roadhbp','roadbb','roadibb',
                     'roadstrikeout','roadsb','roadcs','roadgdp','roadcatcherint',
@@ -62,9 +64,9 @@ class historicSeasons():
                     'home_bat9id','home_bat9name','home_bat9pos',
                     'additionalinfo','acquisitioninfo']
         seasonResults = pd.read_csv(locationStr, names= columns,
-                                    usecols = ['gamedate','roadtm','hometm',
-                                               'roadscor','homescore','lengthofgame_outs',
-                                               'roadlinescore','homelinescore'])
+                                    usecols = ['game_date','roadtm','hometm',
+                                               'roadscore','homescore','length_of_game_outs',
+                                               'road_linescore','home_linescore'])
         return seasonResults
     
     def formatHistoricSeason():
@@ -114,7 +116,7 @@ class historicSeasons():
         # Store Historic Standings
         historicList = leagueFormation.flattenLsts(allStandings)
         historicList = leagueFormation.flattenLsts(historicList)
-        with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\historicStandings.csv', 'w', newline='') as f:
+        with open(r'C:\Users\aaron\Documents\GitHub\Horizon-Americas-Super-Cup\windup\historicStandings.csv', 'w', newline='') as f:
             writer = csv.writer(f)
             writer.writerow(['Year','League','Team','Wins','Losses', 'Winning Pct'])
             writer.writerows(historicList)
@@ -132,45 +134,53 @@ class historicSeasons():
         extrasResultRate: rate of MLB extra-inning games with score (home/away specific)
         seasons_exOuts: DF of MLB extra-inning games, for number of outs post zombie runner change
         '''
-        locationStr = r'C:\Users\Public\retrosheets\gl2020_23'
-        season24 = historicSeasons.readSeason(locationStr+r'\gl2024.txt')
-        season23 = historicSeasons.readSeason(locationStr+r'\gl2023.txt')
-        season22 = historicSeasons.readSeason(locationStr+r'\gl2022.txt')
-        season21 = historicSeasons.readSeason(locationStr+r'\gl2021.txt')
-        locationStr = r'C:\Users\Public\retrosheets\gl2010_19'
-        season19 = historicSeasons.readSeason(locationStr+r'\gl2019.txt')
-        season18 = historicSeasons.readSeason(locationStr+r'\gl2018.txt')
-        season17 = historicSeasons.readSeason(locationStr+r'\gl2017.txt')
-        season16 = historicSeasons.readSeason(locationStr+r'\gl2016.txt')
-        seasons = pd.concat([season24,season23,season22,season21,season19,season18,season17,season16])
+        # locationStr = r'C:\Users\Public\retrosheets\gl2020_23'
+        # season24 = historicSeasons.readSeason(locationStr+r'\gl2024.txt')
+        # season23 = historicSeasons.readSeason(locationStr+r'\gl2023.txt')
+        # season22 = historicSeasons.readSeason(locationStr+r'\gl2022.txt')
+        # season21 = historicSeasons.readSeason(locationStr+r'\gl2021.txt')
+        # locationStr = r'C:\Users\Public\retrosheets\gl2010_19'
+        # season19 = historicSeasons.readSeason(locationStr+r'\gl2019.txt')
+        # season18 = historicSeasons.readSeason(locationStr+r'\gl2018.txt')
+        # season17 = historicSeasons.readSeason(locationStr+r'\gl2017.txt')
+        # season16 = historicSeasons.readSeason(locationStr+r'\gl2016.txt')
+        # seasons = pd.concat([season24,season23,season22,season21,season19,season18,season17,season16])
+        
+        # Establishing the connection
+        engine = create_engine(r"postgresql://postgres:C0rnD0gS0nn3t!@localhost:5432/mlb")
+
+        ## Game log query
+        seasons = pd.read_sql('''select * from mlb.gamelogs.games 
+                                 where game_date > '2016-02-01' 
+                                 and extract(year from game_date) != 2020''', engine)
         
         # Score commonality
-        regulation = seasons[(seasons['lengthofgame_outs']>=51) | (seasons['lengthofgame_outs']<=54) ]
-        regulation.drop(columns = ['roadlinescore','homelinescore'])
-        resultRate = regulation[['roadscor','homescore']].value_counts().reset_index()
+        regulation = seasons[(seasons['length_of_game_outs']>=51) | (seasons['length_of_game_outs']<=54) ]
+        regulation.drop(columns = ['road_linescore','home_linescore'])
+        resultRate = regulation[['roadscore','homescore']].value_counts().reset_index()
         resultRate['PercentOfTotal'] = resultRate['count']/resultRate['count'].sum()
 
-        resultRate.loc[resultRate['homescore'] > resultRate['roadscor'], 'winner'] = 'Home'
-        resultRate.loc[resultRate['homescore'] < resultRate['roadscor'], 'winner'] = 'Road'
+        resultRate.loc[resultRate['homescore'] > resultRate['roadscore'], 'winner'] = 'Home'
+        resultRate.loc[resultRate['homescore'] < resultRate['roadscore'], 'winner'] = 'Road'
 
         # rate of going to extras
-        extras = seasons[seasons['lengthofgame_outs']>54]
+        extras = seasons[seasons['length_of_game_outs']>54]
         extrasRate = round(len(extras)/len(seasons),3)*100
         
         # Rates for result of extras
-        extras.drop(columns = ['roadlinescore','homelinescore'])
-        extrasResultRate = extras[['roadscor','homescore']].value_counts().reset_index()
+        extras.drop(columns = ['road_linescore','home_linescore'])
+        extrasResultRate = extras[['roadscore','homescore']].value_counts().reset_index()
         extrasResultRate['PercentOfTotal'] = extrasResultRate['count']/extrasResultRate['count'].sum()
         
-        extrasResultRate.loc[extrasResultRate['homescore'] > extrasResultRate['roadscor'], 'winner'] = 'Home'
-        extrasResultRate.loc[extrasResultRate['homescore'] < extrasResultRate['roadscor'], 'winner'] = 'Road'
+        extrasResultRate.loc[extrasResultRate['homescore'] > extrasResultRate['roadscore'], 'winner'] = 'Home'
+        extrasResultRate.loc[extrasResultRate['homescore'] < extrasResultRate['roadscore'], 'winner'] = 'Road'
         
         # Rate number of extras route
-        seasons['gamedate'] = pd.to_datetime(seasons['gamedate'], format='%Y%m%d')
+        seasons['game_date'] = pd.to_datetime(seasons['game_date'], format='%Y%m%d')
         # Reducing seasons to pre-2020 rule change
-        seasons_exOuts = seasons[(seasons['gamedate'] < '2020-1-1') & 
-                                 (seasons['lengthofgame_outs'] > 54)][['lengthofgame_outs']].copy()
-        seasons_exOuts['lengthofgame_outs'] = seasons_exOuts['lengthofgame_outs']-54
+        seasons_exOuts = seasons[(seasons['game_date'] < '2020-1-1') & 
+                                 (seasons['length_of_game_outs'] > 54)][['length_of_game_outs']].copy()
+        seasons_exOuts['length_of_game_outs'] = seasons_exOuts['length_of_game_outs']-54
         seasons_exOuts = seasons_exOuts.value_counts().reset_index()
         seasons_exOuts['PercentOfTotal'] = seasons_exOuts['count']/seasons_exOuts['count'].sum()
         
@@ -231,15 +241,15 @@ class historicSeasons():
         home_odds = [round(x[3]*100,3) for x in scoreOptions_reg if x[4] == 'Home']
         road_RsltOptions = [[x[1],x[0]] for x in scoreOptions_reg if x[4] == 'Road']
         road_odds = [round(x[3]*100,3) for x in scoreOptions_reg if x[4] == 'Road']
-
+        
         # Creating list of unique scores and common rates for ties
         scoreOptions_ex = extras.values.tolist()
         regulationScores = []
         for game in scoreOptions_ex:
             score_rd = []
-            for inn in game[6][:9]:score_rd.append(int(inn)) 
+            for inn in game[19][:9]:score_rd.append(int(inn)) 
             score_hm = []
-            for inn in game[7][:9]:score_hm.append(int(inn)) 
+            for inn in game[20][:9]:score_hm.append(int(inn)) 
             if sum(score_rd) == sum(score_hm):
                 regulationScores.append(sum(score_rd))
             else:
