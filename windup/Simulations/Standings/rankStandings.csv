@@ -1,0 +1,97 @@
+Sim Number,Conference,Division,Group,Team,pre-WU1 Rank,post-WU1 Rank,pre-WU2 Rank,post-WU2 Rank,pre-WU3 Rank,post-WU3 Rank,pre-WU4 Rank,post-WU4 Rank
+1,Founders,East Division,Port Group,New Haven,1,1,1,1,1,1,1,1
+1,Founders,East Division,Port Group,Montreal,2,2,2,2,2,2,2,1
+1,Founders,East Division,Port Group,Boston,3,3,4,4,4,3,4,4
+1,Founders,East Division,Port Group,New York,4,4,3,3,3,3,3,3
+1,Founders,East Division,Canal Group,Toronto,1,1,1,1,1,1,1,1
+1,Founders,East Division,Canal Group,Pittsburgh,2,2,1,2,2,2,2,2
+1,Founders,East Division,Canal Group,"Washington, D.C.",3,3,4,4,4,4,4,4
+1,Founders,East Division,Canal Group,Philadelphia,4,4,3,3,3,3,3,3
+1,Founders,West Division,Aurora Group,Chicago,1,1,3,3,2,2,2,2
+1,Founders,West Division,Aurora Group,St. Paul,2,1,1,1,1,1,1,1
+1,Founders,West Division,Aurora Group,Winnipeg,3,3,2,2,3,2,3,3
+1,Founders,West Division,Aurora Group,St. Louis,4,4,4,4,4,4,3,3
+1,Founders,West Division,Rail Group,Detroit,1,1,3,3,3,2,3,3
+1,Founders,West Division,Rail Group,Columbus,2,3,4,4,4,4,2,2
+1,Founders,West Division,Rail Group,Indianapolis,3,2,1,1,1,1,1,1
+1,Founders,West Division,Rail Group,Akron,4,4,2,2,2,3,4,4
+1,Visionaries,East Division,Ridge Group,Charlotte,1,1,1,1,1,1,1,1
+1,Visionaries,East Division,Ridge Group,Atlanta,2,3,2,2,4,4,4,4
+1,Visionaries,East Division,Ridge Group,Nashville,3,1,3,3,2,1,2,2
+1,Visionaries,East Division,Ridge Group,Birmingham,4,4,4,4,3,3,3,3
+1,Visionaries,East Division,Desert Group,Merida,1,1,1,1,2,1,2,2
+1,Visionaries,East Division,Desert Group,Monterrey,2,2,2,2,1,2,1,1
+1,Visionaries,East Division,Desert Group,Dallas,3,3,3,3,3,3,3,3
+1,Visionaries,East Division,Desert Group,San Antonio,4,4,4,4,4,4,4,4
+1,Visionaries,West Division,Pass Group,Vancouver,1,2,1,1,1,1,1,1
+1,Visionaries,West Division,Pass Group,Denver,2,3,3,4,3,3,3,3
+1,Visionaries,West Division,Pass Group,Calgary,3,1,2,2,2,2,2,2
+1,Visionaries,West Division,Pass Group,Seattle,4,4,4,3,4,4,4,4
+1,Visionaries,West Division,Rush Group,Oakland,1,1,3,3,4,4,4,4
+1,Visionaries,West Division,Rush Group,Los Angeles,1,1,4,3,1,1,1,1
+1,Visionaries,West Division,Rush Group,Tijuana,3,2,1,1,3,3,2,2
+1,Visionaries,West Division,Rush Group,Phoenix,4,4,2,2,2,2,3,1
+2,Founders,East Division,Port Group,New York,1,1,2,2,3,3,3,3
+2,Founders,East Division,Port Group,New Haven,2,2,1,1,1,1,2,2
+2,Founders,East Division,Port Group,Montreal,3,3,4,4,4,4,4,4
+2,Founders,East Division,Port Group,Boston,3,4,3,3,2,1,1,1
+2,Founders,East Division,Canal Group,"Washington, D.C.",1,1,2,2,2,2,2,2
+2,Founders,East Division,Canal Group,Pittsburgh,2,3,3,3,4,4,4,4
+2,Founders,East Division,Canal Group,Philadelphia,3,4,4,3,3,3,3,3
+2,Founders,East Division,Canal Group,Toronto,4,2,1,1,1,1,1,1
+2,Founders,West Division,Aurora Group,St. Paul,1,1,2,2,1,1,1,1
+2,Founders,West Division,Aurora Group,Winnipeg,2,2,1,1,2,2,2,2
+2,Founders,West Division,Aurora Group,Chicago,3,3,3,3,4,4,4,4
+2,Founders,West Division,Aurora Group,St. Louis,4,4,4,3,3,3,3,3
+2,Founders,West Division,Rail Group,Columbus,1,1,1,1,2,2,2,2
+2,Founders,West Division,Rail Group,Detroit,2,2,3,3,3,3,3,3
+2,Founders,West Division,Rail Group,Akron,3,3,2,2,1,1,1,1
+2,Founders,West Division,Rail Group,Indianapolis,4,4,4,4,4,4,4,4
+2,Visionaries,East Division,Ridge Group,Nashville,1,1,3,4,4,4,2,3
+2,Visionaries,East Division,Ridge Group,Atlanta,2,1,1,1,1,1,1,1
+2,Visionaries,East Division,Ridge Group,Birmingham,3,3,2,2,2,2,4,4
+2,Visionaries,East Division,Ridge Group,Charlotte,4,4,4,2,3,2,3,2
+2,Visionaries,East Division,Desert Group,Merida,1,1,1,1,1,1,1,1
+2,Visionaries,East Division,Desert Group,San Antonio,2,2,3,3,4,4,4,4
+2,Visionaries,East Division,Desert Group,Monterrey,3,2,2,2,2,2,2,2
+2,Visionaries,East Division,Desert Group,Dallas,4,4,4,4,3,3,3,3
+2,Visionaries,West Division,Pass Group,Vancouver,1,1,1,1,1,1,1,1
+2,Visionaries,West Division,Pass Group,Calgary,2,2,2,2,4,4,4,3
+2,Visionaries,West Division,Pass Group,Seattle,3,3,3,3,2,2,2,2
+2,Visionaries,West Division,Pass Group,Denver,4,4,4,4,3,3,3,4
+2,Visionaries,West Division,Rush Group,Oakland,1,2,3,3,3,3,3,3
+2,Visionaries,West Division,Rush Group,Phoenix,1,1,2,2,1,1,1,2
+2,Visionaries,West Division,Rush Group,Los Angeles,3,3,1,1,2,2,2,1
+2,Visionaries,West Division,Rush Group,Tijuana,4,4,4,4,4,4,4,4
+3,Founders,East Division,Port Group,New York,1,1,3,3,3,3,2,2
+3,Founders,East Division,Port Group,New Haven,2,2,2,2,2,2,3,3
+3,Founders,East Division,Port Group,Boston,3,3,1,1,1,1,1,1
+3,Founders,East Division,Port Group,Montreal,4,4,4,4,4,4,4,4
+3,Founders,East Division,Canal Group,Pittsburgh,1,1,1,1,1,1,1,1
+3,Founders,East Division,Canal Group,Philadelphia,2,2,2,3,3,3,3,3
+3,Founders,East Division,Canal Group,"Washington, D.C.",3,3,3,2,2,2,2,2
+3,Founders,East Division,Canal Group,Toronto,4,4,4,4,4,4,4,4
+3,Founders,West Division,Aurora Group,Chicago,1,1,1,1,1,1,1,1
+3,Founders,West Division,Aurora Group,St. Louis,2,2,2,1,2,2,2,2
+3,Founders,West Division,Aurora Group,St. Paul,3,3,3,3,3,3,4,3
+3,Founders,West Division,Aurora Group,Winnipeg,4,3,4,4,4,4,3,4
+3,Founders,West Division,Rail Group,Akron,1,1,1,1,1,1,1,1
+3,Founders,West Division,Rail Group,Columbus,2,2,4,4,4,4,4,4
+3,Founders,West Division,Rail Group,Detroit,3,2,3,3,3,2,2,2
+3,Founders,West Division,Rail Group,Indianapolis,3,4,2,2,2,3,3,3
+3,Visionaries,East Division,Ridge Group,Atlanta,1,3,1,1,1,1,1,1
+3,Visionaries,East Division,Ridge Group,Nashville,2,1,4,4,2,2,3,3
+3,Visionaries,East Division,Ridge Group,Birmingham,2,1,3,2,4,4,4,4
+3,Visionaries,East Division,Ridge Group,Charlotte,4,4,2,2,3,2,2,2
+3,Visionaries,East Division,Desert Group,Monterrey,1,1,1,1,1,1,1,1
+3,Visionaries,East Division,Desert Group,Dallas,2,2,2,2,2,2,2,2
+3,Visionaries,East Division,Desert Group,Merida,3,3,3,3,4,4,4,4
+3,Visionaries,East Division,Desert Group,San Antonio,4,4,4,4,3,3,3,3
+3,Visionaries,West Division,Pass Group,Vancouver,1,1,1,1,1,1,1,1
+3,Visionaries,West Division,Pass Group,Calgary,2,2,2,2,2,2,2,2
+3,Visionaries,West Division,Pass Group,Denver,3,3,3,4,3,3,3,3
+3,Visionaries,West Division,Pass Group,Seattle,3,3,4,3,4,4,4,4
+3,Visionaries,West Division,Rush Group,Phoenix,1,1,1,1,1,1,1,1
+3,Visionaries,West Division,Rush Group,Oakland,2,2,4,4,4,4,4,4
+3,Visionaries,West Division,Rush Group,Los Angeles,3,3,2,2,2,2,2,2
+3,Visionaries,West Division,Rush Group,Tijuana,4,4,3,3,3,3,3,3

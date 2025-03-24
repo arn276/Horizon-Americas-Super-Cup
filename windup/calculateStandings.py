@@ -1,4 +1,5 @@
 import csv
+from datetime import datetime, timedelta
 from operator import itemgetter
 
 class standings():
@@ -38,7 +39,7 @@ class standings():
                             teamLosses_pre += teamLosses_post
                         
                         try:
-                            winPct_pre = round(teamWins_pre/(teamWins_pre+teamLosses_pre),3)
+                            winPct_pre = teamWins_pre/(teamWins_pre+teamLosses_pre)
                         except ZeroDivisionError:
                             winPct_pre = None
                         WUpre_Standings[i-1][division].append([team ,teamWins_pre,teamLosses_pre,teamTies_pre,winPct_pre])
@@ -48,7 +49,7 @@ class standings():
                         teamWins_post += teamWins_wu
                         teamLosses_post += teamLosses_wu
                         try:
-                            winPct_post = round(teamWins_post/(teamWins_post+teamLosses_post),3)
+                            winPct_post = teamWins_post/(teamWins_post+teamLosses_post)
                         except ZeroDivisionError:
                             winPct_post = None
                         WUpost_Standings[i-1][division].append([team ,teamWins_post,teamLosses_post,0,winPct_post])
@@ -171,7 +172,7 @@ class standings():
         return standingParts
     
     
-    def rankStandings(standingParts,teamStength):
+    def rankStandings(number,standingParts,teamStength, dates):
         '''
         Parameters
         ----------
@@ -192,10 +193,20 @@ class standings():
             elif standingParts[i][9] == standingParts[i-1][9]: rank = i%4
             else: rank = (i+1)%4
             
-            # Add team strength setting to compair to winning percent
+            # Add team strength setting to compare to winning percent
             ts = [ts[1] for ts in teamStength if ts[0] == standingParts[i][5]]
             
-            standings.append(standingParts[i][:5]+[rank]+standingParts[i][5:]+ts)
+            if standingParts[i][0] == 'pre Wind-up' and standingParts[i][1] == 'Part 1': gameDate = dates[1]-timedelta(days=1)
+            elif standingParts[i][0] == 'post Wind-up' and standingParts[i][1] == 'Part 1': gameDate = dates[1]
+            elif standingParts[i][0] == 'pre Wind-up' and standingParts[i][1] == 'Part 2': gameDate = dates[2]-timedelta(days=1)
+            elif standingParts[i][0] == 'post Wind-up' and standingParts[i][1] == 'Part 2': gameDate = dates[2]
+            elif standingParts[i][0] == 'pre Wind-up' and standingParts[i][1] == 'Part 3': gameDate = dates[3]-timedelta(days=1)
+            elif standingParts[i][0] == 'post Wind-up' and standingParts[i][1] == 'Part 3': gameDate = dates[3]
+            elif standingParts[i][0] == 'pre Wind-up' and standingParts[i][1] == 'Part 4': gameDate = dates[4]-timedelta(days=1)
+            else: gameDate = dates[4]
+            
+            
+            standings.append([number]+[gameDate]+standingParts[i][:5]+[rank]+standingParts[i][5:]+ts)
         return standings
             
             

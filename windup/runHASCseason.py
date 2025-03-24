@@ -62,12 +62,11 @@ schedule_conf1 = schedule.groupSeriesToMake4Games(base,schedule_conf1,groupTms)
 schedule_conf2 = schedule.groupSeriesToMake4Games(base,schedule_conf2,groupTms)
 
 ## Store simulation Schedule
-# Find simulation number
-location = r'C:\Users\aaron\Documents\GitHub\Horizon-Americas-Super-Cup\windup\simulations\Standings'
-number = len(os.listdir(location))+1
-
 location = r'C:\Users\aaron\Documents\GitHub\Horizon-Americas-Super-Cup\windup\simulations\Schedules'
 lst = os.listdir(location)
+# Find simulation number
+if len(lst) == 0: number = 1
+else: number = int(len(lst)/2)+1
 
 ##Store Schedule
 with open(r''+location+r'\FoundersSchedule_sim'+str(number)+'.csv', 'w', newline='') as f:
@@ -108,22 +107,12 @@ rankAvgWinPct, scoringDic = historicSeasons.summarizeStandings(historicList, res
 teamStength = simulate.teamStrength(conferenceTms,rankAvgWinPct)
 
 
-# # Open conference schedules
-# with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\FoundersSchedule.csv', 'r') as f:
-#     reader = csv.reader(f)
-#     schedule_conf1 = list(reader)
-
-# # Open conference schedules
-# with open(r'C:\Users\aaron\OneDrive\Documents\GitHub\VisionariesSchedule.csv', 'r') as f:
-#     reader = csv.reader(f)
-#     schedule_conf2 = list(reader)
-
 
 #### Simulate Win-Loss
 ###########################
 # 3% for homefield advantage 
-results_conf1 = simulate.win_loss(schedule_conf1[1:], teamStength, extrasRate, scoringDic, seasons_exOuts, 3, True)
-results_conf2 = simulate.win_loss(schedule_conf2[1:], teamStength, extrasRate, scoringDic, seasons_exOuts, 3, True)
+results_conf1 = simulate.win_loss( schedule_conf1, teamStength, extrasRate, scoringDic, seasons_exOuts, 3, True)
+results_conf2 = simulate.win_loss( schedule_conf2, teamStength, extrasRate, scoringDic, seasons_exOuts, 3, True)
 
 
 
@@ -150,10 +139,10 @@ WU_Results_c1 = simulate.WU_createResults(results_conf1, dates, teamStength, ext
 WU_Results_c2 = simulate.WU_createResults(results_conf2, dates, teamStength, extrasRate, scoringDic, seasons_exOuts)     
 
 
-
 # Flatten results into single list 
 WU_Results_c1 = leagueFormation.flattenLsts(WU_Results_c1)
 WU_Results_c2 = leagueFormation.flattenLsts(WU_Results_c2)
+
 
 # Combine season and wind-up results
 results_conf1 = sorted(results_conf1, key=itemgetter(0), reverse=False)
@@ -163,27 +152,55 @@ results_conf1_final = simulate.seasonResultsOrder(results_conf1,WU_Results_c1, d
 results_conf2_final = simulate.seasonResultsOrder(results_conf2,WU_Results_c2, dates)
 
 ## Standardize cells in row
-for conf in [results_conf1_final,results_conf2_final]:
+def standardizeRowContent(conf,number):
+    tempConf = []
     for matchup in conf:
-        if len(matchup) == 4: matchup = matchup+['','','','','','']
-        if len(matchup) == 6: matchup = matchup+['','','','']
-    
+        if len(matchup) == 4: matchup = matchup+['','','','','','']+[number]
+        if len(matchup) == 6: matchup = matchup+['','','','']+[number]
+        else: matchup = matchup+[number]
+        tempConf.append(matchup)
+    conf = tempConf
+    return conf
+
+results_conf1_final = standardizeRowContent(results_conf1_final,number)
+results_conf2_final = standardizeRowContent(results_conf2_final,number)
+
+
+
+## Open 
+def openExisting(location, file):
+    with open(location+file, 'r') as f:
+        reader = csv.reader(f)
+        existingList = list(reader)
+    return existingList
+
+
+## Open past simulation results
+location = r'C:\Users\aaron\Documents\GitHub\Horizon-Americas-Super-Cup\windup\simulations\Results'
+
+conf1_history = openExisting(location, r'\FoundersResultes.csv')
+conf2_history = openExisting(location, r'\VisionariesResultes.csv')
+
+conf1_history = conf1_history[1:] + results_conf1_final
+conf2_history = conf2_history[1:] + results_conf2_final
+
 
 ## Store simulation Results
-location = r'C:\Users\aaron\Documents\GitHub\Horizon-Americas-Super-Cup\windup\simulations\Results'
-lst = os.listdir(location)
-
-with open(r''+location +r'\FoundersResultes_sim'+str(number)+'.csv', 'w', newline='') as f:
+with open(r''+location +r'\FoundersResultes.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Date','Home','Away','Result','Home Score','Away Score',
-                     'Wrap-up Result','WU Home Score','WU Away Score','WU innings'])
-    writer.writerows(results_conf1_final)
+                     'Wrap-up Result','WU Home Score','WU Away Score','WU innings',
+                     'Sim Number'])
+    writer.writerows(conf1_history)
 
-with open(r''+location +r'\VisionariesResultes_sim'+str(number)+'.csv', 'w', newline='') as f:
+with open(r''+location +r'\VisionariesResultes.csv', 'w', newline='') as f:
     writer = csv.writer(f)
     writer.writerow(['Date','Home','Away','Result','Home Score','Away Score',
-                     'Wrap-up Result','WU Home Score','WU Away Score','WU innings'])
-    writer.writerows(results_conf2_final)
+                     'Wrap-up Result','WU Home Score','WU Away Score','WU innings',
+                     'Sim Number'])
+    writer.writerows(conf2_history)
+
+
 
 ###########################    
 #### Wind-up Standings             
@@ -198,33 +215,67 @@ WUpre_Standings,WUpost_Standings = standings.createStandings(results_conf,WU_Res
 standingParts = standings.standingLists(WUpre_Standings,WUpost_Standings,leagueFormat)
 
 
-## Adding rank and team strength to  standings
-standings_final = standings.rankStandings(standingParts,teamStength)
+## Adding sim number, date, rank, and team strength to  standings
+standings_final = standings.rankStandings(number,standingParts,teamStength, dates)
+
 
 
 ## Store simulation standings
 location = r'C:\Users\aaron\Documents\GitHub\Horizon-Americas-Super-Cup\windup\simulations\Standings'
-lst = os.listdir(location)
+standing_history = openExisting(location, r'\seasonStandings.csv')
 
-with open(r''+location +r'\seasonStandings_sim'+str(number)+'.csv', 'w', newline='') as f:
+standing_history = standing_history[1:] + standings_final
+
+
+with open(r''+location +r'\seasonStandings.csv', 'w', newline='') as f:
     writer = csv.writer(f)
-    writer.writerow(['Timing','Season Part','Conference','Division','Group',
+    writer.writerow(['Sim Number','Standings Date','Timing','Season Part','Conference','Division','Group',
                      'Rank','Team','Wins','Losses','Ties to Finish','Winning Percent','Team Strength'])
-    writer.writerows(standings_final)
+    writer.writerows(standing_history)
+
+#############################
+#### Other standing Format
+# Ordering groups by rank, pre and post
+simTeamLst = [ [r[0]]+r[4:7]+[r[8]] for r in standings_final if r[2] == 'pre Wind-up' and r[3] == 'Part 1']
+pre1 = [ r[7:9] for r in standings_final if r[2] == 'pre Wind-up' and r[3] == 'Part 1']
+post1 = [ r[7:9] for r in standings_final if r[2] == 'post Wind-up' and r[3] == 'Part 1']
+pre2 = [ r[7:9] for r in standings_final if r[2] == 'pre Wind-up' and r[3] == 'Part 2']
+post2 = [ r[7:9] for r in standings_final if r[2] == 'post Wind-up' and r[3] == 'Part 2']
+pre3 = [ r[7:9] for r in standings_final if r[2] == 'pre Wind-up' and r[3] == 'Part 3']
+post3 = [ r[7:9] for r in standings_final if r[2] == 'post Wind-up' and r[3] == 'Part 3']
+pre4 = [ r[7:9] for r in standings_final if r[2] == 'pre Wind-up' and r[3] == 'Part 4']
+post4 = [ r[7:9] for r in standings_final if r[2] == 'post Wind-up' and r[3] == 'Part 4']
 
 
 
+rank_final = []
+for r in simTeamLst:
+    # print([x for x in pre1 if x[1] == r[4]])
+    rank = r+[x[0] for x in pre1 if x[1] == r[4]]
+    rank = rank+[x[0] for x in post1 if x[1] == r[4]]
+    rank = rank+[x[0] for x in pre2 if x[1] == r[4]]
+    rank = rank+[x[0] for x in post2 if x[1] == r[4]]
+    rank = rank+[x[0] for x in pre3 if x[1] == r[4]]
+    rank = rank+[x[0] for x in post3 if x[1] == r[4]]
+    rank = rank+[x[0] for x in pre4 if x[1] == r[4]]
+    rank = rank+[x[0] for x in post4 if x[1] == r[4]]
+    rank_final.append(rank)
 
 
 
+## Store simulation standings
+location = r'C:\Users\aaron\Documents\GitHub\Horizon-Americas-Super-Cup\windup\simulations\Standings'
+rankStanding_history = openExisting(location, r'\rankStandings.csv')
+
+rankStanding_history = rankStanding_history[1:] + rank_final
 
 
-
-
-
-
-
-
+with open(r''+location +r'\rankStandings.csv', 'w', newline='') as f:
+    writer = csv.writer(f)
+    writer.writerow(['Sim Number','Conference','Division','Group','Team',
+                     'pre-WU1 Rank','post-WU1 Rank','pre-WU2 Rank','post-WU2 Rank',
+                     'pre-WU3 Rank','post-WU3 Rank','pre-WU4 Rank','post-WU4 Rank'])
+    writer.writerows(rankStanding_history)
 
 
 
