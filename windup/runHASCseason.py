@@ -8,7 +8,7 @@ File uses MLB scoring information to random select winners, scores, and project 
 
 from operator import itemgetter
 import sys,datetime, csv, copy, os
-sys.path.append(r'C:\Users\aaron\Documents\GitHub\Horizon-Americas-Super-Cup\windup')
+
 
 from League_Info import leagueFormation
 from createMatchups import matchups
@@ -17,7 +17,15 @@ from HistoricSeasonData import historicSeasons
 from simulatingResults import simulate
 from calculateStandings import standings
 
+## Open Postgres Connection for storing simulations
+sys.path.append(r'C:\Users\aaron\Documents')
+from connections import connect
+conn = connect.postgresConnect()
+# Creating a cursor object
+cursor = conn.cursor()
+
 ## Open dictionary of teams and league format
+sys.path.append(r'C:\Users\aaron\Documents\GitHub\Horizon-Americas-Super-Cup\windup')
 leageDict = leagueFormation.leagueDict()
 
 ## Convert League Dictionary to lists of teams
@@ -80,6 +88,31 @@ with open(r''+location+r'\VisionariesSchedule_sim'+str(number)+'.csv', 'w', newl
     writer.writerows(schedule_conf2)
 
 
+schedule_conf1_t = copy.deepcopy(schedule_conf1)
+schedule_conf1_t = [['Founders']+x for x in schedule_conf1_t]
+schedule_conf2_t = copy.deepcopy(schedule_conf2)
+schedule_conf2_t = [['Visionaries']+x for x in schedule_conf2_t]
+
+schedule = schedule_conf1_t+schedule_conf2_t
+schedule = [ [number]+x for x in schedule]
+
+## Insert into postgres 
+fields = '''simulation,conference,gameDate,homeTeam,awayTeam'''
+sql = "INSERT into seasons.schedules(xfieldsx) VALUES (%s,%s,%s,%s,%s)"
+sql = sql.replace('xfieldsx',fields).replace('''\n        ''','')
+for s in schedule:
+    cursor.execute(sql, s)
+# Commit changes in the database
+conn.commit()
+
+
+
+
+
+
+
+
+
 ##############################
 ####Historic Scores
 ##############################
@@ -104,9 +137,20 @@ rankAvgWinPct, scoringDic = historicSeasons.summarizeStandings(historicList, res
 #### "Play" the games
 ##########################
 # Simulate team strength
-teamStength = simulate.teamStrength(conferenceTms,rankAvgWinPct)
+''' Change commenting to randomly assign winning percents'''
+# teamStength = simulate.teamStrength(conferenceTms,rankAvgWinPct)
 
-
+teamStength = [
+    ['Montreal', 0.58,],['Boston', 0.457],['New Haven', 0.253],['New York', 0.531],
+    ['Philadelphia', 0.5,],['Pittsburgh', 0.494,],['Toronto', 0.506],['Washington, D.C.', 0.49,],
+    ['Winnipeg', 0.547],['St. Paul',  0.571],['Chicago', 0.481],['St. Louis', 0.389],
+    ['Detroit',  0.525],['Indianapolis', 0.426],['Akron', 0.562],['Columbus', 0.531],
+    
+    ['Nashville', 0.509],['Charlotte', 0.508],['Atlanta',  0.466],['Birmingham', 0.491],
+    ['Dallas', 0.534],['San Antonio', 0.438],['Monterrey', 0.53],['Merida', 0.51],
+    ['Calgary', 0.534],['Vancouver', 0.37],['Denver', 0.623],['Seattle', 0.41],
+    ['Oakland', 0.565],['Los Angeles', 0.571],['Phoenix', 0.601],['Tijuana', 0.472]
+    ]
 
 #### Simulate Win-Loss
 ###########################
@@ -201,6 +245,52 @@ with open(r''+location +r'\VisionariesResultes.csv', 'w', newline='') as f:
     writer.writerows(conf2_history)
 
 
+results_conf1_final_t = copy.deepcopy(results_conf1_final)
+results_conf1_final_t = [['Founders']+x for x in results_conf1_final_t]
+results_conf2_final_t = copy.deepcopy(results_conf2_final)
+results_conf2_final_t = [['Visionaries']+x for x in results_conf2_final_t]
+
+results = results_conf1_final_t+results_conf2_final_t
+
+
+## Replace int strings with None
+results2 = []
+for r in results:
+    temp = r[:5]
+    if type(r[5]) == str: temp.append(None) 
+    else: temp.append(int(r[5]))
+    if type(r[6]) == str: temp.append(None) 
+    else: temp.append(int(r[6]))
+    temp.append(r[7])
+    if type(r[8]) == str: temp.append(None) 
+    else: temp.append(int(r[8]))
+    if type(r[9]) == str: temp.append(None) 
+    else: temp.append(int(r[9]))
+    if type(r[10]) == str: temp.append(None) 
+    else: temp.append(int(r[10]))
+    temp.append(r[11])
+    results2.append(temp)
+
+## Insert into postgres 
+fields = '''conference,gamedate,homeTeam,awayTeam,regulationResult,
+            homeScore_reg,awayScore_reg,wrapupResult,homeScore_wu,awayScore_wu,
+            outs_wu,simNumber'''
+sql = "INSERT into seasons.results(xfieldsx) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+sql = sql.replace('xfieldsx',fields).replace('''\n        ''','')
+for r in results2:
+    cursor.execute(sql, r[:12])
+# Commit changes in the database
+conn.commit()
+
+
+
+
+
+
+
+
+
+
 
 ###########################    
 #### Wind-up Standings             
@@ -232,6 +322,34 @@ with open(r''+location +r'\seasonStandings.csv', 'w', newline='') as f:
     writer.writerow(['Sim Number','Standings Date','Timing','Season Part','Conference','Division','Group',
                      'Rank','Team','Wins','Losses','Ties to Finish','Winning Percent','Team Strength'])
     writer.writerows(standing_history)
+    
+    
+## Insert into playlogs.plays
+fields = '''simNumber,standingsDate,timing,seasonPart,conference,division,teamGroup,
+            standingRank,team,wins,losses,tiesToFinish,winningPct,teamStrength'''
+sql = "INSERT into seasons.standings(xfieldsx) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+sql = sql.replace('xfieldsx',fields).replace('''\n        ''','')
+for s in standings_final:
+    cursor.execute(sql, s)
+# Commit changes in the database
+conn.commit()  
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 #############################
 #### Other standing Format
@@ -279,5 +397,15 @@ with open(r''+location +r'\rankStandings.csv', 'w', newline='') as f:
 
 
 
+## Insert into playlogs.plays
+fields = '''simNumber,conference,division,teamGroup,team,
+            preWU1rank,postWU1rank,preWU2rank,postWU2rank,
+            preWU3rank,postWU3rank,preWU4rank,postWU4rank'''
+sql = "INSERT into seasons.rankChanges(xfieldsx) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+sql = sql.replace('xfieldsx',fields).replace('''\n        ''','')
+for r in rank_final:
+    cursor.execute(sql, r)
+# Commit changes in the database
+conn.commit()
 
 
