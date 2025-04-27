@@ -1,0 +1,1262 @@
+Date,Home,Away
+2010-04-01,Tijuana,Phoenix
+2010-04-01,Nashville,Atlanta
+2010-04-01,San Antonio,Monterrey
+2010-04-01,Calgary,Seattle
+2010-04-01,Vancouver,Denver
+2010-04-02,Merida,Dallas
+2010-04-02,Los Angeles,Oakland
+2010-04-02,Birmingham,Charlotte
+2010-04-02,Tijuana,Phoenix
+2010-04-02,Nashville,Atlanta
+2010-04-02,San Antonio,Monterrey
+2010-04-02,Calgary,Seattle
+2010-04-02,Vancouver,Denver
+2010-04-03,Merida,Dallas
+2010-04-03,Los Angeles,Oakland
+2010-04-03,Birmingham,Charlotte
+2010-04-03,Tijuana,Phoenix
+2010-04-03,Nashville,Atlanta
+2010-04-03,San Antonio,Monterrey
+2010-04-03,Calgary,Seattle
+2010-04-03,Vancouver,Denver
+2010-04-04,Merida,Dallas
+2010-04-04,Los Angeles,Oakland
+2010-04-04,Birmingham,Charlotte
+2010-04-04,Denver,Calgary
+2010-04-05,Atlanta,Charlotte
+2010-04-05,San Antonio,Merida
+2010-04-05,Nashville,Birmingham
+2010-04-05,Phoenix,Oakland
+2010-04-05,Los Angeles,Tijuana
+2010-04-05,Dallas,Monterrey
+2010-04-05,Seattle,Vancouver
+2010-04-05,Denver,Calgary
+2010-04-06,Atlanta,Charlotte
+2010-04-06,San Antonio,Merida
+2010-04-06,Nashville,Birmingham
+2010-04-06,Phoenix,Oakland
+2010-04-06,Los Angeles,Tijuana
+2010-04-06,Dallas,Monterrey
+2010-04-06,Seattle,Vancouver
+2010-04-06,Denver,Calgary
+2010-04-07,Atlanta,Charlotte
+2010-04-07,San Antonio,Merida
+2010-04-07,Nashville,Birmingham
+2010-04-07,Phoenix,Oakland
+2010-04-07,Los Angeles,Tijuana
+2010-04-07,Dallas,Monterrey
+2010-04-07,Seattle,Vancouver
+2010-04-08,Los Angeles,Phoenix
+2010-04-07,Calgary,Denver
+2010-04-08,Monterrey,Merida
+2010-04-08,Charlotte,Nashville
+2010-04-08,Oakland,Tijuana
+2010-04-08,San Antonio,Dallas
+2010-04-08,Birmingham,Atlanta
+2010-04-08,Vancouver,Seattle
+2010-04-09,Los Angeles,Phoenix
+2010-04-08,Calgary,Denver
+2010-04-09,Monterrey,Merida
+2010-04-09,Charlotte,Nashville
+2010-04-09,Oakland,Tijuana
+2010-04-09,San Antonio,Dallas
+2010-04-09,Birmingham,Atlanta
+2010-04-09,Vancouver,Seattle
+2010-04-10,Los Angeles,Phoenix
+2010-04-09,Calgary,Denver
+2010-04-10,Monterrey,Merida
+2010-04-10,Charlotte,Nashville
+2010-04-10,Oakland,Tijuana
+2010-04-10,San Antonio,Dallas
+2010-04-10,Birmingham,Atlanta
+2010-04-10,Vancouver,Seattle
+2010-04-11,Seattle,Calgary
+2010-04-11,Charlotte,Atlanta
+2010-04-11,Dallas,San Antonio
+2010-04-11,Oakland,Phoenix
+2010-04-11,Denver,Vancouver
+2010-04-11,Merida,Monterrey
+2010-04-11,Tijuana,Los Angeles
+2010-04-11,Birmingham,Nashville
+2010-04-12,Seattle,Calgary
+2010-04-12,Charlotte,Atlanta
+2010-04-12,Dallas,San Antonio
+2010-04-12,Oakland,Phoenix
+2010-04-12,Denver,Vancouver
+2010-04-12,Merida,Monterrey
+2010-04-12,Tijuana,Los Angeles
+2010-04-12,Birmingham,Nashville
+2010-04-13,Seattle,Calgary
+2010-04-13,Charlotte,Atlanta
+2010-04-13,Dallas,San Antonio
+2010-04-13,Oakland,Phoenix
+2010-04-13,Denver,Vancouver
+2010-04-13,Merida,Monterrey
+2010-04-13,Tijuana,Los Angeles
+2010-04-13,Birmingham,Nashville
+2010-04-14,Vancouver,Calgary
+2010-04-14,Denver,Seattle
+2010-04-14,Monterrey,San Antonio
+2010-04-14,Nashville,Charlotte
+2010-04-14,Phoenix,Los Angeles
+2010-04-15,Dallas,Merida
+2010-04-15,Tijuana,Oakland
+2010-04-15,Atlanta,Birmingham
+2010-04-15,Vancouver,Calgary
+2010-04-15,Denver,Seattle
+2010-04-15,Monterrey,San Antonio
+2010-04-15,Nashville,Charlotte
+2010-04-15,Phoenix,Los Angeles
+2010-04-16,Dallas,Merida
+2010-04-16,Tijuana,Oakland
+2010-04-16,Atlanta,Birmingham
+2010-04-16,Vancouver,Calgary
+2010-04-16,Denver,Seattle
+2010-04-16,Monterrey,San Antonio
+2010-04-16,Nashville,Charlotte
+2010-04-16,Phoenix,Los Angeles
+2010-04-17,Dallas,Merida
+2010-04-17,Tijuana,Oakland
+2010-04-17,Atlanta,Birmingham
+2010-04-18,Merida,San Antonio
+2010-04-18,Monterrey,Dallas
+2010-04-18,Atlanta,Nashville
+2010-04-18,Charlotte,Birmingham
+2010-04-18,Oakland,Los Angeles
+2010-04-18,Seattle,Denver
+2010-04-18,Phoenix,Tijuana
+2010-04-18,Calgary,Vancouver
+2010-04-19,Merida,San Antonio
+2010-04-19,Monterrey,Dallas
+2010-04-19,Atlanta,Nashville
+2010-04-19,Charlotte,Birmingham
+2010-04-19,Oakland,Los Angeles
+2010-04-19,Seattle,Denver
+2010-04-19,Phoenix,Tijuana
+2010-04-19,Calgary,Vancouver
+2010-04-20,Merida,San Antonio
+2010-04-20,Monterrey,Dallas
+2010-04-20,Atlanta,Nashville
+2010-04-20,Charlotte,Birmingham
+2010-04-20,Oakland,Los Angeles
+2010-04-20,Seattle,Denver
+2010-04-20,Phoenix,Tijuana
+2010-04-20,Calgary,Vancouver
+2010-04-21,Seattle,San Antonio
+2010-04-21,Vancouver,Merida
+2010-04-21,Charlotte,Los Angeles
+2010-04-21,Nashville,Phoenix
+2010-04-21,Oakland,Birmingham
+2010-04-21,Monterrey,Denver
+2010-04-21,Tijuana,Atlanta
+2010-04-21,Calgary,Dallas
+2010-04-22,Seattle,San Antonio
+2010-04-22,Vancouver,Merida
+2010-04-22,Charlotte,Los Angeles
+2010-04-22,Nashville,Phoenix
+2010-04-22,Oakland,Birmingham
+2010-04-22,Monterrey,Denver
+2010-04-22,Tijuana,Atlanta
+2010-04-22,Calgary,Dallas
+2010-04-23,Seattle,San Antonio
+2010-04-23,Vancouver,Merida
+2010-04-23,Charlotte,Los Angeles
+2010-04-23,Nashville,Phoenix
+2010-04-23,Oakland,Birmingham
+2010-04-23,Monterrey,Denver
+2010-04-23,Tijuana,Atlanta
+2010-04-23,Calgary,Dallas
+2010-04-24,Birmingham,Oakland
+2010-04-24,Atlanta,Los Angeles
+2010-04-24,Merida,Denver
+2010-04-24,Charlotte,Tijuana
+2010-04-24,Calgary,San Antonio
+2010-04-25,Seattle,Monterrey
+2010-04-25,Dallas,Vancouver
+2010-04-25,Phoenix,Nashville
+2010-04-25,Birmingham,Oakland
+2010-04-25,Atlanta,Los Angeles
+2010-04-25,Merida,Denver
+2010-04-25,Charlotte,Tijuana
+2010-04-25,Calgary,San Antonio
+2010-04-26,Seattle,Monterrey
+2010-04-26,Dallas,Vancouver
+2010-04-26,Phoenix,Nashville
+2010-04-26,Birmingham,Oakland
+2010-04-26,Atlanta,Los Angeles
+2010-04-26,Merida,Denver
+2010-04-26,Charlotte,Tijuana
+2010-04-26,Calgary,San Antonio
+2010-04-27,Seattle,Monterrey
+2010-04-27,Dallas,Vancouver
+2010-04-27,Phoenix,Nashville
+2010-04-28,Phoenix,Charlotte
+2010-04-27,Calgary,Merida
+2010-04-27,San Antonio,Denver
+2010-04-28,Monterrey,Vancouver
+2010-04-27,Tijuana,Birmingham
+2010-04-28,Nashville,Los Angeles
+2010-04-28,Dallas,Seattle
+2010-04-28,Atlanta,Oakland
+2010-04-29,Phoenix,Charlotte
+2010-04-28,Calgary,Merida
+2010-04-28,San Antonio,Denver
+2010-04-29,Monterrey,Vancouver
+2010-04-28,Tijuana,Birmingham
+2010-04-29,Nashville,Los Angeles
+2010-04-29,Dallas,Seattle
+2010-04-29,Atlanta,Oakland
+2010-04-30,Phoenix,Charlotte
+2010-04-29,Calgary,Merida
+2010-04-29,San Antonio,Denver
+2010-04-30,Monterrey,Vancouver
+2010-04-29,Tijuana,Birmingham
+2010-04-30,Nashville,Los Angeles
+2010-04-30,Dallas,Seattle
+2010-04-30,Atlanta,Oakland
+2010-05-01,Monterrey,Calgary
+2010-05-01,Nashville,Oakland
+2010-05-01,Phoenix,Birmingham
+2010-05-01,Merida,Vancouver
+2010-05-01,Los Angeles,Atlanta
+2010-05-01,San Antonio,Seattle
+2010-05-01,Denver,Dallas
+2010-05-01,Tijuana,Charlotte
+2010-05-02,Monterrey,Calgary
+2010-05-02,Nashville,Oakland
+2010-05-02,Phoenix,Birmingham
+2010-05-02,Merida,Vancouver
+2010-05-02,Los Angeles,Atlanta
+2010-05-02,San Antonio,Seattle
+2010-05-02,Denver,Dallas
+2010-05-02,Tijuana,Charlotte
+2010-05-03,Monterrey,Calgary
+2010-05-03,Nashville,Oakland
+2010-05-03,Phoenix,Birmingham
+2010-05-03,Merida,Vancouver
+2010-05-03,Los Angeles,Atlanta
+2010-05-03,San Antonio,Seattle
+2010-05-03,Denver,Dallas
+2010-05-03,Tijuana,Charlotte
+2010-05-04,,
+2010-05-05,,
+2010-05-06,,
+2010-05-07,Los Angeles,Denver
+2010-05-07,Nashville,Dallas
+2010-05-07,Merida,Charlotte
+2010-05-07,San Antonio,Birmingham
+2010-05-07,Calgary,Tijuana
+2010-05-08,Seattle,Oakland
+2010-05-08,Phoenix,Vancouver
+2010-05-08,Monterrey,Atlanta
+2010-05-08,Los Angeles,Denver
+2010-05-08,Nashville,Dallas
+2010-05-08,Merida,Charlotte
+2010-05-08,San Antonio,Birmingham
+2010-05-08,Calgary,Tijuana
+2010-05-09,Seattle,Oakland
+2010-05-09,Phoenix,Vancouver
+2010-05-09,Monterrey,Atlanta
+2010-05-09,Los Angeles,Denver
+2010-05-09,Nashville,Dallas
+2010-05-09,Merida,Charlotte
+2010-05-09,San Antonio,Birmingham
+2010-05-09,Calgary,Tijuana
+2010-05-10,Seattle,Oakland
+2010-05-10,Phoenix,Vancouver
+2010-05-10,Monterrey,Atlanta
+2010-05-11,Vancouver,Los Angeles
+2010-05-11,Monterrey,Nashville
+2010-05-11,Oakland,Seattle
+2010-05-11,Dallas,Atlanta
+2010-05-10,Tijuana,Denver
+2010-05-11,Phoenix,Calgary
+2010-05-11,Charlotte,San Antonio
+2010-05-11,Birmingham,Merida
+2010-05-12,Vancouver,Los Angeles
+2010-05-12,Monterrey,Nashville
+2010-05-12,Oakland,Seattle
+2010-05-12,Dallas,Atlanta
+2010-05-11,Tijuana,Denver
+2010-05-12,Phoenix,Calgary
+2010-05-12,Charlotte,San Antonio
+2010-05-12,Birmingham,Merida
+2010-05-13,Vancouver,Los Angeles
+2010-05-13,Monterrey,Nashville
+2010-05-13,Oakland,Seattle
+2010-05-13,Dallas,Atlanta
+2010-05-12,Tijuana,Denver
+2010-05-13,Phoenix,Calgary
+2010-05-13,Charlotte,San Antonio
+2010-05-13,Birmingham,Merida
+2010-05-14,Birmingham,Dallas
+2010-05-14,San Antonio,Atlanta
+2010-05-14,Phoenix,Seattle
+2010-05-14,Vancouver,Oakland
+2010-05-14,Denver,Tijuana
+2010-05-15,Nashville,Monterrey
+2010-05-15,Los Angeles,Calgary
+2010-05-15,Charlotte,Merida
+2010-05-15,Birmingham,Dallas
+2010-05-15,San Antonio,Atlanta
+2010-05-15,Phoenix,Seattle
+2010-05-15,Vancouver,Oakland
+2010-05-15,Denver,Tijuana
+2010-05-16,Nashville,Monterrey
+2010-05-16,Los Angeles,Calgary
+2010-05-16,Charlotte,Merida
+2010-05-16,Birmingham,Dallas
+2010-05-16,San Antonio,Atlanta
+2010-05-16,Phoenix,Seattle
+2010-05-16,Vancouver,Oakland
+2010-05-16,Denver,Tijuana
+2010-05-17,Nashville,Monterrey
+2010-05-17,Los Angeles,Calgary
+2010-05-17,Charlotte,Merida
+2010-05-18,Nashville,Merida
+2010-05-18,Calgary,Los Angeles
+2010-05-18,Atlanta,Monterrey
+2010-05-17,Seattle,Phoenix
+2010-05-17,Oakland,Denver
+2010-05-18,Dallas,Charlotte
+2010-05-18,Vancouver,Tijuana
+2010-05-18,Birmingham,San Antonio
+2010-05-19,Nashville,Merida
+2010-05-19,Calgary,Los Angeles
+2010-05-19,Atlanta,Monterrey
+2010-05-18,Seattle,Phoenix
+2010-05-18,Oakland,Denver
+2010-05-19,Dallas,Charlotte
+2010-05-19,Vancouver,Tijuana
+2010-05-19,Birmingham,San Antonio
+2010-05-20,Nashville,Merida
+2010-05-20,Calgary,Los Angeles
+2010-05-20,Atlanta,Monterrey
+2010-05-19,Seattle,Phoenix
+2010-05-19,Oakland,Denver
+2010-05-20,Dallas,Charlotte
+2010-05-20,Vancouver,Tijuana
+2010-05-20,Birmingham,San Antonio
+2010-05-21,Merida,Atlanta
+2010-05-21,Monterrey,Birmingham
+2010-05-21,Tijuana,Calgary
+2010-05-20,Denver,Phoenix
+2010-05-21,Oakland,Vancouver
+2010-05-21,Dallas,Nashville
+2010-05-21,Los Angeles,Seattle
+2010-05-21,San Antonio,Charlotte
+2010-05-22,Merida,Atlanta
+2010-05-22,Monterrey,Birmingham
+2010-05-22,Tijuana,Calgary
+2010-05-21,Denver,Phoenix
+2010-05-22,Oakland,Vancouver
+2010-05-22,Dallas,Nashville
+2010-05-22,Los Angeles,Seattle
+2010-05-22,San Antonio,Charlotte
+2010-05-23,Merida,Atlanta
+2010-05-23,Monterrey,Birmingham
+2010-05-23,Tijuana,Calgary
+2010-05-22,Denver,Phoenix
+2010-05-23,Oakland,Vancouver
+2010-05-23,Dallas,Nashville
+2010-05-23,Los Angeles,Seattle
+2010-05-23,San Antonio,Charlotte
+2010-05-24,Monterrey,Charlotte
+2010-05-24,Denver,Oakland
+2010-05-24,Dallas,Birmingham
+2010-05-24,Los Angeles,Vancouver
+2010-05-24,Merida,Nashville
+2010-05-25,Calgary,Phoenix
+2010-05-25,Seattle,Tijuana
+2010-05-25,Atlanta,San Antonio
+2010-05-25,Monterrey,Charlotte
+2010-05-25,Denver,Oakland
+2010-05-25,Dallas,Birmingham
+2010-05-25,Los Angeles,Vancouver
+2010-05-25,Merida,Nashville
+2010-05-26,Calgary,Phoenix
+2010-05-26,Seattle,Tijuana
+2010-05-26,Atlanta,San Antonio
+2010-05-26,Monterrey,Charlotte
+2010-05-26,Denver,Oakland
+2010-05-26,Dallas,Birmingham
+2010-05-26,Los Angeles,Vancouver
+2010-05-26,Merida,Nashville
+2010-05-27,Calgary,Phoenix
+2010-05-27,Seattle,Tijuana
+2010-05-27,Atlanta,San Antonio
+2010-05-27,Merida,Birmingham
+2010-05-28,Nashville,San Antonio
+2010-05-28,Oakland,Calgary
+2010-05-27,Charlotte,Monterrey
+2010-05-28,Tijuana,Seattle
+2010-05-28,Denver,Los Angeles
+2010-05-28,Atlanta,Dallas
+2010-05-28,Vancouver,Phoenix
+2010-05-28,Merida,Birmingham
+2010-05-29,Nashville,San Antonio
+2010-05-29,Oakland,Calgary
+2010-05-28,Charlotte,Monterrey
+2010-05-29,Tijuana,Seattle
+2010-05-29,Denver,Los Angeles
+2010-05-29,Atlanta,Dallas
+2010-05-29,Vancouver,Phoenix
+2010-05-29,Merida,Birmingham
+2010-05-30,Nashville,San Antonio
+2010-05-30,Oakland,Calgary
+2010-05-29,Charlotte,Monterrey
+2010-05-30,Tijuana,Seattle
+2010-05-30,Denver,Los Angeles
+2010-05-30,Atlanta,Dallas
+2010-05-30,Vancouver,Phoenix
+2010-05-31,San Antonio,Nashville
+2010-05-31,Tijuana,Vancouver
+2010-05-31,Seattle,Los Angeles
+2010-05-31,Calgary,Oakland
+2010-05-31,Charlotte,Dallas
+2010-05-31,Phoenix,Denver
+2010-05-31,Birmingham,Monterrey
+2010-05-31,Atlanta,Merida
+2010-06-01,San Antonio,Nashville
+2010-06-01,Tijuana,Vancouver
+2010-06-01,Seattle,Los Angeles
+2010-06-01,Calgary,Oakland
+2010-06-01,Charlotte,Dallas
+2010-06-01,Phoenix,Denver
+2010-06-01,Birmingham,Monterrey
+2010-06-01,Atlanta,Merida
+2010-06-02,San Antonio,Nashville
+2010-06-02,Tijuana,Vancouver
+2010-06-02,Seattle,Los Angeles
+2010-06-02,Calgary,Oakland
+2010-06-02,Charlotte,Dallas
+2010-06-02,Phoenix,Denver
+2010-06-02,Birmingham,Monterrey
+2010-06-02,Atlanta,Merida
+2010-06-03,Tijuana,Denver
+2010-06-03,Los Angeles,Seattle
+2010-06-03,San Antonio,Birmingham
+2010-06-03,Dallas,Atlanta
+2010-06-03,Vancouver,Oakland
+2010-06-04,Monterrey,Nashville
+2010-06-04,Charlotte,Merida
+2010-06-04,Calgary,Phoenix
+2010-06-04,Tijuana,Denver
+2010-06-04,Los Angeles,Seattle
+2010-06-04,San Antonio,Birmingham
+2010-06-04,Dallas,Atlanta
+2010-06-04,Vancouver,Oakland
+2010-06-05,Monterrey,Nashville
+2010-06-05,Charlotte,Merida
+2010-06-05,Calgary,Phoenix
+2010-06-05,Tijuana,Denver
+2010-06-05,Los Angeles,Seattle
+2010-06-05,San Antonio,Birmingham
+2010-06-05,Dallas,Atlanta
+2010-06-05,Vancouver,Oakland
+2010-06-06,Monterrey,Nashville
+2010-06-06,Charlotte,Merida
+2010-06-06,Calgary,Phoenix
+2010-06-06,Dallas,Birmingham
+2010-06-07,Los Angeles,Calgary
+2010-06-07,Atlanta,Monterrey
+2010-06-06,Seattle,Tijuana
+2010-06-07,Phoenix,Denver
+2010-06-07,Nashville,Merida
+2010-06-07,Charlotte,San Antonio
+2010-06-07,Oakland,Vancouver
+2010-06-07,Dallas,Birmingham
+2010-06-08,Los Angeles,Calgary
+2010-06-08,Atlanta,Monterrey
+2010-06-07,Seattle,Tijuana
+2010-06-08,Phoenix,Denver
+2010-06-08,Nashville,Merida
+2010-06-08,Charlotte,San Antonio
+2010-06-08,Oakland,Vancouver
+2010-06-08,Dallas,Birmingham
+2010-06-09,Los Angeles,Calgary
+2010-06-09,Atlanta,Monterrey
+2010-06-08,Seattle,Tijuana
+2010-06-09,Phoenix,Denver
+2010-06-09,Nashville,Merida
+2010-06-09,Charlotte,San Antonio
+2010-06-09,Oakland,Vancouver
+2010-06-10,Monterrey,Atlanta
+2010-06-10,Phoenix,Seattle
+2010-06-10,Calgary,Los Angeles
+2010-06-10,San Antonio,Nashville
+2010-06-10,Merida,Birmingham
+2010-06-10,Tijuana,Vancouver
+2010-06-10,Oakland,Denver
+2010-06-10,Dallas,Charlotte
+2010-06-11,Monterrey,Atlanta
+2010-06-11,Phoenix,Seattle
+2010-06-11,Calgary,Los Angeles
+2010-06-11,San Antonio,Nashville
+2010-06-11,Merida,Birmingham
+2010-06-11,Tijuana,Vancouver
+2010-06-11,Oakland,Denver
+2010-06-11,Dallas,Charlotte
+2010-06-12,Monterrey,Atlanta
+2010-06-12,Phoenix,Seattle
+2010-06-12,Calgary,Los Angeles
+2010-06-12,San Antonio,Nashville
+2010-06-12,Merida,Birmingham
+2010-06-12,Tijuana,Vancouver
+2010-06-12,Oakland,Denver
+2010-06-12,Dallas,Charlotte
+2010-06-13,Calgary,Tijuana
+2010-06-13,San Antonio,Charlotte
+2010-06-13,Seattle,Los Angeles
+2010-06-13,Merida,Atlanta
+2010-06-13,Monterrey,Birmingham
+2010-06-14,Denver,Oakland
+2010-06-14,Vancouver,Phoenix
+2010-06-14,Nashville,Dallas
+2010-06-14,Calgary,Tijuana
+2010-06-14,San Antonio,Charlotte
+2010-06-14,Seattle,Los Angeles
+2010-06-14,Merida,Atlanta
+2010-06-14,Monterrey,Birmingham
+2010-06-15,Denver,Oakland
+2010-06-15,Vancouver,Phoenix
+2010-06-15,Nashville,Dallas
+2010-06-15,Calgary,Tijuana
+2010-06-15,San Antonio,Charlotte
+2010-06-15,Seattle,Los Angeles
+2010-06-15,Merida,Atlanta
+2010-06-15,Monterrey,Birmingham
+2010-06-16,Denver,Oakland
+2010-06-16,Vancouver,Phoenix
+2010-06-16,Nashville,Dallas
+2010-06-16,Charlotte,Monterrey
+2010-06-17,Phoenix,Vancouver
+2010-06-17,Denver,Los Angeles
+2010-06-17,Calgary,Oakland
+2010-06-17,Dallas,Nashville
+2010-06-17,Atlanta,Merida
+2010-06-17,Birmingham,San Antonio
+2010-06-17,Tijuana,Seattle
+2010-06-17,Charlotte,Monterrey
+2010-06-18,Phoenix,Vancouver
+2010-06-18,Denver,Los Angeles
+2010-06-18,Calgary,Oakland
+2010-06-18,Dallas,Nashville
+2010-06-18,Atlanta,Merida
+2010-06-18,Birmingham,San Antonio
+2010-06-18,Tijuana,Seattle
+2010-06-18,Charlotte,Monterrey
+2010-06-19,Phoenix,Vancouver
+2010-06-19,Denver,Los Angeles
+2010-06-19,Calgary,Oakland
+2010-06-19,Dallas,Nashville
+2010-06-19,Atlanta,Merida
+2010-06-19,Birmingham,San Antonio
+2010-06-19,Tijuana,Seattle
+2010-06-20,Birmingham,Merida
+2010-06-20,Los Angeles,Vancouver
+2010-06-20,Charlotte,Dallas
+2010-06-20,Oakland,Seattle
+2010-06-20,Denver,Tijuana
+2010-06-20,San Antonio,Atlanta
+2010-06-20,Phoenix,Calgary
+2010-06-20,Nashville,Monterrey
+2010-06-21,Birmingham,Merida
+2010-06-21,Los Angeles,Vancouver
+2010-06-21,Charlotte,Dallas
+2010-06-21,Oakland,Seattle
+2010-06-21,Denver,Tijuana
+2010-06-21,San Antonio,Atlanta
+2010-06-21,Phoenix,Calgary
+2010-06-21,Nashville,Monterrey
+2010-06-22,Birmingham,Merida
+2010-06-22,Los Angeles,Vancouver
+2010-06-22,Charlotte,Dallas
+2010-06-22,Oakland,Seattle
+2010-06-22,Denver,Tijuana
+2010-06-22,San Antonio,Atlanta
+2010-06-22,Phoenix,Calgary
+2010-06-22,Nashville,Monterrey
+2010-06-23,Denver,Phoenix
+2010-06-23,Vancouver,Los Angeles
+2010-06-23,Nashville,San Antonio
+2010-06-23,Birmingham,Monterrey
+2010-06-23,Tijuana,Calgary
+2010-06-24,Merida,Charlotte
+2010-06-24,Atlanta,Dallas
+2010-06-24,Seattle,Oakland
+2010-06-24,Denver,Phoenix
+2010-06-24,Vancouver,Los Angeles
+2010-06-24,Nashville,San Antonio
+2010-06-24,Birmingham,Monterrey
+2010-06-24,Tijuana,Calgary
+2010-06-25,Merida,Charlotte
+2010-06-25,Atlanta,Dallas
+2010-06-25,Seattle,Oakland
+2010-06-25,Denver,Phoenix
+2010-06-25,Vancouver,Los Angeles
+2010-06-25,Nashville,San Antonio
+2010-06-25,Birmingham,Monterrey
+2010-06-25,Tijuana,Calgary
+2010-06-26,Merida,Charlotte
+2010-06-26,Atlanta,Dallas
+2010-06-26,Seattle,Oakland
+2010-06-27,Merida,Nashville
+2010-06-27,Atlanta,San Antonio
+2010-06-27,Oakland,Calgary
+2010-06-26,Los Angeles,Denver
+2010-06-27,Birmingham,Dallas
+2010-06-27,Seattle,Phoenix
+2010-06-27,Monterrey,Charlotte
+2010-06-27,Vancouver,Tijuana
+2010-06-28,Merida,Nashville
+2010-06-28,Atlanta,San Antonio
+2010-06-28,Oakland,Calgary
+2010-06-27,Los Angeles,Denver
+2010-06-28,Birmingham,Dallas
+2010-06-28,Seattle,Phoenix
+2010-06-28,Monterrey,Charlotte
+2010-06-28,Vancouver,Tijuana
+2010-06-29,Merida,Nashville
+2010-06-29,Atlanta,San Antonio
+2010-06-29,Oakland,Calgary
+2010-06-28,Los Angeles,Denver
+2010-06-29,Birmingham,Dallas
+2010-06-29,Seattle,Phoenix
+2010-06-29,Monterrey,Charlotte
+2010-06-29,Vancouver,Tijuana
+2010-06-30,,
+2010-07-01,,
+2010-07-02,,
+2010-07-03,,
+2010-07-04,Vancouver,Calgary
+2010-07-04,Dallas,San Antonio
+2010-07-04,Tijuana,Los Angeles
+2010-07-04,Atlanta,Charlotte
+2010-07-04,Denver,Seattle
+2010-07-05,Birmingham,Nashville
+2010-07-05,Oakland,Phoenix
+2010-07-05,Merida,Monterrey
+2010-07-05,Vancouver,Calgary
+2010-07-05,Dallas,San Antonio
+2010-07-05,Tijuana,Los Angeles
+2010-07-05,Atlanta,Charlotte
+2010-07-05,Denver,Seattle
+2010-07-06,Birmingham,Nashville
+2010-07-06,Oakland,Phoenix
+2010-07-06,Merida,Monterrey
+2010-07-06,Vancouver,Calgary
+2010-07-06,Dallas,San Antonio
+2010-07-06,Tijuana,Los Angeles
+2010-07-06,Atlanta,Charlotte
+2010-07-06,Denver,Seattle
+2010-07-07,Birmingham,Nashville
+2010-07-07,Oakland,Phoenix
+2010-07-07,Merida,Monterrey
+2010-07-08,Atlanta,Nashville
+2010-07-08,Phoenix,Tijuana
+2010-07-08,Monterrey,Merida
+2010-07-08,Los Angeles,Oakland
+2010-07-07,Seattle,Calgary
+2010-07-08,San Antonio,Dallas
+2010-07-08,Charlotte,Birmingham
+2010-07-08,Vancouver,Denver
+2010-07-09,Atlanta,Nashville
+2010-07-09,Phoenix,Tijuana
+2010-07-09,Monterrey,Merida
+2010-07-09,Los Angeles,Oakland
+2010-07-08,Seattle,Calgary
+2010-07-09,San Antonio,Dallas
+2010-07-09,Charlotte,Birmingham
+2010-07-09,Vancouver,Denver
+2010-07-10,Atlanta,Nashville
+2010-07-10,Phoenix,Tijuana
+2010-07-10,Monterrey,Merida
+2010-07-10,Los Angeles,Oakland
+2010-07-09,Seattle,Calgary
+2010-07-10,San Antonio,Dallas
+2010-07-10,Charlotte,Birmingham
+2010-07-10,Vancouver,Denver
+2010-07-11,Nashville,Charlotte
+2010-07-11,Oakland,Tijuana
+2010-07-11,Vancouver,Seattle
+2010-07-11,Monterrey,Dallas
+2010-07-11,Merida,San Antonio
+2010-07-11,Calgary,Denver
+2010-07-11,Atlanta,Birmingham
+2010-07-11,Los Angeles,Phoenix
+2010-07-12,Nashville,Charlotte
+2010-07-12,Oakland,Tijuana
+2010-07-12,Vancouver,Seattle
+2010-07-12,Monterrey,Dallas
+2010-07-12,Merida,San Antonio
+2010-07-12,Calgary,Denver
+2010-07-12,Atlanta,Birmingham
+2010-07-12,Los Angeles,Phoenix
+2010-07-13,Nashville,Charlotte
+2010-07-13,Oakland,Tijuana
+2010-07-13,Vancouver,Seattle
+2010-07-13,Monterrey,Dallas
+2010-07-13,Merida,San Antonio
+2010-07-13,Calgary,Denver
+2010-07-13,Atlanta,Birmingham
+2010-07-13,Los Angeles,Phoenix
+2010-07-14,Dallas,Merida
+2010-07-14,Los Angeles,Tijuana
+2010-07-14,Phoenix,Oakland
+2010-07-14,Calgary,Seattle
+2010-07-14,Charlotte,Nashville
+2010-07-15,Denver,Vancouver
+2010-07-15,San Antonio,Monterrey
+2010-07-15,Birmingham,Atlanta
+2010-07-15,Dallas,Merida
+2010-07-15,Los Angeles,Tijuana
+2010-07-15,Phoenix,Oakland
+2010-07-15,Calgary,Seattle
+2010-07-15,Charlotte,Nashville
+2010-07-16,Denver,Vancouver
+2010-07-16,San Antonio,Monterrey
+2010-07-16,Birmingham,Atlanta
+2010-07-16,Dallas,Merida
+2010-07-16,Los Angeles,Tijuana
+2010-07-16,Phoenix,Oakland
+2010-07-16,Calgary,Seattle
+2010-07-16,Charlotte,Nashville
+2010-07-17,Denver,Vancouver
+2010-07-17,San Antonio,Monterrey
+2010-07-17,Birmingham,Atlanta
+2010-07-17,Calgary,Nashville
+2010-07-18,Birmingham,Denver
+2010-07-17,Merida,Oakland
+2010-07-18,Atlanta,Seattle
+2010-07-18,Phoenix,San Antonio
+2010-07-18,Vancouver,Charlotte
+2010-07-18,Los Angeles,Dallas
+2010-07-18,Monterrey,Tijuana
+2010-07-18,Calgary,Nashville
+2010-07-19,Birmingham,Denver
+2010-07-18,Merida,Oakland
+2010-07-19,Atlanta,Seattle
+2010-07-19,Phoenix,San Antonio
+2010-07-19,Vancouver,Charlotte
+2010-07-19,Los Angeles,Dallas
+2010-07-19,Monterrey,Tijuana
+2010-07-19,Calgary,Nashville
+2010-07-20,Birmingham,Denver
+2010-07-19,Merida,Oakland
+2010-07-20,Atlanta,Seattle
+2010-07-20,Phoenix,San Antonio
+2010-07-20,Vancouver,Charlotte
+2010-07-20,Los Angeles,Dallas
+2010-07-20,Monterrey,Tijuana
+2010-07-21,Monterrey,Los Angeles
+2010-07-21,Denver,Nashville
+2010-07-21,Birmingham,Calgary
+2010-07-21,Dallas,Phoenix
+2010-07-21,Charlotte,Vancouver
+2010-07-21,Seattle,Atlanta
+2010-07-21,Oakland,San Antonio
+2010-07-21,Merida,Tijuana
+2010-07-22,Monterrey,Los Angeles
+2010-07-22,Denver,Nashville
+2010-07-22,Birmingham,Calgary
+2010-07-22,Dallas,Phoenix
+2010-07-22,Charlotte,Vancouver
+2010-07-22,Seattle,Atlanta
+2010-07-22,Oakland,San Antonio
+2010-07-22,Merida,Tijuana
+2010-07-23,Monterrey,Los Angeles
+2010-07-23,Denver,Nashville
+2010-07-23,Birmingham,Calgary
+2010-07-23,Dallas,Phoenix
+2010-07-23,Charlotte,Vancouver
+2010-07-23,Seattle,Atlanta
+2010-07-23,Oakland,San Antonio
+2010-07-23,Merida,Tijuana
+2010-07-24,Merida,Los Angeles
+2010-07-24,San Antonio,Tijuana
+2010-07-24,Seattle,Charlotte
+2010-07-24,Oakland,Monterrey
+2010-07-24,Nashville,Denver
+2010-07-25,Birmingham,Vancouver
+2010-07-25,Calgary,Atlanta
+2010-07-25,Phoenix,Dallas
+2010-07-25,Merida,Los Angeles
+2010-07-25,San Antonio,Tijuana
+2010-07-25,Seattle,Charlotte
+2010-07-25,Oakland,Monterrey
+2010-07-25,Nashville,Denver
+2010-07-26,Birmingham,Vancouver
+2010-07-26,Calgary,Atlanta
+2010-07-26,Phoenix,Dallas
+2010-07-26,Merida,Los Angeles
+2010-07-26,San Antonio,Tijuana
+2010-07-26,Seattle,Charlotte
+2010-07-26,Oakland,Monterrey
+2010-07-26,Nashville,Denver
+2010-07-27,Birmingham,Vancouver
+2010-07-27,Calgary,Atlanta
+2010-07-27,Phoenix,Dallas
+2010-07-27,Nashville,Seattle
+2010-07-28,Calgary,Birmingham
+2010-07-27,Denver,Charlotte
+2010-07-28,Monterrey,Phoenix
+2010-07-27,Los Angeles,Merida
+2010-07-28,Dallas,Oakland
+2010-07-28,Vancouver,Atlanta
+2010-07-28,Tijuana,San Antonio
+2010-07-28,Nashville,Seattle
+2010-07-29,Calgary,Birmingham
+2010-07-28,Denver,Charlotte
+2010-07-29,Monterrey,Phoenix
+2010-07-28,Los Angeles,Merida
+2010-07-29,Dallas,Oakland
+2010-07-29,Vancouver,Atlanta
+2010-07-29,Tijuana,San Antonio
+2010-07-29,Nashville,Seattle
+2010-07-30,Calgary,Birmingham
+2010-07-29,Denver,Charlotte
+2010-07-30,Monterrey,Phoenix
+2010-07-29,Los Angeles,Merida
+2010-07-30,Dallas,Oakland
+2010-07-30,Vancouver,Atlanta
+2010-07-30,Tijuana,San Antonio
+2010-07-31,Tijuana,Dallas
+2010-07-31,Vancouver,Birmingham
+2010-07-31,Oakland,Merida
+2010-07-30,Charlotte,Seattle
+2010-07-31,Denver,Atlanta
+2010-07-31,San Antonio,Phoenix
+2010-07-31,Los Angeles,Monterrey
+2010-07-31,Nashville,Calgary
+2010-08-01,Tijuana,Dallas
+2010-08-01,Vancouver,Birmingham
+2010-08-01,Oakland,Merida
+2010-07-31,Charlotte,Seattle
+2010-08-01,Denver,Atlanta
+2010-08-01,San Antonio,Phoenix
+2010-08-01,Los Angeles,Monterrey
+2010-08-01,Nashville,Calgary
+2010-08-02,Tijuana,Dallas
+2010-08-02,Vancouver,Birmingham
+2010-08-02,Oakland,Merida
+2010-08-01,Charlotte,Seattle
+2010-08-02,Denver,Atlanta
+2010-08-02,San Antonio,Phoenix
+2010-08-02,Los Angeles,Monterrey
+2010-08-02,Nashville,Calgary
+2010-08-03,Seattle,Nashville
+2010-08-03,Tijuana,Merida
+2010-08-03,Los Angeles,San Antonio
+2010-08-03,Atlanta,Vancouver
+2010-08-03,Charlotte,Calgary
+2010-08-04,Oakland,Dallas
+2010-08-04,Phoenix,Monterrey
+2010-08-04,Denver,Birmingham
+2010-08-04,Seattle,Nashville
+2010-08-04,Tijuana,Merida
+2010-08-04,Los Angeles,San Antonio
+2010-08-04,Atlanta,Vancouver
+2010-08-04,Charlotte,Calgary
+2010-08-05,Oakland,Dallas
+2010-08-05,Phoenix,Monterrey
+2010-08-05,Denver,Birmingham
+2010-08-05,Seattle,Nashville
+2010-08-05,Tijuana,Merida
+2010-08-05,Los Angeles,San Antonio
+2010-08-05,Atlanta,Vancouver
+2010-08-05,Charlotte,Calgary
+2010-08-06,Oakland,Dallas
+2010-08-06,Phoenix,Monterrey
+2010-08-06,Denver,Birmingham
+2010-08-07,San Antonio,Oakland
+2010-08-07,Dallas,Los Angeles
+2010-08-07,Tijuana,Monterrey
+2010-08-06,Vancouver,Nashville
+2010-08-07,Atlanta,Denver
+2010-08-07,Birmingham,Seattle
+2010-08-07,Phoenix,Merida
+2010-08-07,Calgary,Charlotte
+2010-08-08,San Antonio,Oakland
+2010-08-08,Dallas,Los Angeles
+2010-08-08,Tijuana,Monterrey
+2010-08-07,Vancouver,Nashville
+2010-08-08,Atlanta,Denver
+2010-08-08,Birmingham,Seattle
+2010-08-08,Phoenix,Merida
+2010-08-08,Calgary,Charlotte
+2010-08-09,San Antonio,Oakland
+2010-08-09,Dallas,Los Angeles
+2010-08-09,Tijuana,Monterrey
+2010-08-08,Vancouver,Nashville
+2010-08-09,Atlanta,Denver
+2010-08-09,Birmingham,Seattle
+2010-08-09,Phoenix,Merida
+2010-08-09,Calgary,Charlotte
+2010-08-10,San Antonio,Los Angeles
+2010-08-10,Atlanta,Calgary
+2010-08-10,Charlotte,Denver
+2010-08-10,Dallas,Tijuana
+2010-08-10,Seattle,Birmingham
+2010-08-10,Nashville,Vancouver
+2010-08-10,Merida,Phoenix
+2010-08-10,Monterrey,Oakland
+2010-08-11,San Antonio,Los Angeles
+2010-08-11,Atlanta,Calgary
+2010-08-11,Charlotte,Denver
+2010-08-11,Dallas,Tijuana
+2010-08-11,Seattle,Birmingham
+2010-08-11,Nashville,Vancouver
+2010-08-11,Merida,Phoenix
+2010-08-11,Monterrey,Oakland
+2010-08-12,San Antonio,Los Angeles
+2010-08-12,Atlanta,Calgary
+2010-08-12,Charlotte,Denver
+2010-08-12,Dallas,Tijuana
+2010-08-12,Seattle,Birmingham
+2010-08-12,Nashville,Vancouver
+2010-08-12,Merida,Phoenix
+2010-08-12,Monterrey,Oakland
+2010-08-13,,
+2010-08-14,,
+2010-08-15,,
+2010-08-16,Phoenix,Los Angeles
+2010-08-16,Denver,Calgary
+2010-08-16,San Antonio,Merida
+2010-08-16,Dallas,Monterrey
+2010-08-16,Birmingham,Charlotte
+2010-08-17,Tijuana,Oakland
+2010-08-17,Nashville,Atlanta
+2010-08-17,Seattle,Vancouver
+2010-08-17,Phoenix,Los Angeles
+2010-08-17,Denver,Calgary
+2010-08-17,San Antonio,Merida
+2010-08-17,Dallas,Monterrey
+2010-08-17,Birmingham,Charlotte
+2010-08-18,Tijuana,Oakland
+2010-08-18,Nashville,Atlanta
+2010-08-18,Seattle,Vancouver
+2010-08-18,Phoenix,Los Angeles
+2010-08-18,Denver,Calgary
+2010-08-18,San Antonio,Merida
+2010-08-18,Dallas,Monterrey
+2010-08-18,Birmingham,Charlotte
+2010-08-19,Tijuana,Oakland
+2010-08-19,Nashville,Atlanta
+2010-08-19,Seattle,Vancouver
+2010-08-19,Merida,Dallas
+2010-08-20,Nashville,Birmingham
+2010-08-20,Calgary,Vancouver
+2010-08-20,Seattle,Denver
+2010-08-20,Oakland,Los Angeles
+2010-08-20,Charlotte,Atlanta
+2010-08-20,Tijuana,Phoenix
+2010-08-20,Monterrey,San Antonio
+2010-08-20,Merida,Dallas
+2010-08-21,Nashville,Birmingham
+2010-08-21,Calgary,Vancouver
+2010-08-21,Seattle,Denver
+2010-08-21,Oakland,Los Angeles
+2010-08-21,Charlotte,Atlanta
+2010-08-21,Tijuana,Phoenix
+2010-08-21,Monterrey,San Antonio
+2010-08-21,Merida,Dallas
+2010-08-22,Nashville,Birmingham
+2010-08-22,Calgary,Vancouver
+2010-08-22,Seattle,Denver
+2010-08-22,Oakland,Los Angeles
+2010-08-22,Charlotte,Atlanta
+2010-08-22,Tijuana,Phoenix
+2010-08-22,Monterrey,San Antonio
+2010-08-23,Denver,Calgary
+2010-08-23,Tijuana,Los Angeles
+2010-08-23,Charlotte,Birmingham
+2010-08-23,Monterrey,San Antonio
+2010-08-23,Atlanta,Nashville
+2010-08-24,Dallas,Merida
+2010-08-24,Seattle,Vancouver
+2010-08-24,Oakland,Phoenix
+2010-08-24,Denver,Calgary
+2010-08-24,Tijuana,Los Angeles
+2010-08-24,Charlotte,Birmingham
+2010-08-24,Monterrey,San Antonio
+2010-08-24,Atlanta,Nashville
+2010-08-25,Dallas,Merida
+2010-08-25,Seattle,Vancouver
+2010-08-25,Oakland,Phoenix
+2010-08-25,Denver,Calgary
+2010-08-25,Tijuana,Los Angeles
+2010-08-25,Charlotte,Birmingham
+2010-08-25,Monterrey,San Antonio
+2010-08-25,Atlanta,Nashville
+2010-08-26,Dallas,Merida
+2010-08-26,Seattle,Vancouver
+2010-08-26,Oakland,Phoenix
+2010-08-27,Phoenix,Tijuana
+2010-08-27,Seattle,Denver
+2010-08-26,Atlanta,Birmingham
+2010-08-27,Monterrey,Dallas
+2010-08-27,Vancouver,Calgary
+2010-08-27,Los Angeles,Oakland
+2010-08-27,Nashville,Charlotte
+2010-08-27,Merida,San Antonio
+2010-08-28,Phoenix,Tijuana
+2010-08-28,Seattle,Denver
+2010-08-27,Atlanta,Birmingham
+2010-08-28,Monterrey,Dallas
+2010-08-28,Vancouver,Calgary
+2010-08-28,Los Angeles,Oakland
+2010-08-28,Nashville,Charlotte
+2010-08-28,Merida,San Antonio
+2010-08-29,Phoenix,Tijuana
+2010-08-29,Seattle,Denver
+2010-08-28,Atlanta,Birmingham
+2010-08-29,Monterrey,Dallas
+2010-08-29,Vancouver,Calgary
+2010-08-29,Los Angeles,Oakland
+2010-08-29,Nashville,Charlotte
+2010-08-29,Merida,San Antonio
+2010-08-30,Nashville,Tijuana
+2010-08-30,Calgary,Monterrey
+2010-08-30,Merida,Seattle
+2010-08-30,Los Angeles,Birmingham
+2010-08-30,Dallas,Denver
+2010-08-30,Oakland,Atlanta
+2010-08-30,Vancouver,San Antonio
+2010-08-30,Charlotte,Phoenix
+2010-08-31,Nashville,Tijuana
+2010-08-31,Calgary,Monterrey
+2010-08-31,Merida,Seattle
+2010-08-31,Los Angeles,Birmingham
+2010-08-31,Dallas,Denver
+2010-08-31,Oakland,Atlanta
+2010-08-31,Vancouver,San Antonio
+2010-08-31,Charlotte,Phoenix
+2010-09-01,Nashville,Tijuana
+2010-09-01,Calgary,Monterrey
+2010-09-01,Merida,Seattle
+2010-09-01,Los Angeles,Birmingham
+2010-09-01,Dallas,Denver
+2010-09-01,Oakland,Atlanta
+2010-09-01,Vancouver,San Antonio
+2010-09-01,Charlotte,Phoenix
+2010-09-02,Seattle,Merida
+2010-09-02,San Antonio,Vancouver
+2010-09-02,Tijuana,Nashville
+2010-09-02,Birmingham,Los Angeles
+2010-09-02,Phoenix,Atlanta
+2010-09-03,Dallas,Calgary
+2010-09-03,Charlotte,Oakland
+2010-09-03,Denver,Monterrey
+2010-09-03,Seattle,Merida
+2010-09-03,San Antonio,Vancouver
+2010-09-03,Tijuana,Nashville
+2010-09-03,Birmingham,Los Angeles
+2010-09-03,Phoenix,Atlanta
+2010-09-04,Dallas,Calgary
+2010-09-04,Charlotte,Oakland
+2010-09-04,Denver,Monterrey
+2010-09-04,Seattle,Merida
+2010-09-04,San Antonio,Vancouver
+2010-09-04,Tijuana,Nashville
+2010-09-04,Birmingham,Los Angeles
+2010-09-04,Phoenix,Atlanta
+2010-09-05,Dallas,Calgary
+2010-09-05,Charlotte,Oakland
+2010-09-05,Denver,Monterrey
+2010-09-06,San Antonio,Calgary
+2010-09-06,Vancouver,Dallas
+2010-09-06,Los Angeles,Charlotte
+2010-09-05,Atlanta,Tijuana
+2010-09-06,Oakland,Nashville
+2010-09-06,Denver,Merida
+2010-09-06,Birmingham,Phoenix
+2010-09-06,Monterrey,Seattle
+2010-09-07,San Antonio,Calgary
+2010-09-07,Vancouver,Dallas
+2010-09-07,Los Angeles,Charlotte
+2010-09-06,Atlanta,Tijuana
+2010-09-07,Oakland,Nashville
+2010-09-07,Denver,Merida
+2010-09-07,Birmingham,Phoenix
+2010-09-07,Monterrey,Seattle
+2010-09-08,San Antonio,Calgary
+2010-09-08,Vancouver,Dallas
+2010-09-08,Los Angeles,Charlotte
+2010-09-07,Atlanta,Tijuana
+2010-09-08,Oakland,Nashville
+2010-09-08,Denver,Merida
+2010-09-08,Birmingham,Phoenix
+2010-09-08,Monterrey,Seattle
+2010-09-09,Merida,Calgary
+2010-09-09,Birmingham,Tijuana
+2010-09-09,Denver,San Antonio
+2010-09-09,Oakland,Charlotte
+2010-09-09,Seattle,Dallas
+2010-09-09,Atlanta,Phoenix
+2010-09-09,Los Angeles,Nashville
+2010-09-09,Vancouver,Monterrey
+2010-09-10,Merida,Calgary
+2010-09-10,Birmingham,Tijuana
+2010-09-10,Denver,San Antonio
+2010-09-10,Oakland,Charlotte
+2010-09-10,Seattle,Dallas
+2010-09-10,Atlanta,Phoenix
+2010-09-10,Los Angeles,Nashville
+2010-09-10,Vancouver,Monterrey
+2010-09-11,Merida,Calgary
+2010-09-11,Birmingham,Tijuana
+2010-09-11,Denver,San Antonio
+2010-09-11,Oakland,Charlotte
+2010-09-11,Seattle,Dallas
+2010-09-11,Atlanta,Phoenix
+2010-09-11,Los Angeles,Nashville
+2010-09-11,Vancouver,Monterrey
+2010-09-12,Dallas,Monterrey
+2010-09-12,Oakland,Tijuana
+2010-09-12,San Antonio,Merida
+2010-09-12,Atlanta,Charlotte
+2010-09-12,Nashville,Birmingham
+2010-09-13,Calgary,Vancouver
+2010-09-13,Phoenix,Los Angeles
+2010-09-13,Denver,Seattle
+2010-09-13,Dallas,Monterrey
+2010-09-13,Oakland,Tijuana
+2010-09-13,San Antonio,Merida
+2010-09-13,Atlanta,Charlotte
+2010-09-13,Nashville,Birmingham
+2010-09-14,Calgary,Vancouver
+2010-09-14,Phoenix,Los Angeles
+2010-09-14,Denver,Seattle
+2010-09-14,Dallas,Monterrey
+2010-09-14,Oakland,Tijuana
+2010-09-14,San Antonio,Merida
+2010-09-14,Atlanta,Charlotte
+2010-09-14,Nashville,Birmingham
+2010-09-15,Calgary,Vancouver
+2010-09-15,Phoenix,Los Angeles
+2010-09-15,Denver,Seattle
+2010-09-15,Birmingham,Atlanta
+2010-09-16,Los Angeles,Phoenix
+2010-09-16,Seattle,Calgary
+2010-09-15,Merida,Monterrey
+2010-09-15,Dallas,San Antonio
+2010-09-16,Tijuana,Oakland
+2010-09-16,Vancouver,Denver
+2010-09-16,Charlotte,Nashville
+2010-09-16,Birmingham,Atlanta
+2010-09-17,Los Angeles,Phoenix
+2010-09-17,Seattle,Calgary
+2010-09-16,Merida,Monterrey
+2010-09-16,Dallas,San Antonio
+2010-09-17,Tijuana,Oakland
+2010-09-17,Vancouver,Denver
+2010-09-17,Charlotte,Nashville
+2010-09-17,Birmingham,Atlanta
+2010-09-18,Los Angeles,Phoenix
+2010-09-18,Seattle,Calgary
+2010-09-17,Merida,Monterrey
+2010-09-17,Dallas,San Antonio
+2010-09-18,Tijuana,Oakland
+2010-09-18,Vancouver,Denver
+2010-09-18,Charlotte,Nashville
+2010-09-19,Los Angeles,Tijuana
+2010-09-18,Monterrey,Merida
+2010-09-18,San Antonio,Dallas
+2010-09-19,Vancouver,Seattle
+2010-09-19,Charlotte,Atlanta
+2010-09-19,Calgary,Denver
+2010-09-19,Birmingham,Nashville
+2010-09-19,Phoenix,Oakland
+2010-09-20,Los Angeles,Tijuana
+2010-09-19,Monterrey,Merida
+2010-09-19,San Antonio,Dallas
+2010-09-20,Vancouver,Seattle
+2010-09-20,Charlotte,Atlanta
+2010-09-20,Calgary,Denver
+2010-09-20,Birmingham,Nashville
+2010-09-20,Phoenix,Oakland
+2010-09-21,Los Angeles,Tijuana
+2010-09-20,Monterrey,Merida
+2010-09-20,San Antonio,Dallas
+2010-09-21,Vancouver,Seattle
+2010-09-21,Charlotte,Atlanta
+2010-09-21,Calgary,Denver
+2010-09-21,Birmingham,Nashville
+2010-09-21,Phoenix,Oakland
+2010-09-22,Calgary,Seattle
+2010-09-22,San Antonio,Monterrey
+2010-09-22,Merida,Dallas
+2010-09-22,Tijuana,Phoenix
+2010-09-22,Oakland,Los Angeles
+2010-09-23,Nashville,Atlanta
+2010-09-23,Denver,Vancouver
+2010-09-23,Birmingham,Charlotte
+2010-09-23,Calgary,Seattle
+2010-09-23,San Antonio,Monterrey
+2010-09-23,Merida,Dallas
+2010-09-23,Tijuana,Phoenix
+2010-09-23,Oakland,Los Angeles
+2010-09-24,Nashville,Atlanta
+2010-09-24,Denver,Vancouver
+2010-09-24,Birmingham,Charlotte
+2010-09-24,Calgary,Seattle
+2010-09-24,San Antonio,Monterrey
+2010-09-24,Merida,Dallas
+2010-09-24,Tijuana,Phoenix
+2010-09-24,Oakland,Los Angeles
+2010-09-25,Nashville,Atlanta
+2010-09-25,Denver,Vancouver
+2010-09-25,Birmingham,Charlotte
+2010-09-26,,
+2010-09-27,,
+2010-09-28,,
+2010-09-22,Nashville,Atlanta
+2010-09-22,Birmingham,Charlotte
+2010-07-07,Atlanta,Charlotte
+2010-08-22,Nashville,Birmingham
+2010-09-15,Charlotte,Nashville
+2010-09-18,Birmingham,Atlanta
+2010-08-20,Charlotte,Atlanta
+2010-07-04,Birmingham,Nashville
+2010-08-26,Nashville,Charlotte
+2010-08-29,Atlanta,Birmingham
+2010-07-10,Atlanta,Nashville
+2010-08-23,Charlotte,Birmingham
+2010-09-25,San Antonio,Monterrey
+2010-08-22,Merida,Dallas
+2010-08-16,San Antonio,Merida
+2010-08-17,Dallas,Monterrey
+2010-09-21,Monterrey,Merida
+2010-09-21,San Antonio,Dallas
+2010-07-07,Dallas,San Antonio
+2010-07-04,Merida,Monterrey
+2010-08-26,Monterrey,San Antonio
+2010-08-23,Dallas,Merida
+2010-07-11,Merida,San Antonio
+2010-07-12,Monterrey,Dallas
+2010-09-25,Calgary,Seattle
+2010-07-07,Vancouver,Denver
+2010-08-26,Denver,Calgary
+2010-08-23,Seattle,Vancouver
+2010-04-10,Calgary,Denver
+2010-07-13,Vancouver,Seattle
+2010-07-10,Seattle,Calgary
+2010-09-22,Denver,Vancouver
+2010-04-17,Vancouver,Calgary
+2010-09-12,Denver,Seattle
+2010-04-17,Seattle,Denver
+2010-09-12,Calgary,Vancouver
+2010-09-25,Tijuana,Phoenix
+2010-04-01,Los Angeles,Oakland
+2010-07-15,Phoenix,Oakland
+2010-07-17,Los Angeles,Tijuana
+2010-07-12,Los Angeles,Phoenix
+2010-09-15,Oakland,Tijuana
+2010-08-23,Oakland,Phoenix
+2010-08-26,Tijuana,Los Angeles
+2010-09-12,Phoenix,Los Angeles
+2010-08-16,Tijuana,Oakland
+2010-09-25,Oakland,Los Angeles
+2010-08-28,Phoenix,Tijuana

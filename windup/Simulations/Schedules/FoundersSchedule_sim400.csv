@@ -1,0 +1,1262 @@
+Date,Home,Away
+2010-04-01,New York,Montreal
+2010-04-01,Boston,New Haven
+2010-04-01,Philadelphia,Toronto
+2010-04-01,Akron,Columbus
+2010-04-01,St. Paul,Chicago
+2010-04-02,"Washington, D.C.",Pittsburgh
+2010-04-02,Detroit,Indianapolis
+2010-04-02,Winnipeg,St. Louis
+2010-04-02,New York,Montreal
+2010-04-02,Boston,New Haven
+2010-04-02,Philadelphia,Toronto
+2010-04-02,Akron,Columbus
+2010-04-02,St. Paul,Chicago
+2010-04-03,"Washington, D.C.",Pittsburgh
+2010-04-03,Detroit,Indianapolis
+2010-04-03,Winnipeg,St. Louis
+2010-04-03,New York,Montreal
+2010-04-03,Boston,New Haven
+2010-04-03,Philadelphia,Toronto
+2010-04-03,Akron,Columbus
+2010-04-03,St. Paul,Chicago
+2010-04-04,"Washington, D.C.",Pittsburgh
+2010-04-04,Detroit,Indianapolis
+2010-04-04,Winnipeg,St. Louis
+2010-04-05,Indianapolis,Detroit
+2010-04-04,Montreal,New Haven
+2010-04-05,Toronto,Pittsburgh
+2010-04-05,St. Paul,Winnipeg
+2010-04-05,"Washington, D.C.",Philadelphia
+2010-04-05,St. Louis,Chicago
+2010-04-05,Boston,New York
+2010-04-05,Columbus,Akron
+2010-04-06,Indianapolis,Detroit
+2010-04-05,Montreal,New Haven
+2010-04-06,Toronto,Pittsburgh
+2010-04-06,St. Paul,Winnipeg
+2010-04-06,"Washington, D.C.",Philadelphia
+2010-04-06,St. Louis,Chicago
+2010-04-06,Boston,New York
+2010-04-06,Columbus,Akron
+2010-04-07,Indianapolis,Detroit
+2010-04-06,Montreal,New Haven
+2010-04-07,Toronto,Pittsburgh
+2010-04-07,St. Paul,Winnipeg
+2010-04-07,"Washington, D.C.",Philadelphia
+2010-04-07,St. Louis,Chicago
+2010-04-07,Boston,New York
+2010-04-07,Columbus,Akron
+2010-04-08,Detroit,Columbus
+2010-04-08,Akron,Indianapolis
+2010-04-08,New Haven,New York
+2010-04-08,Winnipeg,Chicago
+2010-04-08,Philadelphia,"Washington, D.C."
+2010-04-08,Pittsburgh,Toronto
+2010-04-08,St. Paul,St. Louis
+2010-04-08,Montreal,Boston
+2010-04-09,Detroit,Columbus
+2010-04-09,Akron,Indianapolis
+2010-04-09,New Haven,New York
+2010-04-09,Winnipeg,Chicago
+2010-04-09,Philadelphia,"Washington, D.C."
+2010-04-09,Pittsburgh,Toronto
+2010-04-09,St. Paul,St. Louis
+2010-04-09,Montreal,Boston
+2010-04-10,Detroit,Columbus
+2010-04-10,Akron,Indianapolis
+2010-04-10,New Haven,New York
+2010-04-10,Winnipeg,Chicago
+2010-04-10,Philadelphia,"Washington, D.C."
+2010-04-10,Pittsburgh,Toronto
+2010-04-10,St. Paul,St. Louis
+2010-04-10,Montreal,Boston
+2010-04-11,New York,Boston
+2010-04-11,Indianapolis,Akron
+2010-04-11,Chicago,St. Louis
+2010-04-11,Toronto,Philadelphia
+2010-04-11,New Haven,Montreal
+2010-04-11,Pittsburgh,"Washington, D.C."
+2010-04-11,Winnipeg,St. Paul
+2010-04-11,Columbus,Detroit
+2010-04-12,New York,Boston
+2010-04-12,Indianapolis,Akron
+2010-04-12,Chicago,St. Louis
+2010-04-12,Toronto,Philadelphia
+2010-04-12,New Haven,Montreal
+2010-04-12,Pittsburgh,"Washington, D.C."
+2010-04-12,Winnipeg,St. Paul
+2010-04-12,Columbus,Detroit
+2010-04-13,New York,Boston
+2010-04-13,Indianapolis,Akron
+2010-04-13,Chicago,St. Louis
+2010-04-13,Toronto,Philadelphia
+2010-04-13,New Haven,Montreal
+2010-04-13,Pittsburgh,"Washington, D.C."
+2010-04-13,Winnipeg,St. Paul
+2010-04-13,Columbus,Detroit
+2010-04-14,New York,New Haven
+2010-04-14,St. Louis,Winnipeg
+2010-04-14,Columbus,Indianapolis
+2010-04-14,Akron,Detroit
+2010-04-14,Philadelphia,Pittsburgh
+2010-04-15,Toronto,"Washington, D.C."
+2010-04-15,Chicago,St. Paul
+2010-04-15,Boston,Montreal
+2010-04-15,New York,New Haven
+2010-04-15,St. Louis,Winnipeg
+2010-04-15,Columbus,Indianapolis
+2010-04-15,Akron,Detroit
+2010-04-15,Philadelphia,Pittsburgh
+2010-04-16,Toronto,"Washington, D.C."
+2010-04-16,Chicago,St. Paul
+2010-04-16,Boston,Montreal
+2010-04-16,New York,New Haven
+2010-04-16,St. Louis,Winnipeg
+2010-04-16,Columbus,Indianapolis
+2010-04-16,Akron,Detroit
+2010-04-16,Philadelphia,Pittsburgh
+2010-04-17,Toronto,"Washington, D.C."
+2010-04-17,Chicago,St. Paul
+2010-04-17,Boston,Montreal
+2010-04-18,"Washington, D.C.",Toronto
+2010-04-18,St. Louis,St. Paul
+2010-04-18,New Haven,Boston
+2010-04-18,Chicago,Winnipeg
+2010-04-17,Detroit,Akron
+2010-04-18,Montreal,New York
+2010-04-18,Indianapolis,Columbus
+2010-04-18,Pittsburgh,Philadelphia
+2010-04-19,"Washington, D.C.",Toronto
+2010-04-19,St. Louis,St. Paul
+2010-04-19,New Haven,Boston
+2010-04-19,Chicago,Winnipeg
+2010-04-18,Detroit,Akron
+2010-04-19,Montreal,New York
+2010-04-19,Indianapolis,Columbus
+2010-04-19,Pittsburgh,Philadelphia
+2010-04-20,"Washington, D.C.",Toronto
+2010-04-20,St. Louis,St. Paul
+2010-04-20,New Haven,Boston
+2010-04-20,Chicago,Winnipeg
+2010-04-19,Detroit,Akron
+2010-04-20,Montreal,New York
+2010-04-20,Indianapolis,Columbus
+2010-04-20,Pittsburgh,Philadelphia
+2010-04-21,Winnipeg,Boston
+2010-04-21,Chicago,New Haven
+2010-04-21,Detroit,Pittsburgh
+2010-04-21,Toronto,Indianapolis
+2010-04-21,St. Louis,New York
+2010-04-21,Philadelphia,Akron
+2010-04-21,Montreal,St. Paul
+2010-04-21,"Washington, D.C.",Columbus
+2010-04-22,Winnipeg,Boston
+2010-04-22,Chicago,New Haven
+2010-04-22,Detroit,Pittsburgh
+2010-04-22,Toronto,Indianapolis
+2010-04-22,St. Louis,New York
+2010-04-22,Philadelphia,Akron
+2010-04-22,Montreal,St. Paul
+2010-04-22,"Washington, D.C.",Columbus
+2010-04-23,Winnipeg,Boston
+2010-04-23,Chicago,New Haven
+2010-04-23,Detroit,Pittsburgh
+2010-04-23,Toronto,Indianapolis
+2010-04-23,St. Louis,New York
+2010-04-23,Philadelphia,Akron
+2010-04-23,Montreal,St. Paul
+2010-04-23,"Washington, D.C.",Columbus
+2010-04-24,Chicago,Boston
+2010-04-24,Pittsburgh,Columbus
+2010-04-24,Detroit,Philadelphia
+2010-04-24,Winnipeg,Montreal
+2010-04-24,Indianapolis,"Washington, D.C."
+2010-04-25,New York,St. Paul
+2010-04-25,New Haven,St. Louis
+2010-04-25,Toronto,Akron
+2010-04-25,Chicago,Boston
+2010-04-25,Pittsburgh,Columbus
+2010-04-25,Detroit,Philadelphia
+2010-04-25,Winnipeg,Montreal
+2010-04-25,Indianapolis,"Washington, D.C."
+2010-04-26,New York,St. Paul
+2010-04-26,New Haven,St. Louis
+2010-04-26,Toronto,Akron
+2010-04-26,Chicago,Boston
+2010-04-26,Pittsburgh,Columbus
+2010-04-26,Detroit,Philadelphia
+2010-04-26,Winnipeg,Montreal
+2010-04-26,Indianapolis,"Washington, D.C."
+2010-04-27,New York,St. Paul
+2010-04-27,New Haven,St. Louis
+2010-04-27,Toronto,Akron
+2010-04-28,St. Paul,New York
+2010-04-27,Philadelphia,Columbus
+2010-04-28,"Washington, D.C.",Akron
+2010-04-28,Indianapolis,Toronto
+2010-04-27,Boston,Chicago
+2010-04-28,Winnipeg,New Haven
+2010-04-28,Montreal,St. Louis
+2010-04-28,Pittsburgh,Detroit
+2010-04-29,St. Paul,New York
+2010-04-28,Philadelphia,Columbus
+2010-04-29,"Washington, D.C.",Akron
+2010-04-29,Indianapolis,Toronto
+2010-04-28,Boston,Chicago
+2010-04-29,Winnipeg,New Haven
+2010-04-29,Montreal,St. Louis
+2010-04-29,Pittsburgh,Detroit
+2010-04-30,St. Paul,New York
+2010-04-29,Philadelphia,Columbus
+2010-04-30,"Washington, D.C.",Akron
+2010-04-30,Indianapolis,Toronto
+2010-04-29,Boston,Chicago
+2010-04-30,Winnipeg,New Haven
+2010-04-30,Montreal,St. Louis
+2010-04-30,Pittsburgh,Detroit
+2010-05-01,St. Paul,Boston
+2010-05-01,New Haven,Chicago
+2010-05-01,Pittsburgh,Indianapolis
+2010-05-01,Toronto,Detroit
+2010-05-01,Akron,"Washington, D.C."
+2010-05-01,St. Louis,Montreal
+2010-05-01,New York,Winnipeg
+2010-05-01,Columbus,Philadelphia
+2010-05-02,St. Paul,Boston
+2010-05-02,New Haven,Chicago
+2010-05-02,Pittsburgh,Indianapolis
+2010-05-02,Toronto,Detroit
+2010-05-02,Akron,"Washington, D.C."
+2010-05-02,St. Louis,Montreal
+2010-05-02,New York,Winnipeg
+2010-05-02,Columbus,Philadelphia
+2010-05-03,St. Paul,Boston
+2010-05-03,New Haven,Chicago
+2010-05-03,Pittsburgh,Indianapolis
+2010-05-03,Toronto,Detroit
+2010-05-03,Akron,"Washington, D.C."
+2010-05-03,St. Louis,Montreal
+2010-05-03,New York,Winnipeg
+2010-05-03,Columbus,Philadelphia
+2010-05-04,,
+2010-05-05,,
+2010-05-06,,
+2010-05-07,Toronto,New York
+2010-05-07,Detroit,St. Paul
+2010-05-07,Winnipeg,Indianapolis
+2010-05-07,Pittsburgh,Montreal
+2010-05-07,"Washington, D.C.",New Haven
+2010-05-08,Chicago,Columbus
+2010-05-08,Boston,Philadelphia
+2010-05-08,St. Louis,Akron
+2010-05-08,Toronto,New York
+2010-05-08,Detroit,St. Paul
+2010-05-08,Winnipeg,Indianapolis
+2010-05-08,Pittsburgh,Montreal
+2010-05-08,"Washington, D.C.",New Haven
+2010-05-09,Chicago,Columbus
+2010-05-09,Boston,Philadelphia
+2010-05-09,St. Louis,Akron
+2010-05-09,Toronto,New York
+2010-05-09,Detroit,St. Paul
+2010-05-09,Winnipeg,Indianapolis
+2010-05-09,Pittsburgh,Montreal
+2010-05-09,"Washington, D.C.",New Haven
+2010-05-10,Chicago,Columbus
+2010-05-10,Boston,Philadelphia
+2010-05-10,St. Louis,Akron
+2010-05-11,Philadelphia,New York
+2010-05-11,Indianapolis,Chicago
+2010-05-10,New Haven,Toronto
+2010-05-11,Detroit,St. Louis
+2010-05-11,St. Paul,Columbus
+2010-05-11,"Washington, D.C.",Montreal
+2010-05-11,Pittsburgh,Boston
+2010-05-11,Winnipeg,Akron
+2010-05-12,Philadelphia,New York
+2010-05-12,Indianapolis,Chicago
+2010-05-11,New Haven,Toronto
+2010-05-12,Detroit,St. Louis
+2010-05-12,St. Paul,Columbus
+2010-05-12,"Washington, D.C.",Montreal
+2010-05-12,Pittsburgh,Boston
+2010-05-12,Winnipeg,Akron
+2010-05-13,Philadelphia,New York
+2010-05-13,Indianapolis,Chicago
+2010-05-12,New Haven,Toronto
+2010-05-13,Detroit,St. Louis
+2010-05-13,St. Paul,Columbus
+2010-05-13,"Washington, D.C.",Montreal
+2010-05-13,Pittsburgh,Boston
+2010-05-13,Winnipeg,Akron
+2010-05-14,Columbus,St. Paul
+2010-05-14,Akron,Chicago
+2010-05-14,Philadelphia,Montreal
+2010-05-14,Detroit,Winnipeg
+2010-05-14,"Washington, D.C.",New York
+2010-05-15,Toronto,Boston
+2010-05-15,Indianapolis,St. Louis
+2010-05-15,New Haven,Pittsburgh
+2010-05-15,Columbus,St. Paul
+2010-05-15,Akron,Chicago
+2010-05-15,Philadelphia,Montreal
+2010-05-15,Detroit,Winnipeg
+2010-05-15,"Washington, D.C.",New York
+2010-05-16,Toronto,Boston
+2010-05-16,Indianapolis,St. Louis
+2010-05-16,New Haven,Pittsburgh
+2010-05-16,Columbus,St. Paul
+2010-05-16,Akron,Chicago
+2010-05-16,Philadelphia,Montreal
+2010-05-16,Detroit,Winnipeg
+2010-05-16,"Washington, D.C.",New York
+2010-05-17,Toronto,Boston
+2010-05-17,Indianapolis,St. Louis
+2010-05-17,New Haven,Pittsburgh
+2010-05-18,New York,Pittsburgh
+2010-05-18,"Washington, D.C.",Boston
+2010-05-18,Indianapolis,Winnipeg
+2010-05-18,Columbus,St. Louis
+2010-05-18,Philadelphia,New Haven
+2010-05-18,Chicago,Detroit
+2010-05-18,St. Paul,Akron
+2010-05-18,Toronto,Montreal
+2010-05-19,New York,Pittsburgh
+2010-05-19,"Washington, D.C.",Boston
+2010-05-19,Indianapolis,Winnipeg
+2010-05-19,Columbus,St. Louis
+2010-05-19,Philadelphia,New Haven
+2010-05-19,Chicago,Detroit
+2010-05-19,St. Paul,Akron
+2010-05-19,Toronto,Montreal
+2010-05-20,New York,Pittsburgh
+2010-05-20,"Washington, D.C.",Boston
+2010-05-20,Indianapolis,Winnipeg
+2010-05-20,Columbus,St. Louis
+2010-05-20,Philadelphia,New Haven
+2010-05-20,Chicago,Detroit
+2010-05-20,St. Paul,Akron
+2010-05-20,Toronto,Montreal
+2010-05-21,Boston,Pittsburgh
+2010-05-21,New York,"Washington, D.C."
+2010-05-21,Indianapolis,St. Paul
+2010-05-21,Akron,Winnipeg
+2010-05-21,Toronto,New Haven
+2010-05-21,St. Louis,Columbus
+2010-05-21,Detroit,Chicago
+2010-05-21,Montreal,Philadelphia
+2010-05-22,Boston,Pittsburgh
+2010-05-22,New York,"Washington, D.C."
+2010-05-22,Indianapolis,St. Paul
+2010-05-22,Akron,Winnipeg
+2010-05-22,Toronto,New Haven
+2010-05-22,St. Louis,Columbus
+2010-05-22,Detroit,Chicago
+2010-05-22,Montreal,Philadelphia
+2010-05-23,Boston,Pittsburgh
+2010-05-23,New York,"Washington, D.C."
+2010-05-23,Indianapolis,St. Paul
+2010-05-23,Akron,Winnipeg
+2010-05-23,Toronto,New Haven
+2010-05-23,St. Louis,Columbus
+2010-05-23,Detroit,Chicago
+2010-05-23,Montreal,Philadelphia
+2010-05-24,New York,Philadelphia
+2010-05-24,Chicago,Akron
+2010-05-24,St. Paul,Detroit
+2010-05-24,Boston,Toronto
+2010-05-24,Winnipeg,Columbus
+2010-05-25,Montreal,"Washington, D.C."
+2010-05-25,Pittsburgh,New Haven
+2010-05-25,St. Louis,Indianapolis
+2010-05-25,New York,Philadelphia
+2010-05-25,Chicago,Akron
+2010-05-25,St. Paul,Detroit
+2010-05-25,Boston,Toronto
+2010-05-25,Winnipeg,Columbus
+2010-05-26,Montreal,"Washington, D.C."
+2010-05-26,Pittsburgh,New Haven
+2010-05-26,St. Louis,Indianapolis
+2010-05-26,New York,Philadelphia
+2010-05-26,Chicago,Akron
+2010-05-26,St. Paul,Detroit
+2010-05-26,Boston,Toronto
+2010-05-26,Winnipeg,Columbus
+2010-05-27,Montreal,"Washington, D.C."
+2010-05-27,Pittsburgh,New Haven
+2010-05-27,St. Louis,Indianapolis
+2010-05-28,New Haven,Philadelphia
+2010-05-28,Chicago,Indianapolis
+2010-05-27,Akron,St. Paul
+2010-05-28,St. Louis,Detroit
+2010-05-28,Pittsburgh,New York
+2010-05-28,Columbus,Winnipeg
+2010-05-28,Montreal,Toronto
+2010-05-28,Boston,"Washington, D.C."
+2010-05-29,New Haven,Philadelphia
+2010-05-29,Chicago,Indianapolis
+2010-05-28,Akron,St. Paul
+2010-05-29,St. Louis,Detroit
+2010-05-29,Pittsburgh,New York
+2010-05-29,Columbus,Winnipeg
+2010-05-29,Montreal,Toronto
+2010-05-29,Boston,"Washington, D.C."
+2010-05-30,New Haven,Philadelphia
+2010-05-30,Chicago,Indianapolis
+2010-05-29,Akron,St. Paul
+2010-05-30,St. Louis,Detroit
+2010-05-30,Pittsburgh,New York
+2010-05-30,Columbus,Winnipeg
+2010-05-30,Montreal,Toronto
+2010-05-30,Boston,"Washington, D.C."
+2010-05-31,Akron,St. Louis
+2010-05-31,Philadelphia,Boston
+2010-05-31,St. Paul,Indianapolis
+2010-05-31,Columbus,Chicago
+2010-05-31,New York,Toronto
+2010-05-31,Winnipeg,Detroit
+2010-05-31,Montreal,Pittsburgh
+2010-05-31,New Haven,"Washington, D.C."
+2010-06-01,Akron,St. Louis
+2010-06-01,Philadelphia,Boston
+2010-06-01,St. Paul,Indianapolis
+2010-06-01,Columbus,Chicago
+2010-06-01,New York,Toronto
+2010-06-01,Winnipeg,Detroit
+2010-06-01,Montreal,Pittsburgh
+2010-06-01,New Haven,"Washington, D.C."
+2010-06-02,Akron,St. Louis
+2010-06-02,Philadelphia,Boston
+2010-06-02,St. Paul,Indianapolis
+2010-06-02,Columbus,Chicago
+2010-06-02,New York,Toronto
+2010-06-02,Winnipeg,Detroit
+2010-06-02,Montreal,Pittsburgh
+2010-06-02,New Haven,"Washington, D.C."
+2010-06-03,Detroit,St. Louis
+2010-06-03,Winnipeg,Indianapolis
+2010-06-03,Columbus,St. Paul
+2010-06-03,Akron,Chicago
+2010-06-03,Philadelphia,Montreal
+2010-06-04,Boston,Toronto
+2010-06-04,New Haven,Pittsburgh
+2010-06-04,New York,"Washington, D.C."
+2010-06-04,Detroit,St. Louis
+2010-06-04,Winnipeg,Indianapolis
+2010-06-04,Columbus,St. Paul
+2010-06-04,Akron,Chicago
+2010-06-04,Philadelphia,Montreal
+2010-06-05,Boston,Toronto
+2010-06-05,New Haven,Pittsburgh
+2010-06-05,New York,"Washington, D.C."
+2010-06-05,Detroit,St. Louis
+2010-06-05,Winnipeg,Indianapolis
+2010-06-05,Columbus,St. Paul
+2010-06-05,Akron,Chicago
+2010-06-05,Philadelphia,Montreal
+2010-06-06,Boston,Toronto
+2010-06-06,New Haven,Pittsburgh
+2010-06-06,New York,"Washington, D.C."
+2010-06-06,Winnipeg,Detroit
+2010-06-07,"Washington, D.C.",New Haven
+2010-06-07,Pittsburgh,Montreal
+2010-06-06,St. Paul,Indianapolis
+2010-06-07,New York,Toronto
+2010-06-07,Columbus,St. Louis
+2010-06-07,Philadelphia,Boston
+2010-06-07,Chicago,Akron
+2010-06-07,Winnipeg,Detroit
+2010-06-08,"Washington, D.C.",New Haven
+2010-06-08,Pittsburgh,Montreal
+2010-06-07,St. Paul,Indianapolis
+2010-06-08,New York,Toronto
+2010-06-08,Columbus,St. Louis
+2010-06-08,Philadelphia,Boston
+2010-06-08,Chicago,Akron
+2010-06-08,Winnipeg,Detroit
+2010-06-09,"Washington, D.C.",New Haven
+2010-06-09,Pittsburgh,Montreal
+2010-06-08,St. Paul,Indianapolis
+2010-06-09,New York,Toronto
+2010-06-09,Columbus,St. Louis
+2010-06-09,Philadelphia,Boston
+2010-06-09,Chicago,Akron
+2010-06-10,"Washington, D.C.",Montreal
+2010-06-10,New Haven,Toronto
+2010-06-10,Akron,Winnipeg
+2010-06-10,Indianapolis,St. Louis
+2010-06-10,New York,Pittsburgh
+2010-06-10,Boston,Philadelphia
+2010-06-10,St. Paul,Detroit
+2010-06-10,Columbus,Chicago
+2010-06-11,"Washington, D.C.",Montreal
+2010-06-11,New Haven,Toronto
+2010-06-11,Akron,Winnipeg
+2010-06-11,Indianapolis,St. Louis
+2010-06-11,New York,Pittsburgh
+2010-06-11,Boston,Philadelphia
+2010-06-11,St. Paul,Detroit
+2010-06-11,Columbus,Chicago
+2010-06-12,"Washington, D.C.",Montreal
+2010-06-12,New Haven,Toronto
+2010-06-12,Akron,Winnipeg
+2010-06-12,Indianapolis,St. Louis
+2010-06-12,New York,Pittsburgh
+2010-06-12,Boston,Philadelphia
+2010-06-12,St. Paul,Detroit
+2010-06-12,Columbus,Chicago
+2010-06-13,Toronto,Boston
+2010-06-13,Columbus,Winnipeg
+2010-06-13,Detroit,St. Paul
+2010-06-13,New Haven,Philadelphia
+2010-06-13,St. Louis,Akron
+2010-06-14,Montreal,"Washington, D.C."
+2010-06-14,Indianapolis,Chicago
+2010-06-14,Pittsburgh,New York
+2010-06-14,Toronto,Boston
+2010-06-14,Columbus,Winnipeg
+2010-06-14,Detroit,St. Paul
+2010-06-14,New Haven,Philadelphia
+2010-06-14,St. Louis,Akron
+2010-06-15,Montreal,"Washington, D.C."
+2010-06-15,Indianapolis,Chicago
+2010-06-15,Pittsburgh,New York
+2010-06-15,Toronto,Boston
+2010-06-15,Columbus,Winnipeg
+2010-06-15,Detroit,St. Paul
+2010-06-15,New Haven,Philadelphia
+2010-06-15,St. Louis,Akron
+2010-06-16,Montreal,"Washington, D.C."
+2010-06-16,Indianapolis,Chicago
+2010-06-16,Pittsburgh,New York
+2010-06-16,St. Louis,Detroit
+2010-06-17,"Washington, D.C.",Boston
+2010-06-17,New York,Philadelphia
+2010-06-16,Winnipeg,Columbus
+2010-06-16,St. Paul,Akron
+2010-06-17,Toronto,New Haven
+2010-06-17,Chicago,Indianapolis
+2010-06-17,Montreal,Pittsburgh
+2010-06-17,St. Louis,Detroit
+2010-06-18,"Washington, D.C.",Boston
+2010-06-18,New York,Philadelphia
+2010-06-17,Winnipeg,Columbus
+2010-06-17,St. Paul,Akron
+2010-06-18,Toronto,New Haven
+2010-06-18,Chicago,Indianapolis
+2010-06-18,Montreal,Pittsburgh
+2010-06-18,St. Louis,Detroit
+2010-06-19,"Washington, D.C.",Boston
+2010-06-19,New York,Philadelphia
+2010-06-18,Winnipeg,Columbus
+2010-06-18,St. Paul,Akron
+2010-06-19,Toronto,New Haven
+2010-06-19,Chicago,Indianapolis
+2010-06-19,Montreal,Pittsburgh
+2010-06-19,Detroit,Winnipeg
+2010-06-20,St. Louis,Indianapolis
+2010-06-20,Boston,Pittsburgh
+2010-06-20,Chicago,Columbus
+2010-06-19,Akron,St. Paul
+2010-06-20,"Washington, D.C.",New York
+2010-06-20,Philadelphia,New Haven
+2010-06-20,Toronto,Montreal
+2010-06-20,Detroit,Winnipeg
+2010-06-21,St. Louis,Indianapolis
+2010-06-21,Boston,Pittsburgh
+2010-06-21,Chicago,Columbus
+2010-06-20,Akron,St. Paul
+2010-06-21,"Washington, D.C.",New York
+2010-06-21,Philadelphia,New Haven
+2010-06-21,Toronto,Montreal
+2010-06-21,Detroit,Winnipeg
+2010-06-22,St. Louis,Indianapolis
+2010-06-22,Boston,Pittsburgh
+2010-06-22,Chicago,Columbus
+2010-06-21,Akron,St. Paul
+2010-06-22,"Washington, D.C.",New York
+2010-06-22,Philadelphia,New Haven
+2010-06-22,Toronto,Montreal
+2010-06-23,Pittsburgh,Boston
+2010-06-23,New Haven,"Washington, D.C."
+2010-06-23,St. Paul,Columbus
+2010-06-23,Indianapolis,Winnipeg
+2010-06-23,Philadelphia,New York
+2010-06-24,Montreal,Toronto
+2010-06-24,Akron,St. Louis
+2010-06-24,Chicago,Detroit
+2010-06-24,Pittsburgh,Boston
+2010-06-24,New Haven,"Washington, D.C."
+2010-06-24,St. Paul,Columbus
+2010-06-24,Indianapolis,Winnipeg
+2010-06-24,Philadelphia,New York
+2010-06-25,Montreal,Toronto
+2010-06-25,Akron,St. Louis
+2010-06-25,Chicago,Detroit
+2010-06-25,Pittsburgh,Boston
+2010-06-25,New Haven,"Washington, D.C."
+2010-06-25,St. Paul,Columbus
+2010-06-25,Indianapolis,Winnipeg
+2010-06-25,Philadelphia,New York
+2010-06-26,Montreal,Toronto
+2010-06-26,Akron,St. Louis
+2010-06-26,Chicago,Detroit
+2010-06-26,Pittsburgh,New Haven
+2010-06-27,St. Louis,Columbus
+2010-06-27,Toronto,New York
+2010-06-26,Indianapolis,St. Paul
+2010-06-26,Boston,"Washington, D.C."
+2010-06-27,Winnipeg,Akron
+2010-06-27,Montreal,Philadelphia
+2010-06-27,Detroit,Chicago
+2010-06-27,Pittsburgh,New Haven
+2010-06-28,St. Louis,Columbus
+2010-06-28,Toronto,New York
+2010-06-27,Indianapolis,St. Paul
+2010-06-27,Boston,"Washington, D.C."
+2010-06-28,Winnipeg,Akron
+2010-06-28,Montreal,Philadelphia
+2010-06-28,Detroit,Chicago
+2010-06-28,Pittsburgh,New Haven
+2010-06-29,St. Louis,Columbus
+2010-06-29,Toronto,New York
+2010-06-28,Indianapolis,St. Paul
+2010-06-28,Boston,"Washington, D.C."
+2010-06-29,Winnipeg,Akron
+2010-06-29,Montreal,Philadelphia
+2010-06-29,Detroit,Chicago
+2010-06-30,,
+2010-07-01,,
+2010-07-02,,
+2010-07-03,,
+2010-07-04,Pittsburgh,"Washington, D.C."
+2010-07-04,Akron,Detroit
+2010-07-04,Chicago,St. Paul
+2010-07-04,Boston,Montreal
+2010-07-04,Columbus,Indianapolis
+2010-07-05,New York,New Haven
+2010-07-05,Winnipeg,St. Louis
+2010-07-05,Toronto,Philadelphia
+2010-07-05,Pittsburgh,"Washington, D.C."
+2010-07-05,Akron,Detroit
+2010-07-05,Chicago,St. Paul
+2010-07-05,Boston,Montreal
+2010-07-05,Columbus,Indianapolis
+2010-07-06,New York,New Haven
+2010-07-06,Winnipeg,St. Louis
+2010-07-06,Toronto,Philadelphia
+2010-07-06,Pittsburgh,"Washington, D.C."
+2010-07-06,Akron,Detroit
+2010-07-06,Chicago,St. Paul
+2010-07-06,Boston,Montreal
+2010-07-06,Columbus,Indianapolis
+2010-07-07,New York,New Haven
+2010-07-07,Winnipeg,St. Louis
+2010-07-07,Toronto,Philadelphia
+2010-07-08,St. Paul,St. Louis
+2010-07-08,Toronto,"Washington, D.C."
+2010-07-07,Detroit,Columbus
+2010-07-08,Boston,New York
+2010-07-07,Akron,Indianapolis
+2010-07-08,Chicago,Winnipeg
+2010-07-08,Pittsburgh,Philadelphia
+2010-07-08,New Haven,Montreal
+2010-07-09,St. Paul,St. Louis
+2010-07-09,Toronto,"Washington, D.C."
+2010-07-08,Detroit,Columbus
+2010-07-09,Boston,New York
+2010-07-08,Akron,Indianapolis
+2010-07-09,Chicago,Winnipeg
+2010-07-09,Pittsburgh,Philadelphia
+2010-07-09,New Haven,Montreal
+2010-07-10,St. Paul,St. Louis
+2010-07-10,Toronto,"Washington, D.C."
+2010-07-09,Detroit,Columbus
+2010-07-10,Boston,New York
+2010-07-09,Akron,Indianapolis
+2010-07-10,Chicago,Winnipeg
+2010-07-10,Pittsburgh,Philadelphia
+2010-07-10,New Haven,Montreal
+2010-07-11,St. Paul,Chicago
+2010-07-11,Philadelphia,"Washington, D.C."
+2010-07-11,New Haven,Boston
+2010-07-10,Detroit,Indianapolis
+2010-07-11,Pittsburgh,Toronto
+2010-07-11,Montreal,New York
+2010-07-11,St. Louis,Winnipeg
+2010-07-11,Akron,Columbus
+2010-07-12,St. Paul,Chicago
+2010-07-12,Philadelphia,"Washington, D.C."
+2010-07-12,New Haven,Boston
+2010-07-11,Detroit,Indianapolis
+2010-07-12,Pittsburgh,Toronto
+2010-07-12,Montreal,New York
+2010-07-12,St. Louis,Winnipeg
+2010-07-12,Akron,Columbus
+2010-07-13,St. Paul,Chicago
+2010-07-13,Philadelphia,"Washington, D.C."
+2010-07-13,New Haven,Boston
+2010-07-12,Detroit,Indianapolis
+2010-07-13,Pittsburgh,Toronto
+2010-07-13,Montreal,New York
+2010-07-13,St. Louis,Winnipeg
+2010-07-13,Akron,Columbus
+2010-07-14,Winnipeg,Chicago
+2010-07-14,"Washington, D.C.",Toronto
+2010-07-14,Columbus,Akron
+2010-07-14,St. Louis,St. Paul
+2010-07-14,Montreal,Boston
+2010-07-15,New Haven,New York
+2010-07-15,Indianapolis,Detroit
+2010-07-15,Philadelphia,Pittsburgh
+2010-07-15,Winnipeg,Chicago
+2010-07-15,"Washington, D.C.",Toronto
+2010-07-15,Columbus,Akron
+2010-07-15,St. Louis,St. Paul
+2010-07-15,Montreal,Boston
+2010-07-16,New Haven,New York
+2010-07-16,Indianapolis,Detroit
+2010-07-16,Philadelphia,Pittsburgh
+2010-07-16,Winnipeg,Chicago
+2010-07-16,"Washington, D.C.",Toronto
+2010-07-16,Columbus,Akron
+2010-07-16,St. Louis,St. Paul
+2010-07-16,Montreal,Boston
+2010-07-17,New Haven,New York
+2010-07-17,Indianapolis,Detroit
+2010-07-17,Philadelphia,Pittsburgh
+2010-07-18,Indianapolis,New Haven
+2010-07-18,Philadelphia,St. Louis
+2010-07-17,Montreal,Akron
+2010-07-17,Winnipeg,Toronto
+2010-07-18,Pittsburgh,Chicago
+2010-07-18,"Washington, D.C.",St. Paul
+2010-07-18,Detroit,Boston
+2010-07-18,New York,Columbus
+2010-07-19,Indianapolis,New Haven
+2010-07-19,Philadelphia,St. Louis
+2010-07-18,Montreal,Akron
+2010-07-18,Winnipeg,Toronto
+2010-07-19,Pittsburgh,Chicago
+2010-07-19,"Washington, D.C.",St. Paul
+2010-07-19,Detroit,Boston
+2010-07-19,New York,Columbus
+2010-07-20,Indianapolis,New Haven
+2010-07-20,Philadelphia,St. Louis
+2010-07-19,Montreal,Akron
+2010-07-19,Winnipeg,Toronto
+2010-07-20,Pittsburgh,Chicago
+2010-07-20,"Washington, D.C.",St. Paul
+2010-07-20,Detroit,Boston
+2010-07-20,New York,Columbus
+2010-07-21,Detroit,Montreal
+2010-07-21,St. Paul,Toronto
+2010-07-21,Columbus,New York
+2010-07-21,Philadelphia,Chicago
+2010-07-21,Boston,Indianapolis
+2010-07-21,New Haven,Akron
+2010-07-21,"Washington, D.C.",St. Louis
+2010-07-21,Pittsburgh,Winnipeg
+2010-07-22,Detroit,Montreal
+2010-07-22,St. Paul,Toronto
+2010-07-22,Columbus,New York
+2010-07-22,Philadelphia,Chicago
+2010-07-22,Boston,Indianapolis
+2010-07-22,New Haven,Akron
+2010-07-22,"Washington, D.C.",St. Louis
+2010-07-22,Pittsburgh,Winnipeg
+2010-07-23,Detroit,Montreal
+2010-07-23,St. Paul,Toronto
+2010-07-23,Columbus,New York
+2010-07-23,Philadelphia,Chicago
+2010-07-23,Boston,Indianapolis
+2010-07-23,New Haven,Akron
+2010-07-23,"Washington, D.C.",St. Louis
+2010-07-23,Pittsburgh,Winnipeg
+2010-07-24,St. Louis,Toronto
+2010-07-24,Winnipeg,Pittsburgh
+2010-07-24,Indianapolis,Boston
+2010-07-24,Columbus,New Haven
+2010-07-24,New York,Detroit
+2010-07-25,St. Paul,"Washington, D.C."
+2010-07-25,Akron,Montreal
+2010-07-25,Chicago,Philadelphia
+2010-07-25,St. Louis,Toronto
+2010-07-25,Winnipeg,Pittsburgh
+2010-07-25,Indianapolis,Boston
+2010-07-25,Columbus,New Haven
+2010-07-25,New York,Detroit
+2010-07-26,St. Paul,"Washington, D.C."
+2010-07-26,Akron,Montreal
+2010-07-26,Chicago,Philadelphia
+2010-07-26,St. Louis,Toronto
+2010-07-26,Winnipeg,Pittsburgh
+2010-07-26,Indianapolis,Boston
+2010-07-26,Columbus,New Haven
+2010-07-26,New York,Detroit
+2010-07-27,St. Paul,"Washington, D.C."
+2010-07-27,Akron,Montreal
+2010-07-27,Chicago,Philadelphia
+2010-07-27,Detroit,New York
+2010-07-28,Philadelphia,Winnipeg
+2010-07-28,"Washington, D.C.",Chicago
+2010-07-28,Montreal,Columbus
+2010-07-28,Akron,Boston
+2010-07-28,St. Paul,Pittsburgh
+2010-07-28,Toronto,St. Louis
+2010-07-28,New Haven,Indianapolis
+2010-07-28,Detroit,New York
+2010-07-29,Philadelphia,Winnipeg
+2010-07-29,"Washington, D.C.",Chicago
+2010-07-29,Montreal,Columbus
+2010-07-29,Akron,Boston
+2010-07-29,St. Paul,Pittsburgh
+2010-07-29,Toronto,St. Louis
+2010-07-29,New Haven,Indianapolis
+2010-07-29,Detroit,New York
+2010-07-30,Philadelphia,Winnipeg
+2010-07-30,"Washington, D.C.",Chicago
+2010-07-30,Montreal,Columbus
+2010-07-30,Akron,Boston
+2010-07-30,St. Paul,Pittsburgh
+2010-07-30,Toronto,St. Louis
+2010-07-30,New Haven,Indianapolis
+2010-07-31,Boston,Columbus
+2010-07-31,Winnipeg,"Washington, D.C."
+2010-07-31,New Haven,Detroit
+2010-07-31,Pittsburgh,St. Paul
+2010-07-31,Akron,New York
+2010-07-31,Chicago,Toronto
+2010-07-31,Indianapolis,Montreal
+2010-07-31,St. Louis,Philadelphia
+2010-08-01,Boston,Columbus
+2010-08-01,Winnipeg,"Washington, D.C."
+2010-08-01,New Haven,Detroit
+2010-08-01,Pittsburgh,St. Paul
+2010-08-01,Akron,New York
+2010-08-01,Chicago,Toronto
+2010-08-01,Indianapolis,Montreal
+2010-08-01,St. Louis,Philadelphia
+2010-08-02,Boston,Columbus
+2010-08-02,Winnipeg,"Washington, D.C."
+2010-08-02,New Haven,Detroit
+2010-08-02,Pittsburgh,St. Paul
+2010-08-02,Akron,New York
+2010-08-02,Chicago,Toronto
+2010-08-02,Indianapolis,Montreal
+2010-08-02,St. Louis,Philadelphia
+2010-08-03,New York,Akron
+2010-08-03,Detroit,New Haven
+2010-08-03,Winnipeg,Philadelphia
+2010-08-03,St. Louis,Pittsburgh
+2010-08-03,Columbus,Boston
+2010-08-04,Chicago,"Washington, D.C."
+2010-08-04,Montreal,Indianapolis
+2010-08-04,Toronto,St. Paul
+2010-08-04,New York,Akron
+2010-08-04,Detroit,New Haven
+2010-08-04,Winnipeg,Philadelphia
+2010-08-04,St. Louis,Pittsburgh
+2010-08-04,Columbus,Boston
+2010-08-05,Chicago,"Washington, D.C."
+2010-08-05,Montreal,Indianapolis
+2010-08-05,Toronto,St. Paul
+2010-08-05,New York,Akron
+2010-08-05,Detroit,New Haven
+2010-08-05,Winnipeg,Philadelphia
+2010-08-05,St. Louis,Pittsburgh
+2010-08-05,Columbus,Boston
+2010-08-06,Chicago,"Washington, D.C."
+2010-08-06,Montreal,Indianapolis
+2010-08-06,Toronto,St. Paul
+2010-08-07,Toronto,Winnipeg
+2010-08-06,Boston,Akron
+2010-08-07,St. Paul,Philadelphia
+2010-08-07,St. Louis,"Washington, D.C."
+2010-08-07,Chicago,Pittsburgh
+2010-08-07,New Haven,Columbus
+2010-08-07,Indianapolis,New York
+2010-08-07,Montreal,Detroit
+2010-08-08,Toronto,Winnipeg
+2010-08-07,Boston,Akron
+2010-08-08,St. Paul,Philadelphia
+2010-08-08,St. Louis,"Washington, D.C."
+2010-08-08,Chicago,Pittsburgh
+2010-08-08,New Haven,Columbus
+2010-08-08,Indianapolis,New York
+2010-08-08,Montreal,Detroit
+2010-08-09,Toronto,Winnipeg
+2010-08-08,Boston,Akron
+2010-08-09,St. Paul,Philadelphia
+2010-08-09,St. Louis,"Washington, D.C."
+2010-08-09,Chicago,Pittsburgh
+2010-08-09,New Haven,Columbus
+2010-08-09,Indianapolis,New York
+2010-08-09,Montreal,Detroit
+2010-08-10,"Washington, D.C.",Winnipeg
+2010-08-10,Pittsburgh,St. Louis
+2010-08-10,Philadelphia,St. Paul
+2010-08-10,Columbus,Montreal
+2010-08-10,Boston,Detroit
+2010-08-10,Toronto,Chicago
+2010-08-10,New York,Indianapolis
+2010-08-10,Akron,New Haven
+2010-08-11,"Washington, D.C.",Winnipeg
+2010-08-11,Pittsburgh,St. Louis
+2010-08-11,Philadelphia,St. Paul
+2010-08-11,Columbus,Montreal
+2010-08-11,Boston,Detroit
+2010-08-11,Toronto,Chicago
+2010-08-11,New York,Indianapolis
+2010-08-11,Akron,New Haven
+2010-08-12,"Washington, D.C.",Winnipeg
+2010-08-12,Pittsburgh,St. Louis
+2010-08-12,Philadelphia,St. Paul
+2010-08-12,Columbus,Montreal
+2010-08-12,Boston,Detroit
+2010-08-12,Toronto,Chicago
+2010-08-12,New York,Indianapolis
+2010-08-12,Akron,New Haven
+2010-08-13,,
+2010-08-14,,
+2010-08-15,,
+2010-08-16,Columbus,Detroit
+2010-08-16,Philadelphia,Toronto
+2010-08-16,Montreal,New Haven
+2010-08-16,Chicago,St. Louis
+2010-08-16,St. Paul,Winnipeg
+2010-08-17,"Washington, D.C.",Pittsburgh
+2010-08-17,Indianapolis,Akron
+2010-08-17,New York,Boston
+2010-08-17,Columbus,Detroit
+2010-08-17,Philadelphia,Toronto
+2010-08-17,Montreal,New Haven
+2010-08-17,Chicago,St. Louis
+2010-08-17,St. Paul,Winnipeg
+2010-08-18,"Washington, D.C.",Pittsburgh
+2010-08-18,Indianapolis,Akron
+2010-08-18,New York,Boston
+2010-08-18,Columbus,Detroit
+2010-08-18,Philadelphia,Toronto
+2010-08-18,Montreal,New Haven
+2010-08-18,Chicago,St. Louis
+2010-08-18,St. Paul,Winnipeg
+2010-08-19,"Washington, D.C.",Pittsburgh
+2010-08-19,Indianapolis,Akron
+2010-08-19,New York,Boston
+2010-08-20,New York,Montreal
+2010-08-19,St. Louis,Chicago
+2010-08-20,Detroit,Akron
+2010-08-19,Winnipeg,St. Paul
+2010-08-20,Boston,New Haven
+2010-08-20,"Washington, D.C.",Philadelphia
+2010-08-20,Toronto,Pittsburgh
+2010-08-20,Indianapolis,Columbus
+2010-08-21,New York,Montreal
+2010-08-20,St. Louis,Chicago
+2010-08-21,Detroit,Akron
+2010-08-20,Winnipeg,St. Paul
+2010-08-21,Boston,New Haven
+2010-08-21,"Washington, D.C.",Philadelphia
+2010-08-21,Toronto,Pittsburgh
+2010-08-21,Indianapolis,Columbus
+2010-08-22,New York,Montreal
+2010-08-21,St. Louis,Chicago
+2010-08-22,Detroit,Akron
+2010-08-21,Winnipeg,St. Paul
+2010-08-22,Boston,New Haven
+2010-08-22,"Washington, D.C.",Philadelphia
+2010-08-22,Toronto,Pittsburgh
+2010-08-22,Indianapolis,Columbus
+2010-08-23,Chicago,Winnipeg
+2010-08-23,Akron,Indianapolis
+2010-08-23,Boston,New Haven
+2010-08-23,"Washington, D.C.",Toronto
+2010-08-23,Montreal,New York
+2010-08-24,St. Louis,St. Paul
+2010-08-24,Philadelphia,Pittsburgh
+2010-08-24,Detroit,Columbus
+2010-08-24,Chicago,Winnipeg
+2010-08-24,Akron,Indianapolis
+2010-08-24,Boston,New Haven
+2010-08-24,"Washington, D.C.",Toronto
+2010-08-24,Montreal,New York
+2010-08-25,St. Louis,St. Paul
+2010-08-25,Philadelphia,Pittsburgh
+2010-08-25,Detroit,Columbus
+2010-08-25,Chicago,Winnipeg
+2010-08-25,Akron,Indianapolis
+2010-08-25,Boston,New Haven
+2010-08-25,"Washington, D.C.",Toronto
+2010-08-25,Montreal,New York
+2010-08-26,St. Louis,St. Paul
+2010-08-26,Philadelphia,Pittsburgh
+2010-08-26,Detroit,Columbus
+2010-08-27,St. Paul,Chicago
+2010-08-27,Columbus,Detroit
+2010-08-27,Pittsburgh,Toronto
+2010-08-26,New Haven,Montreal
+2010-08-26,New York,Boston
+2010-08-27,"Washington, D.C.",Philadelphia
+2010-08-27,St. Louis,Winnipeg
+2010-08-27,Indianapolis,Akron
+2010-08-28,St. Paul,Chicago
+2010-08-28,Columbus,Detroit
+2010-08-28,Pittsburgh,Toronto
+2010-08-27,New Haven,Montreal
+2010-08-27,New York,Boston
+2010-08-28,"Washington, D.C.",Philadelphia
+2010-08-28,St. Louis,Winnipeg
+2010-08-28,Indianapolis,Akron
+2010-08-29,St. Paul,Chicago
+2010-08-29,Columbus,Detroit
+2010-08-29,Pittsburgh,Toronto
+2010-08-28,New Haven,Montreal
+2010-08-28,New York,Boston
+2010-08-29,"Washington, D.C.",Philadelphia
+2010-08-29,St. Louis,Winnipeg
+2010-08-29,Indianapolis,Akron
+2010-08-30,Montreal,Chicago
+2010-08-30,Boston,St. Louis
+2010-08-30,New Haven,St. Paul
+2010-08-30,"Washington, D.C.",Detroit
+2010-08-30,Akron,Philadelphia
+2010-08-30,Toronto,Columbus
+2010-08-30,Indianapolis,Pittsburgh
+2010-08-30,Winnipeg,New York
+2010-08-31,Montreal,Chicago
+2010-08-31,Boston,St. Louis
+2010-08-31,New Haven,St. Paul
+2010-08-31,"Washington, D.C.",Detroit
+2010-08-31,Akron,Philadelphia
+2010-08-31,Toronto,Columbus
+2010-08-31,Indianapolis,Pittsburgh
+2010-08-31,Winnipeg,New York
+2010-09-01,Montreal,Chicago
+2010-09-01,Boston,St. Louis
+2010-09-01,New Haven,St. Paul
+2010-09-01,"Washington, D.C.",Detroit
+2010-09-01,Akron,Philadelphia
+2010-09-01,Toronto,Columbus
+2010-09-01,Indianapolis,Pittsburgh
+2010-09-01,Winnipeg,New York
+2010-09-02,St. Paul,Montreal
+2010-09-02,New Haven,Winnipeg
+2010-09-02,Columbus,Pittsburgh
+2010-09-02,Indianapolis,Philadelphia
+2010-09-02,St. Louis,Boston
+2010-09-03,Detroit,"Washington, D.C."
+2010-09-03,Akron,Toronto
+2010-09-03,Chicago,New York
+2010-09-03,St. Paul,Montreal
+2010-09-03,New Haven,Winnipeg
+2010-09-03,Columbus,Pittsburgh
+2010-09-03,Indianapolis,Philadelphia
+2010-09-03,St. Louis,Boston
+2010-09-04,Detroit,"Washington, D.C."
+2010-09-04,Akron,Toronto
+2010-09-04,Chicago,New York
+2010-09-04,St. Paul,Montreal
+2010-09-04,New Haven,Winnipeg
+2010-09-04,Columbus,Pittsburgh
+2010-09-04,Indianapolis,Philadelphia
+2010-09-04,St. Louis,Boston
+2010-09-05,Detroit,"Washington, D.C."
+2010-09-05,Akron,Toronto
+2010-09-05,Chicago,New York
+2010-09-05,St. Paul,New Haven
+2010-09-06,New York,St. Louis
+2010-09-06,Akron,Pittsburgh
+2010-09-06,Philadelphia,Detroit
+2010-09-06,"Washington, D.C.",Indianapolis
+2010-09-06,Chicago,Montreal
+2010-09-06,Columbus,Toronto
+2010-09-06,Boston,Winnipeg
+2010-09-06,St. Paul,New Haven
+2010-09-07,New York,St. Louis
+2010-09-07,Akron,Pittsburgh
+2010-09-07,Philadelphia,Detroit
+2010-09-07,"Washington, D.C.",Indianapolis
+2010-09-07,Chicago,Montreal
+2010-09-07,Columbus,Toronto
+2010-09-07,Boston,Winnipeg
+2010-09-07,St. Paul,New Haven
+2010-09-08,New York,St. Louis
+2010-09-08,Akron,Pittsburgh
+2010-09-08,Philadelphia,Detroit
+2010-09-08,"Washington, D.C.",Indianapolis
+2010-09-08,Chicago,Montreal
+2010-09-08,Columbus,Toronto
+2010-09-08,Boston,Winnipeg
+2010-09-09,Boston,St. Paul
+2010-09-09,Philadelphia,Indianapolis
+2010-09-09,St. Louis,New Haven
+2010-09-09,Columbus,"Washington, D.C."
+2010-09-09,Montreal,Winnipeg
+2010-09-09,Detroit,Toronto
+2010-09-09,New York,Chicago
+2010-09-09,Pittsburgh,Akron
+2010-09-10,Boston,St. Paul
+2010-09-10,Philadelphia,Indianapolis
+2010-09-10,St. Louis,New Haven
+2010-09-10,Columbus,"Washington, D.C."
+2010-09-10,Montreal,Winnipeg
+2010-09-10,Detroit,Toronto
+2010-09-10,New York,Chicago
+2010-09-10,Pittsburgh,Akron
+2010-09-11,Boston,St. Paul
+2010-09-11,Philadelphia,Indianapolis
+2010-09-11,St. Louis,New Haven
+2010-09-11,Columbus,"Washington, D.C."
+2010-09-11,Montreal,Winnipeg
+2010-09-11,Detroit,Toronto
+2010-09-11,New York,Chicago
+2010-09-11,Pittsburgh,Akron
+2010-09-12,Indianapolis,Columbus
+2010-09-12,New York,Montreal
+2010-09-12,Pittsburgh,"Washington, D.C."
+2010-09-12,Chicago,St. Louis
+2010-09-12,St. Paul,Winnipeg
+2010-09-13,Akron,Detroit
+2010-09-13,Toronto,Philadelphia
+2010-09-13,New Haven,Boston
+2010-09-13,Indianapolis,Columbus
+2010-09-13,New York,Montreal
+2010-09-13,Pittsburgh,"Washington, D.C."
+2010-09-13,Chicago,St. Louis
+2010-09-13,St. Paul,Winnipeg
+2010-09-14,Akron,Detroit
+2010-09-14,Toronto,Philadelphia
+2010-09-14,New Haven,Boston
+2010-09-14,Indianapolis,Columbus
+2010-09-14,New York,Montreal
+2010-09-14,Pittsburgh,"Washington, D.C."
+2010-09-14,Chicago,St. Louis
+2010-09-14,St. Paul,Winnipeg
+2010-09-15,Akron,Detroit
+2010-09-15,Toronto,Philadelphia
+2010-09-15,New Haven,Boston
+2010-09-16,Pittsburgh,Philadelphia
+2010-09-16,Montreal,Boston
+2010-09-16,Indianapolis,Detroit
+2010-09-15,St. Louis,Chicago
+2010-09-15,Winnipeg,St. Paul
+2010-09-16,New York,New Haven
+2010-09-16,Akron,Columbus
+2010-09-16,Toronto,"Washington, D.C."
+2010-09-17,Pittsburgh,Philadelphia
+2010-09-17,Montreal,Boston
+2010-09-17,Indianapolis,Detroit
+2010-09-16,St. Louis,Chicago
+2010-09-16,Winnipeg,St. Paul
+2010-09-17,New York,New Haven
+2010-09-17,Akron,Columbus
+2010-09-17,Toronto,"Washington, D.C."
+2010-09-18,Pittsburgh,Philadelphia
+2010-09-18,Montreal,Boston
+2010-09-18,Indianapolis,Detroit
+2010-09-17,St. Louis,Chicago
+2010-09-17,Winnipeg,St. Paul
+2010-09-18,New York,New Haven
+2010-09-18,Akron,Columbus
+2010-09-18,Toronto,"Washington, D.C."
+2010-09-19,Toronto,Pittsburgh
+2010-09-19,Philadelphia,"Washington, D.C."
+2010-09-19,Montreal,New Haven
+2010-09-18,Winnipeg,Chicago
+2010-09-18,St. Paul,St. Louis
+2010-09-19,Detroit,Indianapolis
+2010-09-19,Columbus,Akron
+2010-09-19,Boston,New York
+2010-09-20,Toronto,Pittsburgh
+2010-09-20,Philadelphia,"Washington, D.C."
+2010-09-20,Montreal,New Haven
+2010-09-19,Winnipeg,Chicago
+2010-09-19,St. Paul,St. Louis
+2010-09-20,Detroit,Indianapolis
+2010-09-20,Columbus,Akron
+2010-09-20,Boston,New York
+2010-09-21,Toronto,Pittsburgh
+2010-09-21,Philadelphia,"Washington, D.C."
+2010-09-21,Montreal,New Haven
+2010-09-20,Winnipeg,Chicago
+2010-09-20,St. Paul,St. Louis
+2010-09-21,Detroit,Indianapolis
+2010-09-21,Columbus,Akron
+2010-09-21,Boston,New York
+2010-09-22,Detroit,Akron
+2010-09-22,Philadelphia,Toronto
+2010-09-22,"Washington, D.C.",Pittsburgh
+2010-09-22,Boston,Montreal
+2010-09-22,Columbus,Indianapolis
+2010-09-23,Chicago,St. Paul
+2010-09-23,New Haven,New York
+2010-09-23,Winnipeg,St. Louis
+2010-09-23,Detroit,Akron
+2010-09-23,Philadelphia,Toronto
+2010-09-23,"Washington, D.C.",Pittsburgh
+2010-09-23,Boston,Montreal
+2010-09-23,Columbus,Indianapolis
+2010-09-24,Chicago,St. Paul
+2010-09-24,New Haven,New York
+2010-09-24,Winnipeg,St. Louis
+2010-09-24,Detroit,Akron
+2010-09-24,Philadelphia,Toronto
+2010-09-24,"Washington, D.C.",Pittsburgh
+2010-09-24,Boston,Montreal
+2010-09-24,Columbus,Indianapolis
+2010-09-25,Chicago,St. Paul
+2010-09-25,New Haven,New York
+2010-09-25,Winnipeg,St. Louis
+2010-09-26,,
+2010-09-27,,
+2010-09-28,,
+2010-09-15,New York,Montreal
+2010-08-22,Boston,New Haven
+2010-08-19,Montreal,New Haven
+2010-04-04,Boston,New York
+2010-09-22,New Haven,New York
+2010-07-16,Montreal,Boston
+2010-08-29,New York,Boston
+2010-08-29,New Haven,Montreal
+2010-07-04,New York,New Haven
+2010-09-25,Boston,Montreal
+2010-09-12,New Haven,Boston
+2010-07-12,Montreal,New York
+2010-09-25,Philadelphia,Toronto
+2010-09-25,"Washington, D.C.",Pittsburgh
+2010-08-22,Toronto,Pittsburgh
+2010-08-29,"Washington, D.C.",Philadelphia
+2010-07-13,Philadelphia,"Washington, D.C."
+2010-08-28,Pittsburgh,Toronto
+2010-09-12,Toronto,Philadelphia
+2010-09-15,Pittsburgh,"Washington, D.C."
+2010-08-23,Philadelphia,Pittsburgh
+2010-04-14,Toronto,"Washington, D.C."
+2010-08-26,"Washington, D.C.",Toronto
+2010-04-17,Pittsburgh,Philadelphia
+2010-04-04,St. Paul,Chicago
+2010-09-22,Winnipeg,St. Louis
+2010-08-17,St. Paul,Winnipeg
+2010-08-22,St. Louis,Chicago
+2010-09-21,Winnipeg,Chicago
+2010-09-21,St. Paul,St. Louis
+2010-08-17,Chicago,St. Louis
+2010-08-22,Winnipeg,St. Paul
+2010-04-17,St. Louis,Winnipeg
+2010-09-22,Chicago,St. Paul
+2010-08-23,St. Louis,St. Paul
+2010-08-26,Chicago,Winnipeg
+2010-07-10,Akron,Columbus
+2010-07-13,Detroit,Indianapolis
+2010-07-14,Indianapolis,Detroit
+2010-04-04,Columbus,Akron
+2010-08-23,Detroit,Columbus
+2010-08-26,Akron,Indianapolis
+2010-08-16,Indianapolis,Akron
+2010-08-19,Columbus,Detroit
+2010-09-25,Columbus,Indianapolis
+2010-09-12,Akron,Detroit
+2010-09-25,Detroit,Akron
+2010-09-15,Indianapolis,Columbus
