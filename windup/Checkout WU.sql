@@ -7,7 +7,13 @@ SELECT --sum(outs_wu)
 		-- and simnumber	= 220 and hometeam in ('Philadelphia','Pittsburgh', 'Toronto','Washington, D.C.', 'Detroit','Indianapolis', 'Akron','Columbus')
 		-- and simnumber = 309 and hometeam in ('Philadelphia','Pittsburgh', 'Toronto','Washington, D.C.', 'Detroit','Indianapolis', 'Akron','Columbus')
 		-- and simnumber = 330 and hometeam in ('Dallas','San Antonio', 'Monterrey','Merida', 'Calgary','Vancouver', 'Denver','Seattle')
-		and simnumber = 87 and gamedate >'8/15/2010' and wrapupresult != '' and hometeam in ('Birmingham','Nashville','Atlanta','Charlotte','Oakland','Los Angeles', 'Phoenix','Tijuana') 
+		
+		-- and simnumber = 110 and gamedate <'5/6/2010' and wrapupresult != '' and hometeam in ('Montreal','New Haven', 'Boston','New York', 'Winnipeg','St. Paul', 'Chicago','St. Louis') 
+		-- and simnumber = 87 and gamedate >'5/6/2010' and gamedate <'7/1/2010' and wrapupresult != '' and hometeam in ('Birmingham','Nashville','Atlanta','Charlotte','Oakland','Los Angeles', 'Phoenix','Tijuana') 
+		-- and simnumber = 87 and gamedate >'7/1/2010' and gamedate <'8/15/2010' and wrapupresult != '' and hometeam in ('Birmingham','Nashville','Atlanta','Charlotte','Oakland','Los Angeles', 'Phoenix','Tijuana') 
+		
+		-- and simnumber = 172 and gamedate >'8/15/2010' and wrapupresult != '' and hometeam in ('Birmingham','Nashville','Atlanta','Charlotte','Oakland','Los Angeles', 'Phoenix','Tijuana') 
+		and simnumber = 201 and gamedate >'8/15/2010' and wrapupresult != '' and hometeam in ('Dallas','San Antonio', 'Monterrey','Merida','Oakland','Los Angeles', 'Phoenix','Tijuana') 
 		
 		-- and gamedate >'8/15/2010' and wrapupresult != '' and (hometeam = 'Phoenix' or awayteam = 'Phoenix');
 		-- and gamedate >'7/1/2010' and gamedate <'8/15/2010' and wrapupresult != '' and (hometeam = 'Philadelphia' or awayteam = 'Philadelphia')

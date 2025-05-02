@@ -89,6 +89,7 @@ s1 as(
 		(g1.totalties+g2.totalties)/2 as s1_totalDrawGames
 	from s1_grpLevel as g1
 	inner join s1_grpLevel as g2 on g1.oppoGroup = g2.teamgroup and g1.simnumber = g2.simnumber
+	where (g1.totalties+g2.totalties)/2 >= 10
 ),
 
 s3_Philly as (
@@ -163,19 +164,41 @@ s4_winDiff as (
 ),
 
 s4_score as (
-	select distinct s4_sim, s4_team, pre_winsDistance-post_winsDistance + count(gamedate)over(partition by s4_sim, s4_team)/cast(s4_PheonixTies as float) as compelScore
+	select distinct s4_sim, s4_team, 
+		pre_winsDistance,
+		post_winsDistance,
+		count(gamedate)over(partition by s4_sim, s4_team),
+		cast(s4_PheonixTies as float),
+		
+		pre_winsDistance-post_winsDistance + count(gamedate)over(partition by s4_sim, s4_team)/cast(s4_PheonixTies as float) as compelScore
+		
 	from s4_winDiff
 	left join seasons.results as r on s4_winDiff.s4_sim = r.simnumber and gamedate >'8/15/2010' and wrapupresult != '' and hometeam in (s4_team, passingteam) and awayteam in (s4_team, passingteam)
 ),
 
+s4_matchups as (
+	select s4_sim, s4_team,
+		sum(case
+			when hometeam in (s4_team, passingteam) and awayteam in (s4_team, passingteam) then 1
+			else 0
+			end
+		) as matchups
+	from s4_winDiff
+	left join seasons.results as r on s4_winDiff.s4_sim = r.simnumber and gamedate >'8/15/2010' and wrapupresult != '' and hometeam in (s4_team, passingteam) and awayteam in (s4_team, passingteam)
+	group by s4_sim, s4_team
+),
+
 s4 as (
 	select distinct s.s4_sim, s4_conference, keyGroup as s4_group, s.s4_team, --st.team as passingteam,
-			oppogroup as s4_oppogroup, compelScore, s4_PheonixTies, (keyTies.totalties+oppoTies.totalties)/2 as s4_totalties
+			oppogroup as s4_oppogroup, 
+			matchups, compelScore, s.s4_PheonixTies, (keyTies.totalties+oppoTies.totalties)/2 as s4_totalties
 	from s4_Pheonix as s
 	left join groupPairs on s.s4_teamGroup = groupPairs.keyGroup and s.s4_sim=groupPairs.simnumber and draw = 'Part 4'
 	left join s4_ties as keyTies on s.s4_sim=keyTies.simnumber and s.s4_teamGroup = keyTies.teamgroup
 	left join s4_ties as oppoTies on s.s4_sim=oppoTies.simnumber and groupPairs.oppogroup = oppoTies.teamgroup
 	left join s4_score as sc on s.s4_sim = sc.s4_sim and s.s4_team = sc.s4_team
+	left join s4_matchups as sm on s.s4_sim = sm.s4_sim and s.s4_team = sm.s4_team
+	-- where post_winsDistance = 1
 ),
 
 s2_ties as(
@@ -193,16 +216,42 @@ s2 as (
 	left join s2_ties as oppoTies on s.simnumber=oppoTies.simnumber and groupPairs.oppogroup = oppoTies.teamgroup
 )
 
-select s4_sim,s1_conf,s1_group1,s1_group2,s1_totalDrawGames,s1_levelOfStale,
-		s3_conference, s3_group, s3_oppogroup, s3_team,--s3_PhillyTies, 
-			s3_mostTies, s3_totalties,
-		s4_conference, s4_group, s4_team, s4_oppogroup, s4_PheonixTies, s4_totalties, compelScore
-from s4 as d
-left join s1 on d.s4_sim = s1.s1_sim
-left join s3 on d.s4_sim = s3.s3_sim
+
+/* Storyline for draw 2 and 4*/
+-- select s4_sim,
+-- 		-- s1_conf,s1_group1,s1_group2,s1_totalDrawGames,s1_levelOfStale
+-- 		-- ,s3_conference, s3_group, s3_oppogroup, s3_team,--s3_PhillyTies, 
+-- 		-- 	s3_mostTies, s3_totalties,
+-- 		s4_conference, s4_group, s4_team, s4_oppogroup, s4_PheonixTies,matchups, s4_totalties, compelScore
+-- from s4 as d
+-- -- left join s1 on d.s4_sim = s1.s1_sim
+-- -- left join s3 on d.s4_sim = s3.s3_sim
+-- where 1=1 
+-- 	-- and s1_levelOfStale >=0
+-- 	-- and s3_conference is not null 
+-- 	-- and s1_group1||s1_group2 != s4_group||s4_oppogroup
+-- 	and matchups >=3
+-- order by compelScore desc 
+
+/* Storyline for draw 1 & 3*/
+select s1_sim, s1_conf,s1_group1,s1_group2,s1_totalDrawGames,s1_levelOfStale
+		,s3_conference, s3_group, s3_oppogroup, s3_team,--s3_PhillyTies, 
+		s3_mostTies, s3_totalties
+from s1
+left join s3 on s1.s1_sim = s3.s3_sim
 where s1_levelOfStale >=0
+ 	and s1_conf = 'Founders'
 	and s3_conference is not null 
-order by compelScore desc 
+	and s1_group1||s1_group2 != s3_group||s3_oppogroup
+order by s1_levelOfStale desc
+
+
+
+
+
+
+
+
 
 -- select *
 -- from s1_stale

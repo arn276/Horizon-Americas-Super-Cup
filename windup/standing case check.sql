@@ -6,8 +6,8 @@ SELECT simnumber, standingsdate, timing, seasonpart, conference, division, teamg
 		-- simnumber = 309 and seasonpart = 'Part 1'  and teamgroup in ('Canal Group','Rail Group')
 		-- simnumber = 330 and seasonpart = 'Part 1'  and teamgroup in ('Desert Group','Pass Group')
 		
-		simnumber = 87 and seasonpart = 'Part 4'  and teamgroup in ('Ridge Group','Rush Group')
-		-- simnumber = 3 and seasonpart = 'Part 1'  and teamgroup in ('Rush Group','Desert Group')
+		simnumber = 201 and seasonpart = 'Part 4'  and teamgroup in ('Desert Group','Rush Group')
+		-- simnumber = 87 and seasonpart = 'Part 1'  and teamgroup in ('Port Group','Aurora Group')
 		
 	-- order by 	tiestofinish
 		
